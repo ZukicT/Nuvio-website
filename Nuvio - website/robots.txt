@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nuvio.app/sitemap.xml
-
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
