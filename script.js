@@ -57,14 +57,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add subtle parallax effect
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const hero = document.querySelector('.hero-visual');
-        
-        if (hero) {
-            const rate = scrolled * -0.3;
-            hero.style.transform = `translateY(${rate}px)`;
-        }
-    });
+    // Parallax effect removed - hero image now stays static
 });

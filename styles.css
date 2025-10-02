@@ -76,6 +76,7 @@ body {
     font-weight: 600;
     font-size: 1.25rem;
     color: var(--text-primary);
+    text-decoration: none;
 }
 
 .logo img {
@@ -731,5 +732,262 @@ body {
     
     .feature p {
         font-size: 0.875rem;
+    }
+}
+
+/* Contact Page Styles */
+.contact-form {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(87, 116, 205, 0.03), rgba(87, 116, 205, 0.08));
+    border-radius: 20px;
+    border: 2px solid var(--primary-blue);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid rgba(87, 116, 205, 0.2);
+    border-radius: 16px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    background: rgba(87, 116, 205, 0.02);
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+    border-color: var(--primary-blue);
+    background: rgba(87, 116, 205, 0.01);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+    line-height: 1.6;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1.25rem 2rem;
+    background: var(--primary-blue);
+    color: white;
+    border: 2px solid var(--primary-blue);
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-submit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-submit:hover::before {
+    left: 100%;
+}
+
+.btn-submit:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-submit:active {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.form-status {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border-radius: 16px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+
+.form-status.success {
+    background: rgba(52, 199, 89, 0.1);
+    color: #2D7D32;
+    border-color: rgba(52, 199, 89, 0.3);
+}
+
+.form-status.error {
+    background: rgba(255, 59, 48, 0.1);
+    color: #C62828;
+    border-color: rgba(255, 59, 48, 0.3);
+}
+
+.form-status.loading {
+    background: rgba(87, 116, 205, 0.1);
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+/* Contact Methods - Simple styling to match legal pages */
+.contact-methods {
+    margin: 2rem 0;
+}
+
+.contact-method {
+    margin-bottom: 2rem;
+}
+
+.contact-method h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.contact-method p {
+    color: var(--text-tertiary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.contact-method ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.contact-method li {
+    color: var(--text-tertiary);
+    margin-bottom: 0.5rem;
+}
+
+/* FAQ Styles - Simple styling to match legal pages */
+.faq-list {
+    margin: 2rem 0;
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.faq-item p {
+    color: var(--text-tertiary);
+    line-height: 1.6;
+}
+
+/* Response Times - Simple styling to match legal pages */
+.response-times {
+    margin: 2rem 0;
+}
+
+.response-time {
+    margin-bottom: 2rem;
+}
+
+.response-time h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.response-time p {
+    color: var(--text-tertiary);
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Info - Simple styling to match legal pages */
+.contact-info {
+    margin: 1.5rem 0;
+}
+
+.contact-info h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.contact-info p {
+    color: var(--text-tertiary);
+    line-height: 1.6;
+}
+
+/* Contact page uses legal-title and legal-subtitle classes */
+
+/* Responsive Contact Styles */
+@media (max-width: 768px) {
+    .contact-form {
+        margin: 1.5rem;
+        padding: 2rem;
+        max-width: calc(100% - 3rem);
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.875rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .btn-submit {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .form-status {
+        padding: 1rem 1.25rem;
+        font-size: 0.95rem;
     }
 }
