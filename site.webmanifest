@@ -1,0 +1,21 @@
+{
+    "name": "Nuvion - Money Manager",
+    "short_name": "Nuvion",
+    "description": "Simple money manager app for iOS. Track expenses, set budgets, manage loans, and achieve financial goals.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#5774CD",
+    "icons": [
+        {
+            "src": "assets/AppIconBird.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/AppIconBird.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
