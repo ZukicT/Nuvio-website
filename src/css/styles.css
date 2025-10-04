@@ -518,6 +518,7 @@ body {
 .screenshots-section {
     padding: 5rem 0 4rem;
     background: var(--bg-primary);
+    position: relative;
 }
 
 .screenshots-section h2 {
@@ -540,34 +541,96 @@ body {
 
 .screenshots-carousel {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     max-width: 1400px;
     margin: 0 auto;
     overflow-x: auto;
-    padding: 1rem 0;
+    overflow-y: hidden;
+    padding: 2rem 2rem 3rem;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(87, 116, 205, 0.3) transparent;
+}
+
+/* Custom scrollbar for webkit browsers */
+.screenshots-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.screenshots-carousel::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin: 0 2rem;
+}
+
+.screenshots-carousel::-webkit-scrollbar-thumb {
+    background: rgba(87, 116, 205, 0.4);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.screenshots-carousel::-webkit-scrollbar-thumb:hover {
+    background: rgba(87, 116, 205, 0.6);
 }
 
 .screenshot-item {
     flex: 0 0 auto;
-    width: 280px;
+    width: 300px;
     scroll-snap-align: center;
+    scroll-snap-stop: always;
+    transition: all 0.3s ease;
 }
 
 .app-screenshot {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 24px;
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.12),
+        0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.app-screenshot:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+.screenshot-item:hover .app-screenshot {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.18),
+        0 8px 20px rgba(0, 0, 0, 0.12);
+    border-color: rgba(87, 116, 205, 0.2);
+}
+
+/* Fade effect on edges */
+.screenshots-section .container {
+    position: relative;
+}
+
+.screenshots-section .container::before,
+.screenshots-section .container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 400px;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.screenshots-section .container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--bg-primary), transparent);
+}
+
+.screenshots-section .container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--bg-primary), transparent);
 }
 
 /* Screenshots Responsive */
@@ -587,12 +650,17 @@ body {
     }
 
     .screenshots-carousel {
-        gap: 1.5rem;
-        padding: 1rem;
+        gap: 2rem;
+        padding: 2rem 1rem 3rem;
     }
 
     .screenshot-item {
-        width: 240px;
+        width: 260px;
+    }
+
+    .screenshots-section .container::before,
+    .screenshots-section .container::after {
+        width: 60px;
     }
 }
 
@@ -606,11 +674,18 @@ body {
     }
 
     .screenshots-carousel {
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 2rem 0.5rem 3rem;
     }
 
     .screenshot-item {
-        width: 220px;
+        width: 240px;
+    }
+
+    .screenshots-section .container::before,
+    .screenshots-section .container::after {
+        width: 40px;
+        height: 300px;
     }
 }
 
