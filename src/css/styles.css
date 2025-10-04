@@ -514,6 +514,105 @@ body {
     }
 }
 
+/* Screenshots Section */
+.screenshots-section {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(180deg, #f8f9fc 0%, #ffffff 100%);
+}
+
+.screenshots-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.screenshots-section .section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.screenshot-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    padding: 1rem;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.app-screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+/* Screenshots Responsive */
+@media (max-width: 768px) {
+    .screenshots-section {
+        padding: 4rem 0 3rem;
+    }
+
+    .screenshots-section h2 {
+        font-size: 2rem;
+    }
+
+    .screenshots-section .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        padding: 0 1rem;
+    }
+
+    .screenshots-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .screenshot-item {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshots-section {
+        padding: 3rem 0 2rem;
+    }
+
+    .screenshots-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .screenshots-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 300px;
+    }
+}
+
 /* Features Section - Modern Redesign */
 .features {
     padding: 6rem 0;
