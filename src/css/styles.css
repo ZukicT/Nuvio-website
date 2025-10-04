@@ -520,6 +520,8 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     position: relative;
     overflow: hidden;
+    border-radius: 60px;
+    margin: 0 2rem;
 }
 
 /* Animated Background Pattern */
@@ -917,6 +919,8 @@ body {
     
     .features {
         padding: 4rem 0;
+        border-radius: 40px;
+        margin: 0 1rem;
     }
     
     .features h2 {
@@ -1094,6 +1098,8 @@ body {
     
     .features {
         padding: 3rem 0;
+        border-radius: 32px;
+        margin: 0 0.75rem;
     }
     
     .features h2 {
