@@ -261,6 +261,7 @@ body {
     gap: 3rem;
     align-items: center;
     min-height: 70vh;
+    padding: 4rem 0;
     position: relative;
 }
 
@@ -319,7 +320,7 @@ body {
 .description {
     font-size: 1.125rem;
     color: var(--text-tertiary);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     line-height: 1.65;
     opacity: 0;
     transform: translateY(30px);
@@ -327,7 +328,6 @@ body {
 }
 
 .cta {
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -530,11 +530,11 @@ body {
 
 /* Screenshots Section */
 .screenshots-section {
-    padding: 5rem 0 4rem;
+    padding: 4rem 0;
     background: var(--bg-primary);
     position: relative;
     border-radius: 40px;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .screenshots-section h2 {
@@ -549,7 +549,7 @@ body {
     text-align: center;
     font-size: 1.2rem;
     color: var(--text-secondary);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -652,9 +652,9 @@ body {
 /* Screenshots Responsive */
 @media (max-width: 768px) {
     .screenshots-section {
-        padding: 4rem 0 3rem;
+        padding: 3rem 0;
         border-radius: 32px;
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
     }
 
     .screenshots-section h2 {
@@ -684,9 +684,9 @@ body {
 
 @media (max-width: 480px) {
     .screenshots-section {
-        padding: 3rem 0 2rem;
+        padding: 2.5rem 0;
         border-radius: 24px;
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 
     .screenshots-section h2 {
@@ -711,10 +711,10 @@ body {
 
 /* Features Section */
 .features {
-    padding: 5rem 0;
+    padding: 4rem 0;
     background: var(--bg-secondary);
     border-radius: 40px;
-    margin: 3rem 0;
+    margin: 2rem 0 3rem;
 }
 
 .features h2 {
@@ -786,9 +786,10 @@ body {
 
 /* Footer Base Styles */
 .footer {
-    padding: 2rem 0;
+    padding: 3rem 0 2rem;
     background: var(--bg-primary);
     border-top: 1px solid rgba(87, 116, 205, 0.1);
+    margin-top: 2rem;
 }
 
 /* Legal Pages */
@@ -934,6 +935,8 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
+        padding: 3rem 0;
+        min-height: 60vh;
     }
     
     .hero-content {
@@ -994,9 +997,9 @@ body {
     }
     
     .features {
-        padding: 4rem 0;
+        padding: 3rem 0;
         border-radius: 40px;
-        margin: 2.5rem 0;
+        margin: 1.5rem 0 2rem;
     }
     
     .features h2 {
@@ -1127,6 +1130,11 @@ body {
         font-size: 0.85rem;
     }
     
+    .hero {
+        padding: 2.5rem 0;
+        min-height: 50vh;
+    }
+    
     .hero h1 {
         font-size: 2.25rem;
         font-weight: 800;
@@ -1173,9 +1181,9 @@ body {
     }
     
     .features {
-        padding: 3rem 0;
+        padding: 2.5rem 0;
         border-radius: 32px;
-        margin: 2rem 0;
+        margin: 1rem 0 1.5rem;
     }
     
     .features h2 {
