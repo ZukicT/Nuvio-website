@@ -514,57 +514,84 @@ body {
     }
 }
 
-/* Features Section */
+/* Features Section - Modern Redesign */
 .features {
     padding: 6rem 0;
-    background: var(--bg-primary);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     position: relative;
     overflow: hidden;
 }
 
+/* Animated Background Pattern */
 .features::before {
     content: '';
     position: absolute;
-    top: -50%;
-    left: -10%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(87, 116, 205, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.06) 0%, transparent 50%);
     pointer-events: none;
+    animation: shimmer 20s ease-in-out infinite;
 }
 
+/* Geometric Pattern Overlay */
 .features::after {
     content: '';
     position: absolute;
-    bottom: -50%;
-    right: -10%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(255, 101, 132, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(30deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03)),
+        linear-gradient(150deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03)),
+        linear-gradient(30deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03)),
+        linear-gradient(150deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03));
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px;
     pointer-events: none;
+    opacity: 0.5;
+}
+
+@keyframes shimmer {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
 }
 
 .features h2 {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--text-primary);
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: white;
     margin-bottom: 1rem;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em;
     position: relative;
     z-index: 2;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .features-subtitle {
     text-align: center;
-    font-size: 1.125rem;
-    color: var(--text-tertiary);
-    margin-bottom: 3.5rem;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 4rem;
     font-weight: 400;
     position: relative;
     z-index: 2;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .features-grid {
@@ -578,13 +605,14 @@ body {
 }
 
 .feature-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     padding: 2.5rem 2rem;
-    border-radius: 20px;
+    border-radius: 24px;
     text-align: center;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid rgba(87, 116, 205, 0.1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
     position: relative;
     overflow: hidden;
 }
@@ -595,64 +623,87 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-blue), var(--primary-pink));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s ease;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
 }
 
 .feature-card:hover::before {
-    transform: scaleX(1);
+    opacity: 1;
 }
 
 .feature-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 40px rgba(87, 116, 205, 0.15);
-    border-color: rgba(87, 116, 205, 0.2);
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(31, 38, 135, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
 }
 
 .feature-icon {
-    width: 64px;
-    height: 64px;
+    width: 72px;
+    height: 72px;
     margin: 0 auto 1.5rem;
-    border-radius: 16px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.feature-icon::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .feature-card:hover .feature-icon {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.15) rotate(-5deg);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.feature-card:hover .feature-icon::after {
+    opacity: 1;
 }
 
 .feature-icon svg {
-    transition: transform 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .feature-card:hover .feature-icon svg {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .feature h3 {
-    font-size: 1.375rem;
-    font-weight: 600;
-    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
     margin-bottom: 1rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    letter-spacing: -0.01em;
 }
 
 .feature-card:hover h3 {
-    color: var(--primary-blue);
+    color: #667eea;
+    transform: translateY(-2px);
 }
 
 .feature p {
-    color: var(--text-tertiary);
-    line-height: 1.7;
+    color: #4a5568;
+    line-height: 1.8;
     font-size: 1rem;
+    font-weight: 400;
 }
 
 /* Footer Base Styles */
@@ -869,14 +920,14 @@ body {
     }
     
     .features h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        font-size: 2.25rem;
+        margin-bottom: 0.75rem;
     }
     
     .features-subtitle {
-        font-size: 1rem;
-        margin-bottom: 2.5rem;
-        padding: 0 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+        padding: 0 1.5rem;
     }
     
     .features-grid {
@@ -886,16 +937,17 @@ body {
     
     .feature-card {
         padding: 2rem 1.75rem;
+        border-radius: 20px;
     }
     
     .feature-icon {
-        width: 56px;
-        height: 56px;
+        width: 64px;
+        height: 64px;
         margin-bottom: 1.25rem;
     }
     
     .feature h3 {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
     }
     
     .feature p {
@@ -1044,20 +1096,15 @@ body {
         padding: 3rem 0;
     }
     
-    .features::before,
-    .features::after {
-        width: 300px;
-        height: 300px;
-    }
-    
     .features h2 {
-        font-size: 1.75rem;
-        margin-bottom: 0.75rem;
+        font-size: 1.875rem;
+        margin-bottom: 0.5rem;
     }
     
     .features-subtitle {
-        font-size: 0.95rem;
-        margin-bottom: 2rem;
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+        padding: 0 1rem;
     }
     
     .features-grid {
@@ -1066,26 +1113,28 @@ body {
     
     .feature-card {
         padding: 1.75rem 1.5rem;
+        border-radius: 18px;
     }
     
     .feature-icon {
-        width: 52px;
-        height: 52px;
+        width: 60px;
+        height: 60px;
         margin-bottom: 1rem;
+        border-radius: 16px;
     }
     
     .feature-icon svg {
-        width: 24px;
-        height: 24px;
+        width: 26px;
+        height: 26px;
     }
     
     .feature h3 {
-        font-size: 1.125rem;
+        font-size: 1.2rem;
     }
     
     .feature p {
-        font-size: 0.875rem;
-        line-height: 1.6;
+        font-size: 0.9rem;
+        line-height: 1.7;
     }
 }
 
