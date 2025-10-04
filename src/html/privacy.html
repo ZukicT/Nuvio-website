@@ -3,24 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Nuvion</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Primary Meta Tags -->
+    <title>Nuvio - Money Manager</title>
+    <meta name="title" content="Nuvio - Money Manager">
+    <meta name="description" content="Privacy Policy for Nuvio Money Manager. Zero data collection - your financial data stays private on your device.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nuvio.app/privacy.html">
+    <meta property="og:title" content="Privacy Policy - Nuvio Money Manager">
+    <meta property="og:description" content="Privacy Policy for Nuvio Money Manager. Zero data collection - your financial data stays private on your device.">
+    <meta property="og:image" content="https://nuvio.app/assets/AppIconBird.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nuvio.app/privacy.html">
+    <meta property="twitter:title" content="Privacy Policy - Nuvio Money Manager">
+    <meta property="twitter:description" content="Privacy Policy for Nuvio Money Manager. Zero data collection - your financial data stays private on your device.">
+    <meta property="twitter:image" content="https://nuvio.app/assets/AppIconBird.png">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/AppIconBird.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/AppIconBird.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/AppIconBird.png">
+    <link rel="manifest" href="../config/site.webmanifest">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nuvio.app/privacy.html">
+    
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="assets/No background bird.png" alt="Nuvio Logo">
+                <img src="../assets/No background bird.png" alt="Nuvio Logo">
                 <span>Nuvio</span>
             </a>
-            <nav class="nav">
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav desktop-nav">
                 <a href="index.html">Home</a>
                 <a href="contact.html">Contact</a>
                 <a href="terms.html">Terms of Service</a>
                 <a href="privacy.html">Privacy Policy</a>
             </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
         </div>
+        
+        <!-- Mobile Navigation Overlay -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <div class="mobile-nav-content">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="terms.html" class="mobile-nav-link">Terms of Service</a>
+                <a href="privacy.html" class="mobile-nav-link">Privacy Policy</a>
+            </div>
+        </nav>
     </header>
 
     <main class="legal-page" style="background: var(--bg-secondary);">
@@ -108,14 +155,29 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Nuvio. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="contact.html">Contact</a>
-                <a href="terms.html">Terms of Service</a>
-                <a href="privacy.html">Privacy Policy</a>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <p>&copy; 2025 Nuvio. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="footer-support">
+                    <p>Support Nuvio Development</p>
+                    <a href="https://buymeacoffee.com/nuvio" target="_blank" rel="noopener" class="support-btn">
+                        <svg class="support-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        Buy me a coffee
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

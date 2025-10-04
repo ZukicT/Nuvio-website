@@ -1,6 +1,6 @@
 {
-    "name": "Nuvion - Money Manager",
-    "short_name": "Nuvion",
+    "name": "Nuvio - Money Manager",
+    "short_name": "Nuvio",
     "description": "Simple money manager app for iOS. Track expenses, set budgets, manage loans, and achieve financial goals.",
     "start_url": "/",
     "display": "standalone",
