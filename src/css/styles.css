@@ -585,6 +585,26 @@ body {
     border: 1px solid var(--bg-tertiary);
 }
 
+/* Mobile Legal Page Adjustments */
+@media (max-width: 768px) {
+    .legal-page {
+        padding: 2rem 0;
+    }
+    
+    .legal-content {
+        margin: 0 0.5rem;
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .legal-content {
+        margin: 0 0.25rem;
+        padding: 1.25rem;
+    }
+}
+
 .legal-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -778,7 +798,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 0.75rem;
+        padding: 0 1rem;
     }
     
     /* Mobile navigation adjustments for small screens */
@@ -796,12 +816,13 @@ body {
         width: 20px;
     }
     
-    /* Contact form small mobile optimization - Wider */
+    /* Contact form small mobile optimization - Much Wider */
     .contact-form {
-        margin: 0.5rem !important;
-        padding: 1.25rem !important;
+        margin: 0.5rem auto !important;
+        padding: 1.5rem !important;
         width: calc(100% - 1rem) !important;
         border-radius: 12px !important;
+        border-width: 1px !important;
     }
     
     .form-group {
@@ -1160,11 +1181,12 @@ body {
 /* Responsive Contact Styles - Updated for wider mobile form */
 @media (max-width: 768px) {
     .contact-form {
-        margin: 0.75rem !important;
-        padding: 1.5rem !important;
+        margin: 1rem auto !important;
+        padding: 1.75rem !important;
         max-width: none !important;
-        width: calc(100% - 1.5rem) !important;
+        width: calc(100% - 2rem) !important;
         border-radius: 16px !important;
+        border-width: 1px !important;
     }
     
     .form-group {
@@ -1471,10 +1493,11 @@ body {
 @media (max-width: 360px) {
     /* Contact form micro mobile optimization - Widest */
     .contact-form {
-        margin: 0.25rem !important;
-        padding: 1rem !important;
-        width: calc(100% - 0.5rem) !important;
-        border-radius: 8px !important;
+        margin: 0.5rem auto !important;
+        padding: 1.25rem !important;
+        width: calc(100% - 1rem) !important;
+        border-radius: 10px !important;
+        border-width: 1px !important;
     }
     
     .form-group {
