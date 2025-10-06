@@ -960,6 +960,10 @@ body {
         margin-bottom: 2rem;
     }
     
+    .cta {
+        align-items: center;
+    }
+    
     .btn {
         padding: 1rem 2rem;
         font-size: 1rem;
@@ -1142,6 +1146,10 @@ body {
         font-size: 0.95rem;
         line-height: 1.5;
         margin-bottom: 1.75rem;
+    }
+    
+    .cta {
+        align-items: center;
     }
     
     .btn {
