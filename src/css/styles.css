@@ -353,6 +353,8 @@ body {
     box-shadow: 0 4px 12px rgba(87, 116, 205, 0.3);
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .btn::before {
@@ -364,6 +366,7 @@ body {
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.5s;
+    pointer-events: none;
 }
 
 .btn:hover::before {
@@ -374,6 +377,20 @@ body {
     background: var(--primary-dark);
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(87, 116, 205, 0.4);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(87, 116, 205, 0.3);
+}
+
+/* Ensure button is touchable on mobile */
+@media (max-width: 768px) {
+    .btn {
+        -webkit-tap-highlight-color: rgba(87, 116, 205, 0.2);
+        touch-action: manipulation;
+        min-height: 48px;
+    }
 }
 
 .btn-icon {
@@ -962,6 +979,7 @@ body {
     
     .cta {
         align-items: center;
+        width: 100%;
     }
     
     .btn {
@@ -1150,6 +1168,7 @@ body {
     
     .cta {
         align-items: center;
+        width: 100%;
     }
     
     .btn {
