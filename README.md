@@ -82,12 +82,6 @@ Update CSS variables in `styles.css`:
 - Add your actual App Store links
 - Update contact information in legal pages
 
-## 📞 Support
-
-For questions about this website template or Nuvio app:
-- Email: support@nuvio.app
-- Website: [Your GitHub Pages URL]
-
 ## 📄 License
 
 © 2024 Nuvio. All rights reserved.
