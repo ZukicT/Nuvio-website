@@ -5,15 +5,15 @@
     "start_url": "/",
     "display": "standalone",
     "background_color": "#FFFFFF",
-    "theme_color": "#5774CD",
+    "theme_color": "#0052D9",
     "icons": [
         {
-            "src": "assets/AppIconBird.png",
+            "src": "assets/images/AppIconBird.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "assets/AppIconBird.png",
+            "src": "assets/images/AppIconBird.png",
             "sizes": "512x512",
             "type": "image/png"
         }

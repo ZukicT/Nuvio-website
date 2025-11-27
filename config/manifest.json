@@ -5,7 +5,7 @@
     "start_url": "/",
     "display": "standalone",
     "background_color": "#FFFFFF",
-    "theme_color": "#5774CD",
+    "theme_color": "#0052D9",
     "icons": [
         {
             "src": "assets/AppIconBird.png",
