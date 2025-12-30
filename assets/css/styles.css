@@ -137,14 +137,25 @@ body {
         margin-bottom: 2rem !important;
         max-width: 100% !important;
         padding: 0 1rem !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
     }
     
-    /* Reduce hero section padding on mobile */
+    /* Mobile hero section - taller for proper bird positioning */
     .hero-section {
-        padding-top: 7rem !important;
-        padding-bottom: 3rem !important;
+        min-height: 100vh !important;
+        padding-bottom: 8rem !important;
+    }
+    
+    /* Mobile bird positioning */
+    .hero-illustration {
+        bottom: 0 !important;
+        right: -5% !important;
+        width: 60% !important;
+        max-width: 280px !important;
+    }
+    
+    .hero-bird {
+        width: 100% !important;
+        transform: rotate(-15deg) translateX(20%) !important;
     }
     
     .hero {
