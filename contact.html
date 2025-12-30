@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXFM9GSJ71"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PXFM9GSJ71');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -53,6 +62,11 @@
                 <a href="privacy.html">Privacy Policy</a>
             </nav>
             
+            <!-- Download Button -->
+            <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="nav-download-btn" target="_blank" rel="noopener noreferrer">
+                Download
+            </a>
+            
             <!-- Mobile Menu Button -->
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
                 <span class="hamburger-line"></span>
@@ -68,6 +82,7 @@
                 <a href="contact.html" class="mobile-nav-link">Contact</a>
                 <a href="terms.html" class="mobile-nav-link">Terms of Service</a>
                 <a href="privacy.html" class="mobile-nav-link">Privacy Policy</a>
+                <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="mobile-nav-download" target="_blank" rel="noopener noreferrer">Download</a>
             </div>
         </nav>
     </header>
@@ -79,189 +94,207 @@
             </a>
             
             <div class="legal-content">
-                <h1 class="legal-title">Contact Support</h1>
-                <p class="legal-subtitle">We're here to help you get the most out of Nuvio Money Manager</p>
+                <h1 class="legal-title">Get in Touch</h1>
+                <p class="legal-subtitle">Have a question, found a bug, or want to suggest a feature? I'd love to hear from you.</p>
                 
-                <div class="legal-section">
-                    <h2>How Can We Help?</h2>
-                    <p>As a solo developer, I'm committed to providing the best support possible for Nuvio Money Manager. Whether you have questions, need help with features, or want to report an issue, I'm here to assist you.</p>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                    </div>
                     
-                    <div class="contact-info">
-                        <h3>Email Support</h3>
-                        <p>For the fastest response, please email us directly at <strong>infow3bdev@gmail.com</strong>. As a solo developer, I personally read and respond to every message.</p>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="subject">What's this about?</label>
+                            <div class="select-wrapper">
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="Bug Report">Bug Report</option>
+                                    <option value="Feature Request">Feature Request</option>
+                                    <option value="General Question">General Question</option>
+                                    <option value="App Help">App Help</option>
+                                    <option value="Business Inquiry">Business Inquiry</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="device">Your Device</label>
+                            <div class="select-wrapper">
+                                <select id="device" name="device">
+                                    <option value="">Select device (optional)</option>
+                                    <option value="iPhone 17 Pro Max">iPhone 17 Pro Max</option>
+                                    <option value="iPhone 17 Pro">iPhone 17 Pro</option>
+                                    <option value="iPhone 17 Plus">iPhone 17 Plus</option>
+                                    <option value="iPhone 17">iPhone 17</option>
+                                    <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+                                    <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+                                    <option value="iPhone 16 Plus">iPhone 16 Plus</option>
+                                    <option value="iPhone 16">iPhone 16</option>
+                                    <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+                                    <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+                                    <option value="iPhone 15 Plus">iPhone 15 Plus</option>
+                                    <option value="iPhone 15">iPhone 15</option>
+                                    <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+                                    <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+                                    <option value="iPhone 14 Plus">iPhone 14 Plus</option>
+                                    <option value="iPhone 14">iPhone 14</option>
+                                    <option value="iPhone SE">iPhone SE</option>
+                                    <option value="iPad Pro">iPad Pro</option>
+                                    <option value="iPad Air">iPad Air</option>
+                                    <option value="iPad">iPad</option>
+                                    <option value="iPad mini">iPad mini</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="legal-section">
-                    <h2>Contact Information</h2>
-                    <div class="contact-methods">
-                <div class="contact-method">
-                    <h3>📧 Email Support</h3>
-                    <p><strong>infow3bdev@gmail.com</strong></p>
-                    <p>Send us an email for any questions or support needs. As a solo developer, I personally handle all support requests.</p>
-                </div>
-                
-                <div class="contact-method">
-                    <h3>🐛 Bug Reports</h3>
-                    <p>Found a bug? Please email us at <strong>infow3bdev@gmail.com</strong> with:</p>
-                    <ul>
-                        <li>Description of the issue</li>
-                        <li>Steps to reproduce</li>
-                        <li>Your device and iOS version</li>
-                        <li>Screenshots if possible</li>
-                    </ul>
-                </div>
-                
-                <div class="contact-method">
-                    <h3>💡 Feature Requests</h3>
-                    <p>Have an idea for a new feature? Email us at <strong>infow3bdev@gmail.com</strong> with your suggestions. I love hearing from users about how to improve Nuvio!</p>
+                    
+                    <div class="form-group" id="customDeviceGroup" style="display: none;">
+                        <label for="customDevice">Specify Your Device</label>
+                        <input type="text" id="customDevice" name="customDevice" placeholder="e.g., iPhone 13 mini, iOS 17.2">
                     </div>
-                </div>
-
-                <div class="legal-section">
-                    <h2>Send Us a Message</h2>
-            <p>Use the form below to send us a message directly. We'll get back to you as soon as possible.</p>
-            
-            <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="subject">Subject *</label>
-                    <select id="subject" name="subject" required>
-                        <option value="">Select a subject</option>
-                        <option value="General Support">General Support</option>
-                        <option value="Bug Report">Bug Report</option>
-                        <option value="Feature Request">Feature Request</option>
-                        <option value="Business Inquiry">Business Inquiry</option>
-                        <option value="Data Export Help">Data Export Help</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Message *</label>
-                    <textarea id="message" name="message" rows="6" required placeholder="Please describe your question or issue in detail..."></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <label for="device">Device Information (Optional)</label>
-                    <input type="text" id="device" name="device" placeholder="e.g., iPhone 15 Pro, iOS 18.2">
-                </div>
-                
-                <button type="submit" class="btn btn-submit">
-                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                    </svg>
-                    Send Message
-                </button>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me what's on your mind..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                        Send Message
+                    </button>
+                    
+                    <p class="form-note">I personally read every message and typically respond within 24-48 hours.</p>
                 </form>
                 
                 <div id="formStatus" class="form-status" style="display: none;"></div>
-                </div>
 
-                <div class="legal-section">
-                    <h2>Frequently Asked Questions</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h3>How do I export my data?</h3>
-                    <p>Go to Settings → Data Management → Export Data. You can export your transactions as a CSV file for backup or analysis.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Is my data secure?</h3>
-                    <p>Yes! All your data is stored locally on your device using Core Data. We don't collect or store any personal information on external servers.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>How do I set up budgets?</h3>
-                    <p>Navigate to the Budget tab and tap the "+" button to create a new budget. Set your spending limit and track your progress throughout the month.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h3>Can I use Nuvio offline?</h3>
-                    <p>Absolutely! Nuvio works completely offline. All your data is stored locally on your device, so you can track your finances anywhere, anytime.</p>
+                <div class="legal-section faq-section">
+                    <h2>Common Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-card">
+                            <h3>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17 8 12 3 7 8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                How do I export my data?
+                            </h3>
+                            <p>Settings → Data Management → Export Data. Your transactions export as a CSV file.</p>
+                        </div>
+                        
+                        <div class="faq-card">
+                            <h3>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                                </svg>
+                                Is my data secure?
+                            </h3>
+                            <p>Yes! Everything stays on your device. No servers, no cloud, no data collection.</p>
+                        </div>
+                        
+                        <div class="faq-card">
+                            <h3>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="1" x2="12" y2="23"/>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                                How do I create budgets?
+                            </h3>
+                            <p>Go to the Budget tab and tap "+" to create a new budget with your spending limit.</p>
+                        </div>
+                        
+                        <div class="faq-card">
+                            <h3>
+                                <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="var(--primary-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="1" y1="1" x2="23" y2="23"/>
+                                    <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+                                    <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+                                    <path d="M10.71 5.05A16 16 0 0 1 22.58 9"/>
+                                    <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/>
+                                    <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                                    <line x1="12" y1="20" x2="12.01" y2="20"/>
+                                </svg>
+                                Does it work offline?
+                            </h3>
+                            <p>Absolutely! Nuvio works 100% offline. Track your finances anywhere, anytime.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="legal-section">
-                    <h2>Response Times</h2>
-            <p><strong>Important:</strong> As a solo developer, I personally handle all support requests. Response times are tentative and may vary significantly depending on my availability, workload, and current development priorities.</p>
-            
-            <div class="response-times">
-                <div class="response-time">
-                    <h3>📧 Email Support</h3>
-                    <p><strong>Tentative Response:</strong> 24-48 hours</p>
-                    <p><strong>Note:</strong> Times are estimates only - may be longer during busy periods</p>
-                </div>
-                
-                <div class="response-time">
-                    <h3>🐛 Bug Reports</h3>
-                    <p><strong>Priority:</strong> High (when possible)</p>
-                    <p><strong>Tentative Response:</strong> 12-24 hours</p>
-                    <p><strong>Note:</strong> Critical bugs prioritized, but no guarantees on timing</p>
-                </div>
-                
-                <div class="response-time">
-                    <h3>💡 Feature Requests</h3>
-                    <p><strong>Tentative Response:</strong> 2-3 days</p>
-                    <p><strong>Note:</strong> I appreciate all feedback, but response times vary greatly</p>
-                </div>
-            </div>
-            
-                    <p><strong>Please understand:</strong> As a solo developer, I cannot guarantee specific response times. I do my best to respond quickly, but development work, personal commitments, and other factors may cause delays. Thank you for your patience!</p>
-                </div>
-
-                <div class="legal-section">
-                    <h2>Privacy & Data</h2>
-                    <p>Your privacy is important to us. All data you provide through this contact form is used solely for support purposes and will not be shared with third parties. Please review our <a href="privacy.html">Privacy Policy</a> for more information.</p>
+                    <h2>Privacy Note</h2>
+                    <p>Your message is sent directly to me and won't be shared with anyone. See our <a href="privacy.html">Privacy Policy</a> for more details.</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer-section">
+        <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-main">
-                    <p>&copy; 2025 Nuvio. All rights reserved.</p>
                     <div class="footer-links">
                         <a href="index.html">Home</a>
                         <a href="contact.html">Contact</a>
                         <a href="terms.html">Terms of Service</a>
                         <a href="privacy.html">Privacy Policy</a>
                     </div>
+                    <p>&copy; 2025 Nuvio. All rights reserved.</p>
                 </div>
                 <div class="footer-support">
-                    <p>Support Nuvio Development</p>
                     <a href="https://buymeacoffee.com/nuvio" target="_blank" rel="noopener" class="support-btn-image">
                         <img src="assets/images/bmc-button yallow.svg" alt="Buy me a coffee" class="bmc-button">
                     </a>
+                    <p>Support Nuvio Development</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- EmailJS SDK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-        // Initialize EmailJS
-        (function() {
-            emailjs.init("dxBolxIDvyxAvN3xm");
-        })();
-
-        // Contact form handling with EmailJS
+        // Contact form handling with Discord Webhook
         document.addEventListener('DOMContentLoaded', function() {
             const contactForm = document.getElementById('contactForm');
             const formStatus = document.getElementById('formStatus');
+            const deviceSelect = document.getElementById('device');
+            const customDeviceGroup = document.getElementById('customDeviceGroup');
+            const customDeviceInput = document.getElementById('customDevice');
+            const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1455633939929759962/mPa-x8M2kc2T0-a6mGcn9dNMK5yMa99_f4NQLY9pcChhJa40-JK5RPpUlhHiQnfoSTzu';
+            
+            // Show/hide custom device input
+            if (deviceSelect) {
+                deviceSelect.addEventListener('change', function() {
+                    if (this.value === 'Other') {
+                        customDeviceGroup.style.display = 'block';
+                        customDeviceInput.required = true;
+                    } else {
+                        customDeviceGroup.style.display = 'none';
+                        customDeviceInput.required = false;
+                        customDeviceInput.value = '';
+                    }
+                });
+            }
             
             if (contactForm) {
                 contactForm.addEventListener('submit', async function(e) {
@@ -269,12 +302,18 @@
                     
                     // Get form data
                     const formData = new FormData(contactForm);
+                    const deviceValue = formData.get('device');
+                    const customDeviceValue = formData.get('customDevice');
+                    const finalDevice = deviceValue === 'Other' && customDeviceValue 
+                        ? customDeviceValue 
+                        : (deviceValue || 'Not specified');
+                    
                     const data = {
                         name: formData.get('name'),
                         email: formData.get('email'),
                         subject: formData.get('subject'),
                         message: formData.get('message'),
-                        device: formData.get('device') || 'Not specified'
+                        device: finalDevice
                     };
                     
                     // Show loading state
@@ -283,34 +322,66 @@
                     submitButton.disabled = true;
                     
                     try {
-                        // Send email using EmailJS
-                        const response = await emailjs.send(
-                            'service_192chi8',
-                            'template_5bj1lhm',
-                            {
-                                to_email: 'infow3bdev@gmail.com',
-                                from_name: data.name,
-                                from_email: data.email,
-                                subject: data.subject,
-                                message: data.message,
-                                device: data.device
-                            }
-                        );
+                        // Create Discord embed message
+                        const discordPayload = {
+                            username: 'Nuvio Website',
+                            avatar_url: 'https://nuvio.app/assets/images/AppIconBird.png',
+                            embeds: [{
+                                title: '📬 New Contact Form Submission',
+                                color: 0x007AFF,
+                                fields: [
+                                    {
+                                        name: '👤 Name',
+                                        value: data.name,
+                                        inline: true
+                                    },
+                                    {
+                                        name: '📧 Email',
+                                        value: data.email,
+                                        inline: true
+                                    },
+                                    {
+                                        name: '📋 Subject',
+                                        value: data.subject,
+                                        inline: false
+                                    },
+                                    {
+                                        name: '📱 Device',
+                                        value: data.device,
+                                        inline: true
+                                    },
+                                    {
+                                        name: '💬 Message',
+                                        value: data.message.length > 1024 ? data.message.substring(0, 1021) + '...' : data.message,
+                                        inline: false
+                                    }
+                                ],
+                                timestamp: new Date().toISOString(),
+                                footer: {
+                                    text: 'Nuvio Contact Form'
+                                }
+                            }]
+                        };
                         
-                        console.log('EmailJS Response:', response);
+                        // Send to Discord webhook
+                        const response = await fetch(DISCORD_WEBHOOK_URL, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(discordPayload)
+                        });
                         
-                        if (response.status === 200) {
+                        if (response.ok || response.status === 204) {
                             // Success
                             showStatus('success', 'Thank you! Your message has been sent successfully. We\'ll get back to you as soon as possible.');
                             contactForm.reset();
                         } else {
-                            throw new Error('EmailJS returned non-200 status');
+                            throw new Error('Discord webhook returned error status: ' + response.status);
                         }
                         
                     } catch (error) {
-                        console.error('EmailJS Error Details:', error);
-                        console.error('Error Status:', error.status);
-                        console.error('Error Text:', error.text);
+                        console.error('Form submission error:', error);
                         
                         // Fallback: Create mailto link as backup
                         const emailBody = `Hello,
@@ -332,18 +403,8 @@ ${data.name}`;
                         
                         const mailtoLink = `mailto:infow3bdev@gmail.com?subject=${encodeURIComponent('Nuvio Support: ' + data.subject)}&body=${encodeURIComponent(emailBody)}`;
                         
-                        let errorMessage = 'Sorry, there was an error sending your message. Please try again or email us directly at infow3bdev@gmail.com';
-                        
-                        if (error.status === 400) {
-                            errorMessage = 'Invalid form data. Please check all fields and try again.';
-                        } else if (error.status === 401) {
-                            errorMessage = 'Authentication error. Please refresh the page and try again.';
-                        } else if (error.status === 403) {
-                            errorMessage = 'Service not authorized. Please contact support directly at infow3bdev@gmail.com';
-                        }
-                        
                         // Show error message with fallback option
-                        showStatus('error', errorMessage + ' <br><br><a href="' + mailtoLink + '" style="color: #007AFF; text-decoration: underline;">Click here to send via email client instead</a>');
+                        showStatus('error', 'Sorry, there was an error sending your message. Please try again or email us directly at infow3bdev@gmail.com <br><br><a href="' + mailtoLink + '" style="color: #007AFF; text-decoration: underline;">Click here to send via email client instead</a>');
                     } finally {
                         submitButton.disabled = false;
                     }

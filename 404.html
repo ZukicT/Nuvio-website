@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXFM9GSJ71"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PXFM9GSJ71');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
     <title>404 - Page Not Found | Nuvio</title>
     <meta name="description" content="The page you're looking for doesn't exist. Return to Nuvio homepage.">
+    <meta name="robots" content="noindex, nofollow">
     
     <!-- Apple Touch Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/AppIconBird.png">
@@ -24,7 +34,7 @@
     <link rel="stylesheet" href="assets/css/styles.css?v=20250127redesign">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="page-404">
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
@@ -39,6 +49,11 @@
                 <a href="terms.html">Terms of Service</a>
                 <a href="privacy.html">Privacy Policy</a>
             </nav>
+            
+            <!-- Download Button -->
+            <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="nav-download-btn" target="_blank" rel="noopener noreferrer">
+                Download
+            </a>
             
             <!-- Mobile Menu Button -->
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
@@ -55,6 +70,7 @@
                 <a href="contact.html" class="mobile-nav-link">Contact</a>
                 <a href="terms.html" class="mobile-nav-link">Terms of Service</a>
                 <a href="privacy.html" class="mobile-nav-link">Privacy Policy</a>
+                <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="mobile-nav-download" target="_blank" rel="noopener noreferrer">Download</a>
             </div>
         </nav>
     </header>
@@ -68,7 +84,7 @@
                     Oops! The page you're looking for doesn't exist or has been moved.
                 </p>
                 <div style="margin-top: 2rem;">
-                    <a href="index.html" class="btn" style="display: inline-flex;">
+                    <a href="index.html" class="btn" style="display: inline-flex; border-radius: 9999px; padding: 1rem 2rem;">
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
                         </svg>
@@ -79,23 +95,23 @@
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer-section">
+        <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-main">
-                    <p>&copy; 2025 Nuvio. All rights reserved.</p>
                     <div class="footer-links">
                         <a href="index.html">Home</a>
                         <a href="contact.html">Contact</a>
                         <a href="terms.html">Terms of Service</a>
                         <a href="privacy.html">Privacy Policy</a>
                     </div>
+                    <p>&copy; 2025 Nuvio. All rights reserved.</p>
                 </div>
                 <div class="footer-support">
-                    <p>Support Nuvio Development</p>
                     <a href="https://buymeacoffee.com/nuvio" target="_blank" rel="noopener" class="support-btn-image">
                         <img src="assets/images/bmc-button yallow.svg" alt="Buy me a coffee" class="bmc-button">
                     </a>
+                    <p>Support Nuvio Development</p>
                 </div>
             </div>
         </div>

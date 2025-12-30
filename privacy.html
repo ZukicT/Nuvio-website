@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXFM9GSJ71"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PXFM9GSJ71');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -57,6 +66,11 @@
                 <a href="privacy.html">Privacy Policy</a>
             </nav>
             
+            <!-- Download Button -->
+            <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="nav-download-btn" target="_blank" rel="noopener noreferrer">
+                Download
+            </a>
+            
             <!-- Mobile Menu Button -->
             <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
                 <span class="hamburger-line"></span>
@@ -72,6 +86,7 @@
                 <a href="contact.html" class="mobile-nav-link">Contact</a>
                 <a href="terms.html" class="mobile-nav-link">Terms of Service</a>
                 <a href="privacy.html" class="mobile-nav-link">Privacy Policy</a>
+                <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="mobile-nav-download" target="_blank" rel="noopener noreferrer">Download</a>
             </div>
         </nav>
     </header>
@@ -82,105 +97,655 @@
                 ← Back to Home
             </a>
             
-            <div class="legal-content">
-                <h1 class="legal-title">Privacy Policy</h1>
-                <p class="legal-subtitle">Last Updated: January 26, 2025</p>
+            <div class="legal-layout">
+                <aside class="toc-sidebar">
+                    <h3 class="toc-title">Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li><a href="#introduction">1. Introduction</a></li>
+                        <li><a href="#definitions">2. Definitions</a></li>
+                        <li><a href="#data-controller">3. Data Controller</a></li>
+                        <li><a href="#zero-collection">4. Zero Data Collection</a></li>
+                        <li><a href="#data-not-collected">5. Data We Do Not Collect</a></li>
+                        <li><a href="#local-storage">6. Local Data Storage</a></li>
+                        <li><a href="#third-party">7. Third Party Services</a></li>
+                        <li><a href="#data-security">8. Data Security</a></li>
+                        <li><a href="#your-rights">9. Your Rights</a></li>
+                        <li><a href="#data-retention">10. Data Retention</a></li>
+                        <li><a href="#childrens-privacy">11. Children's Privacy</a></li>
+                        <li><a href="#washington-state">12. Washington State Rights</a></li>
+                        <li><a href="#california">13. California Residents</a></li>
+                        <li><a href="#gdpr">14. European Users (GDPR)</a></li>
+                        <li><a href="#international">15. International Transfers</a></li>
+                        <li><a href="#website">16. Website Privacy</a></li>
+                        <li><a href="#changes">17. Policy Changes</a></li>
+                        <li><a href="#contact">18. Contact Information</a></li>
+                        <li><a href="#effective-date">19. Effective Date</a></li>
+                    </ul>
+                </aside>
                 
-                <div class="legal-section">
-                    <h2>SECTION 1: ABSOLUTE DATA PRIVACY GUARANTEE</h2>
-                    <p>Nuvio operates under a ZERO DATA COLLECTION POLICY. We do not collect, store, transmit, process, analyze, monitor, track, or have access to ANY personal information, financial data, usage patterns, or device information whatsoever. All data remains exclusively on your device.</p>
-                </div>
+                <div class="legal-content">
+                    <h1 class="legal-title">Privacy Policy</h1>
+                    <p class="legal-subtitle">Effective Date: December 30, 2025 | Last Updated: December 30, 2025</p>
+                    
+                    <div class="legal-section" id="introduction">
+                        <h2>1. Introduction and Overview</h2>
+                        <p>This Privacy Policy ("Policy") describes how Nuvio ("we," "us," "our," or "the App") handles information when you use our mobile application available on Apple's App Store. Nuvio is developed and operated from Washington State, United States.</p>
+                        <p>Nuvio is a personal finance management application designed with privacy as its foundational principle. We have architected the App specifically to avoid collecting, processing, or storing any user data whatsoever.</p>
+                        <p><strong>Our Fundamental Privacy Commitment:</strong> Nuvio operates on a complete zero data collection model. We do not collect, receive, transmit, store, process, sell, share, or have access to any of your personal information, financial data, or any other information you enter into the App. All data you create within the App remains exclusively on your device under your complete and sole control.</p>
+                        <p>This Policy is designed to inform you about our privacy practices and to comply with applicable privacy laws including but not limited to the Washington State Consumer Protection Act (RCW 19.86), the Washington My Health My Data Act, the California Consumer Privacy Act (CCPA), the California Privacy Rights Act (CPRA), the General Data Protection Regulation (GDPR), and other applicable federal, state, and international privacy laws and regulations.</p>
+                        <p>By downloading, installing, or using Nuvio, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy. If you do not agree with this Policy, please do not download, install, or use the App.</p>
+                    </div>
 
-                <div class="legal-section">
-                    <h2>SECTION 2: COMPREHENSIVE PRIVACY PROTECTION</h2>
-                    <ul>
-                        <li><strong>NO DATA TRANSMISSION:</strong> Zero data is sent over any network connection</li>
-                        <li><strong>NO SERVER STORAGE:</strong> No data is stored on any external servers</li>
-                        <li><strong>NO ANALYTICS:</strong> No usage tracking, metrics, or behavioral analysis</li>
-                        <li><strong>NO THIRD-PARTY INTEGRATION:</strong> No external services or APIs</li>
-                        <li><strong>NO CLOUD BACKUP:</strong> No automatic cloud synchronization</li>
-                        <li><strong>NO COOKIES OR TRACKING:</strong> No tracking technologies whatsoever</li>
-                    </ul>
-                </div>
+                    <div class="legal-section" id="definitions">
+                        <h2>2. Definitions</h2>
+                        <p>For the purposes of this Privacy Policy, the following definitions apply:</p>
+                        <ul>
+                            <li><strong>"Personal Information"</strong> means any information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular individual or household, as defined under applicable privacy laws including the CCPA and Washington State law.</li>
+                            <li><strong>"Financial Information"</strong> means any information relating to financial accounts, transactions, income, expenses, debts, loans, budgets, or other financial data.</li>
+                            <li><strong>"Device"</strong> means the Apple iPhone, iPad, or other compatible device on which you install and use the App.</li>
+                            <li><strong>"Local Storage"</strong> means data storage mechanisms on your Device, including but not limited to Apple's Core Data framework, that store information exclusively on your physical Device.</li>
+                            <li><strong>"Processing"</strong> means any operation performed on Personal Information, including collection, recording, organization, structuring, storage, adaptation, retrieval, consultation, use, disclosure, dissemination, alignment, combination, restriction, erasure, or destruction.</li>
+                            <li><strong>"Third Party"</strong> means any individual, company, or entity other than you or us.</li>
+                            <li><strong>"Service Provider"</strong> means any Third Party that processes Personal Information on behalf of a business.</li>
+                            <li><strong>"Sale" or "Sell"</strong> means selling, renting, releasing, disclosing, disseminating, making available, transferring, or otherwise communicating Personal Information for monetary or other valuable consideration, as defined under applicable privacy laws.</li>
+                        </ul>
+                    </div>
 
-                <div class="legal-section">
-                    <h2>SECTION 3: LOCAL STORAGE EXCLUSIVELY</h2>
-                    <p>All financial data including transactions, budgets, loans, settings, and preferences are stored locally on your device using Core Data. This data is never accessible to us or any third parties under any circumstances.</p>
-                </div>
+                    <div class="legal-section" id="data-controller">
+                        <h2>3. Data Controller Information</h2>
+                        <p>For the purposes of applicable data protection laws, the data controller is:</p>
+                        <p><strong>Nuvio</strong><br>
+                        Washington State, United States<br>
+                        Email: infow3bdev@gmail.com</p>
+                        <p>However, it is important to note that because we do not collect, receive, or process any Personal Information through the App, the traditional role of "data controller" does not apply in the conventional sense. All data you enter into the App remains under your exclusive control on your Device.</p>
+                    </div>
 
-                <div class="legal-section">
-                    <h2>SECTION 4: USER DATA CONTROL</h2>
-                    <p>You maintain complete and absolute control over your data. You may export, modify, delete, or manage your data at any time through the app's built-in tools. We have no ability to access, modify, or delete your data.</p>
-                </div>
+                    <div class="legal-section" id="zero-collection">
+                        <h2>4. Zero Data Collection Policy</h2>
+                        <p><strong>Absolute Zero Collection:</strong> Nuvio does not collect any data from you. This is not a limited or qualified statement. We have specifically designed and built the App architecture to make data collection technically impossible.</p>
+                        <p><strong>Technical Implementation:</strong> The App:</p>
+                        <ul>
+                            <li>Contains no code that transmits data to any server, API, or external service</li>
+                            <li>Does not include any analytics SDKs, frameworks, or libraries</li>
+                            <li>Does not include any advertising SDKs, frameworks, or libraries</li>
+                            <li>Does not include any crash reporting SDKs, frameworks, or libraries</li>
+                            <li>Does not include any social media SDKs, frameworks, or libraries</li>
+                            <li>Does not make any network requests for data collection purposes</li>
+                            <li>Does not require or request internet connectivity for any functionality</li>
+                            <li>Does not access any device identifiers for tracking purposes</li>
+                            <li>Does not use any form of cookies, pixels, beacons, or similar tracking technologies</li>
+                        </ul>
+                        <p><strong>No Exceptions:</strong> There are no exceptions to our zero data collection policy. We do not collect data under any circumstances, for any purpose, at any time.</p>
+                    </div>
 
-                <div class="legal-section">
-                    <h2>SECTION 5: CHILDREN'S PRIVACY COMPLIANCE</h2>
-                    <p>This app complies with all children's privacy regulations. Since we collect no data from anyone, including children under 13, no parental consent is required and no privacy concerns exist.</p>
-                </div>
+                    <div class="legal-section" id="data-not-collected">
+                        <h2>5. Categories of Data We Explicitly Do Not Collect</h2>
+                        <p>To provide complete transparency and clarity, the following is a comprehensive list of data categories that we DO NOT collect:</p>
+                        
+                        <h3>5.1 Personal Identifiers</h3>
+                        <ul>
+                            <li>Name (real name, alias, nickname, or any other identifier)</li>
+                            <li>Email address</li>
+                            <li>Phone number</li>
+                            <li>Physical address (postal address, street address, city, state, ZIP code)</li>
+                            <li>Social Security number or other government-issued identifiers</li>
+                            <li>Driver's license number</li>
+                            <li>Passport number</li>
+                            <li>Account names or usernames</li>
+                            <li>Online identifiers</li>
+                            <li>IP address</li>
+                        </ul>
+                        
+                        <h3>5.2 Financial Information</h3>
+                        <ul>
+                            <li>Bank account numbers</li>
+                            <li>Credit card numbers</li>
+                            <li>Debit card numbers</li>
+                            <li>Financial account credentials</li>
+                            <li>Transaction history</li>
+                            <li>Income information</li>
+                            <li>Expense information</li>
+                            <li>Budget information</li>
+                            <li>Loan information</li>
+                            <li>Investment information</li>
+                            <li>Any financial data you enter into the App</li>
+                        </ul>
+                        
+                        <h3>5.3 Device and Technical Information</h3>
+                        <ul>
+                            <li>Device identifiers (IDFA, IDFV, UDID, or any other device ID)</li>
+                            <li>Device type or model</li>
+                            <li>Operating system and version</li>
+                            <li>Browser type and version</li>
+                            <li>Hardware specifications</li>
+                            <li>Screen resolution</li>
+                            <li>Language settings</li>
+                            <li>Time zone</li>
+                            <li>Network information (carrier, connection type, Wi-Fi network names)</li>
+                            <li>Device fingerprints or any form of device identification</li>
+                        </ul>
+                        
+                        <h3>5.4 Usage and Behavioral Data</h3>
+                        <ul>
+                            <li>App usage patterns</li>
+                            <li>Features used or accessed</li>
+                            <li>Session duration or frequency</li>
+                            <li>Click patterns or interactions</li>
+                            <li>Navigation paths</li>
+                            <li>Search queries within the App</li>
+                            <li>User preferences or settings</li>
+                            <li>Error logs or diagnostic data</li>
+                            <li>Performance data</li>
+                        </ul>
+                        
+                        <h3>5.5 Location Data</h3>
+                        <ul>
+                            <li>GPS coordinates</li>
+                            <li>Precise location</li>
+                            <li>Approximate location</li>
+                            <li>Location history</li>
+                            <li>IP-based geolocation</li>
+                            <li>Cell tower data</li>
+                            <li>Wi-Fi-based location</li>
+                        </ul>
+                        
+                        <h3>5.6 Biometric and Sensitive Data</h3>
+                        <ul>
+                            <li>Fingerprint data</li>
+                            <li>Facial recognition data</li>
+                            <li>Voice recordings</li>
+                            <li>Health information</li>
+                            <li>Genetic information</li>
+                            <li>Religious or philosophical beliefs</li>
+                            <li>Political opinions</li>
+                            <li>Sexual orientation</li>
+                            <li>Race or ethnicity</li>
+                            <li>Trade union membership</li>
+                        </ul>
+                        
+                        <h3>5.7 Third-Party Data</h3>
+                        <ul>
+                            <li>Contacts or address book information</li>
+                            <li>Calendar data</li>
+                            <li>Photos or media files</li>
+                            <li>Messages or communications</li>
+                            <li>Social media profiles or data</li>
+                            <li>Data from other apps on your Device</li>
+                        </ul>
+                    </div>
 
-                <div class="legal-section">
-                    <h2>SECTION 6: DATA SECURITY MEASURES</h2>
-                    <p>Your data security is protected through:</p>
-                    <ul>
-                        <li>iOS Core Data secure storage mechanisms</li>
-                        <li>Device-level encryption</li>
-                        <li>No external data transmission</li>
-                        <li>Complete local control</li>
-                    </ul>
-                </div>
+                    <div class="legal-section" id="local-storage">
+                        <h2>6. Local Data Storage</h2>
+                        <p>All information you enter into Nuvio is stored exclusively on your Device using Apple's Core Data framework. This data never leaves your Device and is never accessible to us.</p>
+                        
+                        <h3>6.1 What is Stored Locally</h3>
+                        <p>The following types of information that YOU choose to enter are stored locally on YOUR Device:</p>
+                        <ul>
+                            <li>Transaction records you create (amounts, descriptions, categories, dates)</li>
+                            <li>Budget configurations you set up</li>
+                            <li>Loan tracking information you enter</li>
+                            <li>Custom categories and tags you create</li>
+                            <li>App settings and preferences you configure</li>
+                            <li>Any other data you voluntarily enter into the App</li>
+                        </ul>
+                        
+                        <h3>6.2 How Local Storage Works</h3>
+                        <p>Core Data is Apple's native persistence framework that stores data in a SQLite database on your Device. Key characteristics include:</p>
+                        <ul>
+                            <li>Data is stored in the App's sandboxed container on your Device</li>
+                            <li>Other apps cannot access this data due to iOS sandboxing</li>
+                            <li>Data is protected by your Device's security features (passcode, Face ID, Touch ID)</li>
+                            <li>Data may be included in your iCloud or iTunes backups if you have enabled device backups</li>
+                            <li>Data is deleted when you uninstall the App</li>
+                        </ul>
+                        
+                        <h3>6.3 Our Access to Your Local Data</h3>
+                        <p><strong>We have absolutely no access to your locally stored data.</strong> We cannot:</p>
+                        <ul>
+                            <li>View your data</li>
+                            <li>Read your data</li>
+                            <li>Copy your data</li>
+                            <li>Retrieve your data</li>
+                            <li>Modify your data</li>
+                            <li>Delete your data</li>
+                            <li>Analyze your data</li>
+                            <li>Share your data</li>
+                            <li>Access your data in any way whatsoever</li>
+                        </ul>
+                        
+                        <h3>6.4 Your Responsibility</h3>
+                        <p>Because data is stored only on your Device, you are solely responsible for:</p>
+                        <ul>
+                            <li>Creating backups of your data through device backups</li>
+                            <li>Maintaining the security of your Device</li>
+                            <li>Protecting access to your Device</li>
+                            <li>Any loss of data due to device failure, loss, theft, damage, or uninstallation</li>
+                        </ul>
+                    </div>
 
-                <div class="legal-section">
-                    <h2>SECTION 7: NO DATA BREACH RISK</h2>
-                    <p>Since we collect, store, and transmit zero data, there is no risk of data breaches, unauthorized access, or data exposure through our systems. Your data remains completely private and secure on your device.</p>
-                </div>
+                    <div class="legal-section" id="third-party">
+                        <h2>7. Third Party Services and Data Sharing</h2>
+                        
+                        <h3>7.1 No Third Party Data Sharing</h3>
+                        <p>Because we collect absolutely no data, we share absolutely no data with third parties. There is no data to share.</p>
+                        <ul>
+                            <li>We do not sell your Personal Information</li>
+                            <li>We do not share your Personal Information for cross-context behavioral advertising</li>
+                            <li>We do not disclose your Personal Information for business purposes</li>
+                            <li>We do not transfer your Personal Information to third parties</li>
+                            <li>We do not provide your Personal Information to service providers</li>
+                            <li>We have no data to share, sell, or transfer</li>
+                        </ul>
+                        
+                        <h3>7.2 No Third Party SDKs or Services</h3>
+                        <p>The App does not integrate any third party services that collect data, including but not limited to:</p>
+                        <ul>
+                            <li>Google Analytics, Firebase Analytics, or any analytics service</li>
+                            <li>Facebook SDK, Meta SDK, or any social media SDK</li>
+                            <li>Google Ads, Facebook Ads, or any advertising network</li>
+                            <li>Crashlytics, Sentry, Bugsnag, or any crash reporting service</li>
+                            <li>Mixpanel, Amplitude, or any product analytics service</li>
+                            <li>Customer.io, Braze, or any marketing automation service</li>
+                            <li>Any attribution or measurement SDK</li>
+                            <li>Any A/B testing or experimentation SDK</li>
+                            <li>Any push notification service that tracks users</li>
+                            <li>Any cloud storage or synchronization service</li>
+                        </ul>
+                        
+                        <h3>7.3 Apple App Store</h3>
+                        <p>The App is distributed through Apple's App Store. Apple may collect certain information when you download the App as described in Apple's Privacy Policy. This data collection by Apple is governed by Apple's terms and privacy policy, and we do not receive personally identifiable information from Apple about individual users.</p>
+                        
+                        <h3>7.4 Website Contact Form</h3>
+                        <p>If you choose to contact us through our website at nuvio.app, the information you voluntarily provide (such as your name, email address, and message content) may be transmitted to us for the sole purpose of responding to your inquiry. This website contact information:</p>
+                        <ul>
+                            <li>Is completely separate from the App</li>
+                            <li>Is provided voluntarily by you</li>
+                            <li>Is used solely to respond to your inquiry</li>
+                            <li>Is not connected to any App usage data (because we collect none)</li>
+                            <li>May be transmitted via third party services (such as email or form providers)</li>
+                        </ul>
+                    </div>
 
-                <div class="legal-section">
-                    <h2>SECTION 8: COMPLETE TRANSPARENCY</h2>
-                    <p>This privacy policy represents our complete and absolute commitment to your privacy. We maintain zero data collection practices and will never change this fundamental approach.</p>
-                </div>
+                    <div class="legal-section" id="data-security">
+                        <h2>8. Data Security</h2>
+                        
+                        <h3>8.1 Security Through Architecture</h3>
+                        <p>Our primary security measure is our architecture: by not collecting any data, we eliminate the risk of data breaches from our systems. You cannot breach data that does not exist.</p>
+                        
+                        <h3>8.2 Local Data Security</h3>
+                        <p>Your locally stored data benefits from iOS's robust security architecture:</p>
+                        <ul>
+                            <li><strong>App Sandboxing:</strong> Each iOS app operates in its own sandbox, preventing other apps from accessing your data</li>
+                            <li><strong>Hardware Encryption:</strong> Data is encrypted using hardware-level encryption on supported devices</li>
+                            <li><strong>Data Protection:</strong> iOS Data Protection encrypts files using your passcode as part of the encryption key</li>
+                            <li><strong>Secure Enclave:</strong> Biometric data (Face ID, Touch ID) is protected by the Secure Enclave</li>
+                            <li><strong>Device Passcode:</strong> Your device passcode provides an additional layer of protection</li>
+                        </ul>
+                        
+                        <h3>8.3 No Server-Side Security Concerns</h3>
+                        <p>Because we operate no servers that store user data:</p>
+                        <ul>
+                            <li>There is no server-side attack surface</li>
+                            <li>There is no database that can be breached</li>
+                            <li>There are no API endpoints that can be exploited</li>
+                            <li>There is no risk of man-in-the-middle attacks on your data</li>
+                            <li>There is no risk of unauthorized server access</li>
+                        </ul>
+                        
+                        <h3>8.4 Your Security Responsibilities</h3>
+                        <p>To maintain the security of your data, we recommend:</p>
+                        <ul>
+                            <li>Using a strong device passcode (at least 6 digits, preferably alphanumeric)</li>
+                            <li>Enabling Face ID or Touch ID for additional security</li>
+                            <li>Keeping your iOS version updated to receive security patches</li>
+                            <li>Not jailbreaking your device, which compromises security</li>
+                            <li>Being cautious about physical access to your device</li>
+                            <li>Enabling "Find My" to remotely wipe your device if lost or stolen</li>
+                            <li>Regularly backing up your device to preserve your data</li>
+                        </ul>
+                        
+                        <h3>8.5 Data Breach Notification</h3>
+                        <p>In the unlikely event of a security incident affecting our website or business operations (not the App, as we hold no App user data), we will comply with all applicable breach notification laws, including Washington State's data breach notification requirements (RCW 19.255.010) and other applicable state and federal laws.</p>
+                    </div>
 
-                <div class="legal-section">
-                    <h2>SECTION 9: YOUR RIGHTS AND CONTROL</h2>
-                    <p>You have complete control over your data:</p>
-                    <ul>
-                        <li>View all your data at any time</li>
-                        <li>Export your data in CSV format</li>
-                        <li>Delete all data using in-app features</li>
-                        <li>Modify or update any information</li>
-                        <li>Complete data portability</li>
-                    </ul>
-                </div>
+                    <div class="legal-section" id="your-rights">
+                        <h2>9. Your Rights and Data Control</h2>
+                        
+                        <h3>9.1 Complete Data Control</h3>
+                        <p>You have complete and exclusive control over your data within the App. You may:</p>
+                        <ul>
+                            <li><strong>Access:</strong> View all your data at any time within the App</li>
+                            <li><strong>Export:</strong> Export your transaction data in CSV format for portability and backup</li>
+                            <li><strong>Modify:</strong> Edit or update any information you have entered</li>
+                            <li><strong>Delete:</strong> Delete individual records or specific data</li>
+                            <li><strong>Erase All:</strong> Delete all data using the App's data management features</li>
+                            <li><strong>Complete Removal:</strong> Uninstalling the App removes all associated data from your Device</li>
+                        </ul>
+                        
+                        <h3>9.2 No Data Requests to Us</h3>
+                        <p>Because we do not collect or store any of your data, we cannot fulfill requests to:</p>
+                        <ul>
+                            <li>Access your Personal Information (we have none)</li>
+                            <li>Provide copies of your data (we have none)</li>
+                            <li>Correct your data (we have none)</li>
+                            <li>Delete your data (we have none)</li>
+                            <li>Port your data (we have none)</li>
+                            <li>Opt you out of data sales (we sell no data)</li>
+                        </ul>
+                        <p>All data management must be performed by you directly within the App or on your Device.</p>
+                        
+                        <h3>9.3 Right to Information</h3>
+                        <p>You have the right to know what data we collect about you. The answer is: none. This Privacy Policy provides complete transparency about our data practices.</p>
+                    </div>
 
-                <div class="legal-section">
-                    <h2>SECTION 10: CONTACT AND QUESTIONS</h2>
-                    <p>If you have any questions about this privacy policy or our data practices, please contact us. However, please note that we maintain zero data collection, so there is no personal information for us to access or modify.</p>
+                    <div class="legal-section" id="data-retention">
+                        <h2>10. Data Retention</h2>
+                        
+                        <h3>10.1 Local Data Retention</h3>
+                        <p>Your data is retained on your Device for as long as:</p>
+                        <ul>
+                            <li>You keep the App installed on your Device</li>
+                            <li>You choose to retain the data (you can delete it at any time)</li>
+                            <li>Your Device is functional and accessible</li>
+                        </ul>
+                        
+                        <h3>10.2 No Server-Side Retention</h3>
+                        <p>Because we do not collect your data, there is no server-side retention period. We retain zero data because we collect zero data.</p>
+                        
+                        <h3>10.3 Data Deletion</h3>
+                        <p>You may permanently delete your data at any time by:</p>
+                        <ul>
+                            <li>Using the in-app data management features to delete specific records</li>
+                            <li>Using the in-app option to delete all data</li>
+                            <li>Uninstalling the App from your Device, which removes all associated data</li>
+                            <li>Performing a factory reset on your Device</li>
+                        </ul>
+                        
+                        <h3>10.4 Backup Considerations</h3>
+                        <p>If you have enabled iCloud Backup or create iTunes/Finder backups, your App data may be included in those backups. Managing or deleting this backed-up data is governed by Apple's policies and your backup settings.</p>
+                    </div>
+
+                    <div class="legal-section" id="childrens-privacy">
+                        <h2>11. Children's Privacy</h2>
+                        
+                        <h3>11.1 COPPA Compliance</h3>
+                        <p>We comply with the Children's Online Privacy Protection Act (COPPA) and similar laws worldwide. However, because we collect no information from any user, the protections typically required under these laws are inherently satisfied.</p>
+                        
+                        <h3>11.2 No Collection from Children</h3>
+                        <p>We do not knowingly collect any Personal Information from anyone, including children under 13 years of age (or the applicable age in other jurisdictions, such as 16 in the European Union). Since we collect no data from any user, no special provisions for children's data are necessary.</p>
+                        
+                        <h3>11.3 Parental Guidance</h3>
+                        <p>The App is designed for general audiences interested in personal finance management. We recommend that parents and guardians supervise their children's use of mobile applications and devices, and review the settings and content of apps their children use.</p>
+                        
+                        <h3>11.4 Contact Regarding Children</h3>
+                        <p>If you are a parent or guardian and believe your child has somehow provided us with Personal Information (although this is technically impossible through the App), please contact us at infow3bdev@gmail.com. If we become aware that we have inadvertently received Personal Information from a child through any means, we will delete such information immediately.</p>
+                    </div>
+
+                    <div class="legal-section" id="washington-state">
+                        <h2>12. Washington State Privacy Rights</h2>
+                        
+                        <h3>12.1 Washington State Consumer Protection</h3>
+                        <p>As a Washington State-based developer, we operate in compliance with Washington State's Consumer Protection Act (RCW 19.86) and other applicable state laws regarding consumer privacy and data protection.</p>
+                        
+                        <h3>12.2 Washington My Health My Data Act</h3>
+                        <p>The Washington My Health My Data Act provides enhanced protections for consumer health data. While Nuvio may be used to track health-related expenses, we do not collect any health data or any other data. All such information remains on your Device and is never accessible to us.</p>
+                        
+                        <h3>12.3 Washington State Data Breach Laws</h3>
+                        <p>Washington State's data breach notification law (RCW 19.255.010) requires businesses to notify consumers of security breaches involving personal information. Because we do not collect or store any personal information, there is no risk of a data breach involving your data from our systems.</p>
+                        
+                        <h3>12.4 Washington State Rights</h3>
+                        <p>Under Washington State law, consumers have various rights regarding their personal information. Because we collect no personal information, these rights are automatically satisfied:</p>
+                        <ul>
+                            <li>Right to know what data is collected (Answer: None)</li>
+                            <li>Right to access data (All your data is on your Device)</li>
+                            <li>Right to delete data (You control all deletion via the App)</li>
+                            <li>Right to data portability (Export feature available in the App)</li>
+                            <li>Right to non-discrimination for exercising rights (Not applicable as we have no data)</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section" id="california">
+                        <h2>13. California Residents (CCPA/CPRA)</h2>
+                        
+                        <h3>13.1 California Consumer Privacy Act</h3>
+                        <p>If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA). This section describes those rights and how they apply given our zero data collection policy.</p>
+                        
+                        <h3>13.2 Categories of Personal Information</h3>
+                        <p>Under the CCPA, we are required to disclose the categories of Personal Information we collect. <strong>We collect no categories of Personal Information.</strong> Specifically:</p>
+                        <ul>
+                            <li>Identifiers: Not collected</li>
+                            <li>Personal Information under Cal. Civ. Code 1798.80: Not collected</li>
+                            <li>Protected classification characteristics: Not collected</li>
+                            <li>Commercial information: Not collected</li>
+                            <li>Biometric information: Not collected</li>
+                            <li>Internet or network activity: Not collected</li>
+                            <li>Geolocation data: Not collected</li>
+                            <li>Sensory data: Not collected</li>
+                            <li>Professional or employment information: Not collected</li>
+                            <li>Education information: Not collected</li>
+                            <li>Inferences: Not collected (no data to draw inferences from)</li>
+                            <li>Sensitive Personal Information: Not collected</li>
+                        </ul>
+                        
+                        <h3>13.3 Sale and Sharing of Personal Information</h3>
+                        <p><strong>We do not sell your Personal Information.</strong> We have not sold Personal Information in the preceding 12 months or ever. We will not sell your Personal Information in the future.</p>
+                        <p><strong>We do not share your Personal Information for cross-context behavioral advertising.</strong> We have not shared Personal Information for such purposes in the preceding 12 months or ever.</p>
+                        
+                        <h3>13.4 California Consumer Rights</h3>
+                        <p>California residents have the following rights under the CCPA/CPRA. We explain how each right applies given our zero data collection:</p>
+                        <ul>
+                            <li><strong>Right to Know:</strong> You have the right to know what Personal Information we collect, use, disclose, and sell. We collect, use, disclose, and sell no Personal Information.</li>
+                            <li><strong>Right to Delete:</strong> You have the right to request deletion of your Personal Information. We have no Personal Information to delete. You can delete your local data yourself within the App.</li>
+                            <li><strong>Right to Correct:</strong> You have the right to correct inaccurate Personal Information. We have no Personal Information to correct. You can correct your local data yourself within the App.</li>
+                            <li><strong>Right to Opt-Out of Sale:</strong> You have the right to opt out of the sale of your Personal Information. We do not sell Personal Information.</li>
+                            <li><strong>Right to Limit Use of Sensitive Personal Information:</strong> You have the right to limit the use of sensitive Personal Information. We do not collect sensitive Personal Information.</li>
+                            <li><strong>Right to Non-Discrimination:</strong> You have the right not to be discriminated against for exercising your privacy rights. This right is not applicable as we have no data to use for discrimination.</li>
+                        </ul>
+                        
+                        <h3>13.5 Do Not Sell or Share My Personal Information</h3>
+                        <p>Because we do not sell or share any Personal Information, a "Do Not Sell or Share My Personal Information" opt-out mechanism is not necessary. There is nothing to opt out of.</p>
+                        
+                        <h3>13.6 Financial Incentives</h3>
+                        <p>We do not offer any financial incentives related to the collection, retention, or sale of Personal Information.</p>
+                        
+                        <h3>13.7 Authorized Agents</h3>
+                        <p>California residents may designate an authorized agent to make requests on their behalf. However, because we collect no Personal Information, there are no requests we can fulfill.</p>
+                        
+                        <h3>13.8 Shine the Light</h3>
+                        <p>Under California Civil Code Section 1798.83 ("Shine the Light"), California residents may request information about disclosure of Personal Information to third parties for direct marketing purposes. We do not disclose Personal Information to third parties for direct marketing purposes because we collect no Personal Information.</p>
+                    </div>
+
+                    <div class="legal-section" id="gdpr">
+                        <h2>14. European Users (GDPR)</h2>
+                        
+                        <h3>14.1 General Data Protection Regulation</h3>
+                        <p>If you are located in the European Economic Area (EEA), United Kingdom, or Switzerland, you have rights under the General Data Protection Regulation (GDPR) and equivalent laws. This section explains how these rights apply to our zero data collection model.</p>
+                        
+                        <h3>14.2 Legal Basis for Processing</h3>
+                        <p>Under the GDPR, processing of Personal Data requires a legal basis. Because we do not process any Personal Data, no legal basis is required or applicable.</p>
+                        
+                        <h3>14.3 Data Subject Rights</h3>
+                        <p>European data subjects have the following rights under GDPR:</p>
+                        <ul>
+                            <li><strong>Right of Access (Article 15):</strong> You have the right to access your Personal Data. We hold no Personal Data about you.</li>
+                            <li><strong>Right to Rectification (Article 16):</strong> You have the right to correct inaccurate Personal Data. We hold no Personal Data to correct.</li>
+                            <li><strong>Right to Erasure (Article 17):</strong> You have the right to erasure ("right to be forgotten"). We hold no Personal Data to erase. You control erasure of your local data.</li>
+                            <li><strong>Right to Restriction (Article 18):</strong> You have the right to restrict processing. We do not process any Personal Data.</li>
+                            <li><strong>Right to Data Portability (Article 20):</strong> You have the right to receive your data in a portable format. Use the App's export feature for your local data.</li>
+                            <li><strong>Right to Object (Article 21):</strong> You have the right to object to processing. We do not process any Personal Data.</li>
+                            <li><strong>Rights Related to Automated Decision-Making (Article 22):</strong> You have rights related to automated decision-making and profiling. We do not engage in any automated decision-making or profiling.</li>
+                        </ul>
+                        
+                        <h3>14.4 Data Protection Officer</h3>
+                        <p>Given our zero data collection policy, we have not appointed a Data Protection Officer as we do not process Personal Data.</p>
+                        
+                        <h3>14.5 Supervisory Authority</h3>
+                        <p>You have the right to lodge a complaint with a supervisory authority, particularly in the EU Member State of your habitual residence, place of work, or place of alleged infringement. However, given our zero data collection, we encourage you to contact us first at infow3bdev@gmail.com.</p>
+                    </div>
+
+                    <div class="legal-section" id="international">
+                        <h2>15. International Data Transfers</h2>
+                        
+                        <h3>15.1 No International Transfers</h3>
+                        <p>Because all data remains exclusively on your Device and we do not collect any data, there are no international transfers of your Personal Information to consider.</p>
+                        
+                        <h3>15.2 Local Processing</h3>
+                        <p>All data processing occurs locally on your Device, in whatever country you and your Device are located. Your data never leaves your Device to travel to any other jurisdiction.</p>
+                        
+                        <h3>15.3 Global Availability</h3>
+                        <p>The App is available globally through the App Store. Regardless of where you are located, your data remains on your Device and is subject to your local jurisdiction's laws as they pertain to data stored on devices you own and control.</p>
+                    </div>
+
+                    <div class="legal-section" id="website">
+                        <h2>16. Website Privacy Practices</h2>
+                        
+                        <h3>16.1 Website vs. App</h3>
+                        <p>This section describes privacy practices for our website at nuvio.app, which are separate from the App's privacy practices.</p>
+                        
+                        <h3>16.2 Website Data Collection</h3>
+                        <p>Our website may collect limited information through:</p>
+                        <ul>
+                            <li><strong>Contact Form:</strong> If you submit a contact form, we receive the information you voluntarily provide (name, email, message) for the purpose of responding to your inquiry.</li>
+                            <li><strong>Server Logs:</strong> Our website hosting provider may automatically collect standard log data (IP address, browser type, referring pages) as part of standard web hosting operations.</li>
+                        </ul>
+                        
+                        <h3>16.3 Website Cookies</h3>
+                        <p>Our website may use essential cookies necessary for website functionality. We do not use cookies for tracking, advertising, or analytics purposes on our website.</p>
+                        
+                        <h3>16.4 Third Party Website Services</h3>
+                        <p>Our website may utilize third party services for hosting, form processing, or other operational purposes. These third parties may have their own privacy policies governing their services.</p>
+                    </div>
+
+                    <div class="legal-section" id="changes">
+                        <h2>17. Changes to This Privacy Policy</h2>
+                        
+                        <h3>17.1 Modification Rights</h3>
+                        <p>We reserve the right to modify this Privacy Policy at any time. Any changes will be effective immediately upon posting the updated Policy on this page with a new "Last Updated" date.</p>
+                        
+                        <h3>17.2 Notification of Changes</h3>
+                        <p>For material changes to this Policy, we will make reasonable efforts to provide notice, such as updating the App Store description or prominently posting a notice on our website. However, it is your responsibility to periodically review this Policy for changes.</p>
+                        
+                        <h3>17.3 Our Commitment</h3>
+                        <p><strong>While we may update this Policy to clarify our practices, comply with legal requirements, or reflect changes in our operations, our fundamental commitment to zero data collection will not change.</strong></p>
+                        <p>If we ever consider changing this core principle (which we do not anticipate), we would:</p>
+                        <ul>
+                            <li>Provide prominent advance notice</li>
+                            <li>Obtain your explicit consent before any data collection begins</li>
+                            <li>Comply with all applicable laws regarding consent and notification</li>
+                            <li>Allow you to continue using existing versions without data collection</li>
+                        </ul>
+                        
+                        <h3>17.4 Continued Use</h3>
+                        <p>Your continued use of the App after any modifications to this Policy indicates your acceptance of the modified Policy.</p>
+                    </div>
+
+                    <div class="legal-section" id="contact">
+                        <h2>18. Contact Information</h2>
+                        
+                        <h3>18.1 How to Contact Us</h3>
+                        <p>If you have any questions, concerns, comments, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+                        <ul>
+                            <li><strong>Email:</strong> infow3bdev@gmail.com</li>
+                            <li><strong>Website Contact Form:</strong> <a href="contact.html">nuvio.app/contact</a></li>
+                        </ul>
+                        
+                        <h3>18.2 Response Time</h3>
+                        <p>We will make reasonable efforts to respond to your inquiries within 48 hours during business days, and in any event within any timeframes required by applicable law.</p>
+                        
+                        <h3>18.3 Important Note</h3>
+                        <p>Please understand that because we do not collect any data through the App, we cannot provide you with copies of your data, delete data, or make corrections to data on your behalf. All such data management must be performed by you directly within the App on your Device.</p>
+                    </div>
+
+                    <div class="legal-section" id="effective-date">
+                        <h2>19. Effective Date and Governing Law</h2>
+                        
+                        <h3>19.1 Effective Date</h3>
+                        <p>This Privacy Policy is effective as of December 30, 2025.</p>
+                        
+                        <h3>19.2 Governing Law</h3>
+                        <p>This Privacy Policy and any disputes arising from or relating to it shall be governed by and construed in accordance with the laws of the State of Washington, United States, without regard to its conflict of law provisions, except where preempted by federal law.</p>
+                        
+                        <h3>19.3 Severability</h3>
+                        <p>If any provision of this Privacy Policy is found to be unenforceable or invalid by a court of competent jurisdiction, that provision shall be limited or eliminated to the minimum extent necessary so that this Privacy Policy shall otherwise remain in full force and effect.</p>
+                        
+                        <h3>19.4 Entire Agreement</h3>
+                        <p>This Privacy Policy, together with our Terms of Service, constitutes the entire agreement between you and us regarding privacy and data handling in connection with the App.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer-section">
+        <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-main">
-                    <p>&copy; 2025 Nuvio. All rights reserved.</p>
                     <div class="footer-links">
                         <a href="index.html">Home</a>
                         <a href="contact.html">Contact</a>
                         <a href="terms.html">Terms of Service</a>
                         <a href="privacy.html">Privacy Policy</a>
                     </div>
+                    <p>&copy; 2025 Nuvio. All rights reserved.</p>
                 </div>
                 <div class="footer-support">
-                    <p>Support Nuvio Development</p>
                     <a href="https://buymeacoffee.com/nuvio" target="_blank" rel="noopener" class="support-btn-image">
                         <img src="assets/images/bmc-button yallow.svg" alt="Buy me a coffee" class="bmc-button">
                     </a>
+                    <p>Support Nuvio Development</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <script>
+        // TOC Active State with Intersection Observer
+        document.addEventListener('DOMContentLoaded', function() {
+            const tocLinks = document.querySelectorAll('.toc-list a');
+            const sections = document.querySelectorAll('.legal-section[id]');
+            
+            // Intersection Observer for active section highlighting
+            const observerOptions = {
+                root: null,
+                rootMargin: '-100px 0px -66%',
+                threshold: 0
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        tocLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === '#' + id) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            // Smooth scroll for TOC links
+            tocLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 100;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
