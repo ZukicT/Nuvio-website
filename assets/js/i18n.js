@@ -60,7 +60,9 @@
         if (el.hasAttribute('placeholder')) {
           el.placeholder = translation;
         }
-      } else if (el.hasAttribute('data-i18n-html')) {
+      } else if (el.tagName === 'OPTION') {
+        el.textContent = translation;
+      } else if (el.hasAttribute('data-i18n-html') || translation.includes('<')) {
         el.innerHTML = translation;
       } else {
         el.textContent = translation;
