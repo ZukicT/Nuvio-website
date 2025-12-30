@@ -137,6 +137,8 @@ body {
         margin-bottom: 2rem !important;
         max-width: 100% !important;
         padding: 0 1rem !important;
+        text-wrap: balance !important;
+        word-break: keep-all !important;
     }
     
     /* Mobile hero section - taller for proper bird positioning */
