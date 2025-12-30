@@ -147,7 +147,7 @@ body {
     
     /* Mobile bird positioning */
     .hero-illustration {
-        bottom: -15% !important;
+        bottom: -12% !important;
         right: -5% !important;
         width: 60% !important;
         max-width: 280px !important;
