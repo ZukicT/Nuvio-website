@@ -117,3 +117,6 @@ tramp
 # Local development
 .local/
 local/
+
+# Generated deployment marker
+/indexnow-deploy.txt
