@@ -23,7 +23,7 @@ These sources substantiate service descriptions and truthful disclosure. They do
 
 ## Outstanding review items
 
-- Confirm or implement any regional consent and opt-out mechanisms required for the actual AdMob and website Analytics configuration. This update does not claim such consent mechanisms exist.
+- The Nuvio 2.7 work adds Google UMP consent and iOS App Tracking Transparency controls for personalized advertising. Verify those controls on physical devices and in each configured region before release. Website Analytics consent and applicable opt-out obligations remain a separate review item.
 - Review international privacy notices, legal bases, transfers, representative/contact requirements, retention practices, and California sale/sharing characterization with qualified counsel against the actual business and provider settings.
 - The existing contact form has a Discord webhook embedded in public browser code. A server-side form endpoint with abuse controls would avoid exposing that endpoint. No webhook or private credential was added by this update.
 - The policy does not promise that anonymous SDK identifiers are unidentifiable or that app deletion cancels a subscription.
