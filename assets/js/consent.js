@@ -77,7 +77,7 @@
           <div><h2 id="consent-title" data-i18n="cookie_title">Your privacy, your choice.</h2><p data-i18n="cookie_intro">We use essential browser storage to remember your privacy choices. Optional analytics helps us understand visits and downloads. You decide what to allow.</p><a href="cookies.html" data-i18n="cookie_policy">Cookie Policy</a></div>
           <div class="consent-actions"><button type="button" data-consent-reject data-i18n="cookie_reject">Reject optional</button><button type="button" data-consent-open data-i18n="cookie_customize">Customize</button><button type="button" data-consent-accept data-i18n="cookie_accept">Accept optional</button></div>
         </section>
-        <button type="button" class="privacy-launcher" data-consent-open data-i18n="cookie_choices" hidden>Privacy choices</button>
+        <button type="button" class="privacy-launcher" data-consent-open data-i18n-aria="cookie_choices" aria-label="Privacy choices"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.2A9 9 0 1 1 11.8 3a4 4 0 0 0 5.1 5.1A4 4 0 0 0 21 12.2Z"/><circle cx="8" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="8" cy="15" r="1" fill="currentColor" stroke="none"/><circle cx="13" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="16" r="1" fill="currentColor" stroke="none"/></svg></button>
         <dialog class="consent-dialog" aria-labelledby="privacy-title"><div class="consent-dialog-header"><h2 id="privacy-title" data-i18n="cookie_settings">Cookie & tracking choices</h2><button type="button" data-consent-close aria-label="Close privacy settings" data-i18n-aria="cookie_close">×</button></div>
           <p data-i18n="cookie_settings_intro">Optional features stay off until you choose them. You can change your choices at any time.</p>
           <label class="consent-category"><span><strong data-i18n="cookie_essential">Essential storage</strong><small data-i18n="cookie_essential_body">Remembers your privacy choices. Always on; no analytics.</small></span><input type="checkbox" checked disabled><span class="consent-switch" aria-hidden="true"></span></label>
@@ -92,6 +92,7 @@
         analytics = document.getElementById('consent-analytics'); preferences = document.getElementById('consent-preferences');
         root.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = translate(el.dataset.i18n); });
         panel.querySelector('[data-consent-close]').setAttribute('aria-label', translate('cookie_close'));
+        launcher.setAttribute('aria-label', translate('cookie_choices'));
         document.addEventListener('click', event => {
             if (event.target.closest('[data-consent-open]')) open();
             else if (event.target.closest('[data-consent-reject]')) save({ preferences: false, analytics: false });
@@ -100,8 +101,8 @@
             else if (event.target.closest('[data-consent-close]')) panel.close();
         });
         panel.addEventListener('close', () => { if (previousFocus?.isConnected) previousFocus.focus({ preventScroll: true }); });
-        banner.hidden = Boolean(saved); launcher.hidden = !saved;
-        window.addEventListener('storage', event => { if (event.key === KEY) { const wasLoaded = loaded; saved = read(); apply(); window.dispatchEvent(new CustomEvent('nuvio:consentchange')); banner.hidden = Boolean(saved); launcher.hidden = !saved; if (wasLoaded && !allowed('analytics')) location.reload(); } });
+        banner.hidden = Boolean(saved); launcher.hidden = false;
+        window.addEventListener('storage', event => { if (event.key === KEY) { const wasLoaded = loaded; saved = read(); apply(); window.dispatchEvent(new CustomEvent('nuvio:consentchange')); banner.hidden = Boolean(saved); launcher.hidden = false; if (wasLoaded && !allowed('analytics')) location.reload(); } });
     }
     window.NuvioConsent = { allows: allowed, open, setPreferences: save, getPreferences: () => ({ essential: true, preferences: allowed('preferences'), analytics: allowed('analytics') }) };
     apply();
