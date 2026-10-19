@@ -39,3 +39,9 @@
 
 .cookie-policy-page .legal-page > .container { max-width: 960px; }
 @media(max-width:380px) { .consent-dialog { padding: 18px; } .consent-category { padding-block: 15px; } }
+/* Brand-blue banner with readable white copy and equally weighted choices. */
+.consent-banner { background: var(--blue-edge); border-color: var(--blue-edge); border-bottom-color: #1047AA; color: white; }
+.consent-banner h2, .consent-banner p, .consent-banner a { color: white; }
+.consent-banner .consent-actions button { background: white; color: var(--blue-edge); border-color: white; border-bottom-color: #BDD5FA; }
+.consent-banner .consent-actions button:hover { background: #F0F6FF; border-color: white; border-bottom-color: #BDD5FA; }
+#nuvio-privacy .consent-banner button:focus-visible, .consent-banner a:focus-visible { outline: 3px solid white; outline-offset: 4px; }
