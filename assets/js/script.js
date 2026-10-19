@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-download-location]').forEach(link => {
         link.addEventListener('click', () => {
-            if (location.hostname !== 'nuviomm.com' || typeof window.gtag !== 'function') return;
+            if (location.hostname !== 'nuviomm.com' || !window.NuvioConsent?.allows('analytics') || typeof window.gtag !== 'function') return;
             window.gtag('event', 'app_store_click', {
                 placement: link.dataset.downloadLocation,
                 link_url: link.href

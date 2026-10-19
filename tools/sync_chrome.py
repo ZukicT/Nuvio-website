@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 
 root = Path(__file__).resolve().parents[1]
-for name in ('index.html', 'contact.html', 'privacy.html', 'terms.html', '404.html'):
+for name in ('index.html', 'contact.html', 'privacy.html', 'terms.html', 'cookies.html', '404.html'):
     path = root / name
     source = path.read_text()
     for kind in ('header', 'footer'):
@@ -15,4 +15,4 @@ for name in ('index.html', 'contact.html', 'privacy.html', 'terms.html', '404.ht
         if count != 1:
             raise ValueError(f'{name}: expected one {kind} marker pair, found {count}')
     path.write_text('\n'.join(line.rstrip() for line in source.splitlines()) + '\n')
-print('Shared header and footer synchronized across five pages.')
+print('Shared header and footer synchronized across all public pages.')

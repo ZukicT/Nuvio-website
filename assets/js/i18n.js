@@ -1,14 +1,15 @@
 /** Localized copy with explicit language selection or automatic browser-language matching. */
 (function () {
     'use strict';
-    const STORAGE_KEY = 'nuvio_language';
+    const STORAGE_KEY = 'nuvio_language_v2';
     const supported = ['en', 'de-DE', 'es-ES', 'ja-JP', 'ko-KR', 'zh-CN', 'zh-TW'].filter(lang => languageNames[lang]);
     const automaticNames = { en: 'Automatic', 'zh-CN': '自动', 'zh-TW': '自動', 'de-DE': 'Automatisch', 'es-ES': 'Automático', 'ja-JP': '自動', 'ko-KR': '자동' };
     const codes = { en: 'EN', 'zh-CN': '简中', 'zh-TW': '繁中', 'de-DE': 'DE', 'es-ES': 'ES', 'ja-JP': '日本語', 'ko-KR': '한국어' };
     let preference = 'auto';
     try {
-        const stored = localStorage.getItem(STORAGE_KEY);
-        if (stored === 'auto' || supported.includes(stored)) preference = stored;
+        localStorage.removeItem('nuvio_language');
+        const stored = window.NuvioConsent?.allows('preferences') ? localStorage.getItem(STORAGE_KEY) : null;
+        if (window.NuvioConsent?.allows('preferences') && (stored === 'auto' || supported.includes(stored))) preference = stored;
     } catch { /* Browser preferences still work when storage is unavailable. */ }
     function matchLanguage(locale) {
         const value = locale.toLowerCase();
@@ -17,7 +18,7 @@
     }
     function resolvedLanguage() {
         if (preference !== 'auto') return preference;
-        for (const locale of navigator.languages || [navigator.language || 'en']) {
+        for (const locale of [navigator.language, ...(navigator.languages || [])].filter(Boolean)) {
             const match = matchLanguage(locale);
             if (supported.includes(match)) return match;
         }
@@ -91,7 +92,7 @@
     function setLanguage(lang) {
         if (lang !== 'auto' && !supported.includes(lang)) return;
         preference = lang;
-        try { localStorage.setItem(STORAGE_KEY, lang); } catch { /* Keep the current selection in memory. */ }
+        try { if (window.NuvioConsent?.allows('preferences')) localStorage.setItem(STORAGE_KEY, lang); } catch { /* Keep the current selection in memory. */ }
         render();
     }
     function init() {
@@ -123,6 +124,7 @@
         });
         document.addEventListener('click', closeDropdowns);
         window.addEventListener('languagechange', () => { if (preference === 'auto') render(); });
+        window.addEventListener('nuvio:consentchange', () => { try { if (window.NuvioConsent?.allows('preferences')) { if (!localStorage.getItem(STORAGE_KEY)) localStorage.setItem(STORAGE_KEY, preference); } else localStorage.removeItem(STORAGE_KEY); } catch {} });
     }
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
     window.NuvioI18n = { setLanguage, getLanguage: resolvedLanguage, getPreference: () => preference, t };
