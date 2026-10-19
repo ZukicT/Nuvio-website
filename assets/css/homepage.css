@@ -496,8 +496,8 @@
 .start-heading p { max-width: 380px; color: var(--subtle); font-size: 17px; line-height: 1.75; }
 .start-heading img { width: 175px; height: 175px; margin-top: 24px; }
 .setup-steps { display: block; }
-.setup-steps li { display: grid; grid-template-columns: 47px minmax(0,1fr) 125px; align-items: center; gap: 22px; padding: 27px 0; border-top: 0; border-bottom: 2px solid var(--line); }
-.setup-steps li:last-child { border-bottom: 0; }
+.setup-steps li { display: grid; grid-template-columns: 47px minmax(0,1fr) 125px; align-items: center; gap: 22px; padding: 27px 0; border-top: 0; border-bottom: 0; --step-divider-inset: 69px; }
+.setup-steps li:not(:last-child)::after { content: ""; position: absolute; inset-inline-start: var(--step-divider-inset); inset-inline-end: 0; bottom: 0; height: 2px; background: var(--line); }
 .step-number { min-width: 42px; width: 42px; height: 44px; margin: 0; }
 .setup-steps h3 { font-size: 21px; margin: 0 0 8px; }
 .setup-steps p { font-size: 14px; line-height: 1.65; }
@@ -567,7 +567,7 @@
 }
 @media (max-width: 1100px) {
     .privacy-layout, .start-layout, .questions-layout { gap: 45px; }
-    .setup-steps li { grid-template-columns: 42px minmax(0,1fr); gap: 18px; }
+    .setup-steps li { grid-template-columns: 42px minmax(0,1fr); gap: 18px; --step-divider-inset: 60px; }
     .step-preview { display: none; }
     .footer-grid { gap: 30px; }
 }
@@ -579,7 +579,7 @@
     .start-layout { grid-template-columns: 1fr; gap: 25px; }
     .start-heading { position: relative; padding-right: 190px; }
     .start-heading img { position: absolute; width: 150px; height: 150px; right: 0; top: 0; margin: 0; }
-    .setup-steps li { grid-template-columns: 45px minmax(0,1fr) 125px; }
+    .setup-steps li { grid-template-columns: 45px minmax(0,1fr) 125px; --step-divider-inset: 63px; }
     .step-preview { display: flex; }
     .habit-preview { display: grid; }
     .questions-layout { grid-template-columns: 1fr; gap: 30px; }
@@ -605,7 +605,7 @@
     .start-heading img { display: none; }
     .start-heading h2 { font-size: 34px; }
     .start-heading p { font-size: 16px; max-width: none; }
-    .setup-steps li { grid-template-columns: 42px minmax(0,1fr); gap: 16px; padding: 24px 0; }
+    .setup-steps li { grid-template-columns: 42px minmax(0,1fr); gap: 16px; padding: 24px 0; --step-divider-inset: 58px; }
     .step-preview, .habit-preview { display: none; }
     .setup-steps h3 { font-size: 21px; }
     .questions-section { padding: 55px 0 65px; }
