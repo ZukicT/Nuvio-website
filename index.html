@@ -1,19 +1,7 @@
-<!-- 
-WEBSITE REDESIGN - January 2025
-================================================
-✅ COMPLETED: Full website redesign with GitHub Pages optimization
-- Moved all HTML files to root level for clean URLs
-- Reorganized assets into assets/ directory structure
-- Updated all file references for root-level deployment
-- Enhanced design and user experience
-- Optimized for GitHub Pages hosting
-
-STATUS: PRODUCTION READY
-================================================
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <noscript><style>.product-tabs{display:none}.feature-panel[hidden]{display:grid}.feature-panel{margin-top:24px}</style></noscript>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PXFM9GSJ71"></script>
     <script>
@@ -22,208 +10,197 @@ STATUS: PRODUCTION READY
       gtag('js', new Date());
       gtag('config', 'G-PXFM9GSJ71');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
-    <title>Nuvio Money Manager - Free Budget & Expense Tracker</title>
-    <meta name="title" content="Nuvio Money Manager - Free Budget & Expense Tracker">
-    <meta name="description" content="Nuvio tracks expenses, budgets, and loans on iOS. Financial records stay on your device. Free tools with ads; optional Nuvio Pro coming in version 2.7.">
-    <meta name="keywords" content="Nuvio Money Manager, Nuvio app, Nuvio budget app, Nuvio expense tracker, free money manager iOS, budget tracker iPhone, expense tracker iPad, personal finance app free, private budget app, offline money manager, no account budget app, loan tracker iOS">
+    <title>Nuvio: Expense Tracker &amp; Budget Planner for iPhone</title>
+    <meta name="title" content="Nuvio: Expense Tracker &amp; Budget Planner for iPhone">
+    <meta name="description" content="Track expenses, plan your budget, and build better money habits with Nuvio for iPhone. See where you can save. Free to download, with optional Pro.">
     <meta name="author" content="Nuvio">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
-    
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nuviomm.com/">
-    <meta property="og:title" content="Nuvio Money Manager - Free Budget & Expense Tracker">
-    <meta property="og:description" content="Nuvio tracks expenses, budgets, and loans on iOS. Financial records stay on your device. Free tools with ads; optional Nuvio Pro coming in version 2.7.">
-    <meta property="og:image" content="https://nuviomm.com/assets/images/AppIconBird.png">
-    <meta property="og:site_name" content="Nuvio Money Manager">
+    <meta property="og:title" content="Nuvio: Expense Tracker &amp; Budget Planner for iPhone">
+    <meta property="og:description" content="Track expenses, plan your budget, and build better money habits with Nuvio for iPhone. See where you can save. Free to download, with optional Pro.">
+    <meta property="og:image" content="https://nuviomm.com/assets/images/brand/nuvio-social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Nuvio money manager with its blue bird and an app overview showing sample data">
+    <meta property="og:site_name" content="Nuvio">
     <meta property="og:locale" content="en_US">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://nuviomm.com/">
-    <meta property="twitter:title" content="Nuvio Money Manager - Free Budget & Expense Tracker">
-    <meta property="twitter:description" content="Nuvio tracks expenses, budgets, and loans on iOS. Financial records stay on your device. Free tools with ads; optional Nuvio Pro coming in version 2.7.">
-    <meta property="twitter:image" content="https://nuviomm.com/assets/images/AppIconBird.png">
-    
+    <meta property="twitter:title" content="Nuvio: Expense Tracker &amp; Budget Planner for iPhone">
+    <meta property="twitter:description" content="Track expenses, plan your budget, and build better money habits with Nuvio for iPhone. See where you can save. Free to download, with optional Pro.">
+    <meta property="twitter:image" content="https://nuviomm.com/assets/images/brand/nuvio-social.png">
+    <meta property="twitter:image:alt" content="Nuvio money manager with its blue bird and an app overview showing sample data">
+
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="assets/images/logo-optimized.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo-optimized.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo-optimized.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo-optimized.png">
+    <link rel="icon" type="image/x-icon" sizes="32x32 48x48" href="favicon.ico?v=20261018full">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="assets/images/brand/favicon.svg?v=20261018full">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/brand/icon-180.png?v=20261018full">
     <link rel="manifest" href="config/site.webmanifest">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://nuviomm.com/">
-    
+
     <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Nuvio Money Manager",
-        "alternateName": "Nuvio",
-        "description": "Nuvio tracks expenses, budgets, and loans with local financial records and no app account. Free tools include ads; version 2.7 introduces optional Nuvio Pro.",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "150"
-        },
-        "operatingSystem": "iOS",
-        "applicationSubCategory": "Finance",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "url": "https://apps.apple.com/us/app/nuvio-money-manager/id6753201126"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "Nuvio Money Manager"
-        },
-        "screenshot": "https://nuviomm.com/assets/images/AppIconBird.png",
-        "softwareVersion": "1.0",
-        "datePublished": "2025-01-26",
-        "dateModified": "2025-01-26"
-    }
-    </script>
-    
-    <!-- Additional Structured Data for Better SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Nuvio Money Manager",
-        "alternateName": "Nuvio Budget App",
-        "url": "https://nuviomm.com/",
-        "description": "Nuvio Money Manager - Free iOS budget and expense tracker app for iPhone and iPad",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://nuviomm.com/?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
-    
-    <!-- FAQ Schema for AI Agents -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is Nuvio Money Manager?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Nuvio Money Manager helps you track expenses, set budgets, and manage loans without an app account. Financial records remain on your device. Advertising and subscription providers process limited service data as explained in our Privacy Policy."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is Nuvio Money Manager free?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Nuvio is free to download, with ads in the free experience. Version 2.7 introduces optional Nuvio Pro for receipt scanning and ad removal. Weekly, Monthly, and Yearly plans unlock the same features; see the App Store purchase sheet for your local price and eligibility."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is Nuvio Money Manager private and secure?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Your financial entries are stored on your device. Nuvio does not send them to the developer, AdMob, or RevenueCat. Ads, subscriptions, website analytics, and support process other information described in our Privacy Policy."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What features does Nuvio Money Manager have?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Nuvio Money Manager includes expense tracking with smart categories, budget planning with spending limits and alerts, loan and debt tracking with payment schedules, visual insights into spending patterns, and a native iOS experience built with SwiftUI."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do I need to sign up to use Nuvio Money Manager?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No, you don't need to sign up or create an account to use Nuvio Money Manager. Just download the app, choose your currency and starting balance, and start tracking your money immediately."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What devices does Nuvio Money Manager work on?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Nuvio Money Manager is available for iOS devices including iPhone and iPad. It's built with SwiftUI for optimal performance and follows Apple's Human Interface Guidelines."
-                }
-            }
-        ]
-    }
-    </script>
-    
-    <!-- Organization Schema for AI Agents -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Nuvio Money Manager",
-        "alternateName": "Nuvio",
-        "url": "https://nuviomm.com/",
-        "logo": "https://nuviomm.com/assets/images/AppIconBird.png",
-        "description": "Nuvio Money Manager is a free, privacy-first iOS budget and expense tracker app that helps users track expenses, manage budgets, and achieve financial goals without compromising their privacy.",
-        "sameAs": [
-            "https://apps.apple.com/us/app/nuvio-money-manager/id6753201126"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Customer Support",
-            "url": "https://nuviomm.com/contact.html"
-        }
-    }
-    </script>
-    
+
     <!-- Preconnect to external origins for faster resource loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    
+
     <link rel="stylesheet" href="assets/css/styles.css?v=20251230b">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="assets/fonts/Nunito-Variable.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="assets/css/nuvio-play.css?v=20261018">
+    <link rel="stylesheet" href="assets/css/homepage.css?v=20261018u">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nuviomm.com/#organization",
+      "name": "Nuvio",
+      "url": "https://nuviomm.com/",
+      "logo": "https://nuviomm.com/assets/images/brand/nuvio-wordmark.svg",
+      "sameAs": [
+        "https://apps.apple.com/us/app/nuvio-money-manager/id6753201126"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://nuviomm.com/#website",
+      "url": "https://nuviomm.com/",
+      "name": "Nuvio",
+      "alternateName": "Nuvio Money Manager",
+      "publisher": {
+        "@id": "https://nuviomm.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://nuviomm.com/#webpage",
+      "url": "https://nuviomm.com/",
+      "name": "Nuvio: Expense Tracker & Budget Planner for iPhone",
+      "description": "Track expenses, plan your budget, and build better money habits with Nuvio for iPhone. See where you can save. Free to download, with optional Pro.",
+      "isPartOf": {
+        "@id": "https://nuviomm.com/#website"
+      },
+      "about": {
+        "@id": "https://nuviomm.com/#app"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://nuviomm.com/#app",
+      "name": "Nuvio Money Manager",
+      "url": "https://nuviomm.com/",
+      "downloadUrl": "https://apps.apple.com/us/app/nuvio-money-manager/id6753201126",
+      "operatingSystem": "iOS",
+      "applicationCategory": "FinanceApplication",
+      "description": "Nuvio is an expense tracker and budget planner for iPhone and iPad. Log income and expenses, set category budgets, and track loans while building better money habits.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "url": "https://apps.apple.com/us/app/nuvio-money-manager/id6753201126"
+      },
+      "screenshot": [
+        "https://nuviomm.com/assets/images/app/overview.webp",
+        "https://nuviomm.com/assets/images/app/transactions.webp",
+        "https://nuviomm.com/assets/images/app/budgets.webp",
+        "https://nuviomm.com/assets/images/app/loans.webp"
+      ],
+      "publisher": {
+        "@id": "https://nuviomm.com/#organization"
+      },
+      "featureList": [
+        "Daily expense and income tracking",
+        "Category budget planning",
+        "Loan tracking",
+        "Daily check-in streaks"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://nuviomm.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Nuvio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuvio is an expense tracker and budget planner for iPhone and iPad. Log income and expenses, set category budgets, and track loans while building better money habits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Nuvio free to download?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Nuvio is free to download, and the free experience includes ads. Optional Nuvio Pro adds receipt scanning and ad removal. Check the app for availability and local pricing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to connect my bank or create an account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You enter your own transactions. Choose your currency and starting balance, then start tracking without a bank connection or a Nuvio account."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where are my financial records stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your financial entries are stored on your device. Advertising, subscriptions, website analytics, and support process other information as explained in the Privacy Policy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can Nuvio help me save money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start by logging your expenses so you can see where your money goes. Set category budgets and check what is left before you spend. These small habits can help you find room to save; the amount depends on your income, spending, and choices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I start tracking daily expenses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose your currency and starting balance, then add an expense with an amount and category. Keep logging purchases and review your overview regularly to understand your spending. You enter your transactions yourself, without connecting a bank account."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
 </head>
-<body>
+<body class="site-home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <!-- Header -->
-    <header class="header">
+    <!-- shared:header:start -->
+<header class="header">
         <div class="container">
-            <a href="index.html" class="logo">
-                <img src="assets/images/logo-optimized.png" alt="Nuvio Logo" width="24" height="24">
-                <span>Nuvio</span>
-            </a>
-            
+            <a href="index.html" class="logo"><img src="assets/images/brand/nuvio-wordmark.svg" alt="Nuvio" width="112" height="36"></a>
+
             <!-- Desktop Navigation -->
-            <nav class="nav desktop-nav">
-                <a href="index.html" data-i18n="nav_home">Home</a>
-                <a href="contact.html" data-i18n="nav_contact">Contact</a>
-                <a href="terms.html" data-i18n="nav_terms">Terms of Service</a>
-                <a href="privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
-            </nav>
-            
+            <nav class="nav desktop-nav"><a href="#features"><span data-i18n="landing_features">Explore</span></a><a href="#how-it-works"><span data-i18n="landing_how">How it works</span></a><a href="#questions"><span data-i18n="landing_faq">FAQs</span></a><a href="contact.html" data-i18n="landing_support">Support</a></nav>
+
             <!-- Language Dropdown -->
             <div class="lang-dropdown">
-                <button class="lang-toggle" aria-label="Select language">
-                    <span class="current-lang">🇺🇸 English</span>
+                <button class="lang-toggle" aria-label="Select language" aria-expanded="false">
+                    <span class="current-lang">EN</span>
                     <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
@@ -243,33 +220,31 @@ STATUS: PRODUCTION READY
                     </button>
                 </div>
             </div>
-            
+
             <!-- Download Button -->
-            <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="nav-download-btn" target="_blank" rel="noopener noreferrer" data-i18n="nav_download">
-                Download
+            <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="nav-download-btn" data-download-location="header" target="_blank" rel="noopener noreferrer" data-i18n="landing_start_cta">
+                Start tracking
             </a>
-            
+
             <!-- Mobile Menu Button -->
-            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle mobile menu">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
         </div>
-        
+
         <!-- Mobile Navigation Overlay -->
         <nav class="mobile-nav" id="mobile-nav">
             <div class="mobile-nav-content">
-                <a href="index.html" class="mobile-nav-link" data-i18n="nav_home">Home</a>
-                <a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">Contact</a>
-                <a href="terms.html" class="mobile-nav-link" data-i18n="nav_terms">Terms of Service</a>
-                <a href="privacy.html" class="mobile-nav-link" data-i18n="nav_privacy">Privacy Policy</a>
-                <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="mobile-nav-download" target="_blank" rel="noopener noreferrer" data-i18n="nav_download">Download</a>
-                
+                <a href="#features" class="mobile-nav-link"><span data-i18n="landing_features">Explore</span></a><a href="#how-it-works" class="mobile-nav-link"><span data-i18n="landing_how">How it works</span></a><a href="#questions" class="mobile-nav-link"><span data-i18n="landing_faq">FAQs</span></a>
+                <a href="contact.html" class="mobile-nav-link" data-i18n="landing_support">Support</a>
+                <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="mobile-nav-download" data-download-location="mobile-menu" target="_blank" rel="noopener noreferrer" data-i18n="landing_start_cta">Start tracking</a>
+
                 <!-- Mobile Language Selector -->
                 <div class="mobile-lang-dropdown lang-dropdown">
-                    <button class="mobile-lang-toggle lang-toggle">
-                        <span class="current-lang">🇺🇸 English</span>
+                    <button class="mobile-lang-toggle lang-toggle" aria-label="Select language" aria-expanded="false">
+                        <span class="current-lang">EN</span>
                         <svg class="dropdown-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
@@ -292,257 +267,166 @@ STATUS: PRODUCTION READY
             </div>
         </nav>
     </header>
+<!-- shared:header:end -->
 
     <!-- Main Content -->
-    <main class="main">
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-illustration">
-                <img src="assets/images/App-Assets/Happy-Bird-illustration.svg" alt="Nuvio Happy Bird" class="hero-bird" width="300" height="300" fetchpriority="high">
-            </div>
-            <div class="container">
-                <div class="hero">
-                    <div class="hero-content">
-                        <!-- Badge - shows on both mobile and desktop -->
-                        <div class="hero-badge">
-                            <span data-i18n="hero_badge">Free on the App Store</span>
-                        </div>
-                        
-                        <!-- Desktop version -->
-                        <h1 class="desktop-only" data-i18n="hero_title_desktop">Know Where Every Dollar Goes</h1>
-                        <p class="subtitle desktop-only" data-i18n="hero_subtitle_desktop" data-i18n-html="true">Track expenses, plan budgets, and manage loans without creating an account. <strong>Your financial records stay on your device.</strong> Free tracking includes ads; optional Nuvio Pro is coming in version 2.7.</p>
-                        
-                        <!-- Mobile version - punchy and benefit-focused -->
-                        <h1 class="mobile-only" data-i18n="hero_title_mobile" data-i18n-html="true">Know Where Your<br>Money Goes</h1>
-                        <p class="subtitle mobile-only" data-i18n="hero_subtitle_mobile">Expenses, budgets, and loans in one app. Financial records stay on your device. Free tracking with ads; optional Pro in version 2.7.</p>
-                        
-                        <div class="hero-features mobile-only">
-                            <div class="hero-feature-item">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-                                </svg>
-                                <span data-i18n="hero_feature_private">Local Financial Records</span>
-                            </div>
-                            <div class="hero-feature-item">
-                                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                                <span data-i18n="hero_feature_free">Free Core Tools</span>
-                            </div>
-                        </div>
-                        
-                        <div class="hero-features desktop-only">
-                            <div class="hero-feature-item">
-                                <svg class="hero-feature-icon" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-                                </svg>
-                                <span data-i18n="hero_feature_private">Local Financial Records</span>
-                            </div>
-                            <div class="hero-feature-item">
-                                <svg class="hero-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                                </svg>
-                                <span data-i18n="hero_feature_free">Free Core Tools</span>
-                            </div>
-                            <div class="hero-feature-item">
-                                <svg class="hero-feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                    <polyline points="22 4 12 14.01 9 11.01"/>
-                                </svg>
-                                <span data-i18n="hero_feature_nosignup">No Sign-Up</span>
-                            </div>
-                        </div>
-                        <div class="cta">
-                            <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="btn btn-download" id="app-store-link" target="_blank" rel="noopener noreferrer">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+    <main id="main-content" class="website-main">
+<section class="landing-hero">
+<div class="site-container landing-hero-grid">
+<div class="hero-message">
+<h1 data-i18n="landing_title" data-i18n-html="true">Your money,<br><span>at a glance.</span>
+</h1> <p data-i18n="landing_intro" class="hero-intro">An expense tracker and budget planner for iPhone. See where your money goes, make room to save, and build better money habits one day at a time.</p>
+<div class="hero-action-row"><a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="download-action" data-download-location="hero" target="_blank" rel="noopener noreferrer"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                                </svg>
-                                <span data-i18n="hero_cta_download">Download Free</span>
-                            </a>
-                            <p class="cta-note" data-i18n="hero_cta_note">Free to download. Optional Pro in version 2.7.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                                </svg><span data-i18n="landing_download">Download for iPhone</span></a><a class="text-action" href="#features"><span data-i18n="landing_see">Take a look inside</span><span aria-hidden="true">↗</span></a>
+</div>
+<p data-i18n="landing_free" class="action-note">Free to download.</p>
+<a class="hero-rating" href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" target="_blank" rel="noopener noreferrer" data-i18n-aria="rating_aria" aria-label="Rated 4.8 out of 5 on the App Store"><span class="rating-stars" aria-hidden="true"><span>★★★★★</span><span>★★★★★</span></span><strong>4.8<span aria-hidden="true">/5</span></strong><span data-i18n="rating_label">on the App Store</span><span class="rating-arrow" aria-hidden="true">↗</span></a>
+</div>
+<figure class="hero-product">
+<svg class="hero-scene-lines" viewBox="0 0 640 690" fill="none" aria-hidden="true"><path d="M105 145c-28 18-43 45-38 77M547 440c30 19 43 48 28 76" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 8"/><path d="m61 213 6 12 10-10m488 292 10 11 10-12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<div class="hero-prop prop-wallet" aria-hidden="true"><img src="assets/images/brand/hero-wallet.png" alt="" width="108" height="108"></div>
+<div class="hero-prop prop-budget" aria-hidden="true"><img src="assets/images/brand/hero-budget.png" alt="" width="108" height="108"></div>
+<div class="hero-prop prop-receipt" aria-hidden="true"><svg viewBox="0 0 88 110" fill="none"><path d="M14 8h60v92l-10-6-10 6-10-6-10 6-10-6-10 6V8Z" fill="#CECECE"/><path d="M14 3h60v92l-10-6-10 6-10-6-10 6-10-6-10 6V3Z" fill="white" stroke="#E5E5E5" stroke-width="2" stroke-linejoin="round"/><rect x="26" y="18" width="36" height="24" rx="7" fill="#1C7BFF"/><path d="m37 30 5 5 10-11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 55h34M27 65h34M27 75h20" stroke="#CECECE" stroke-width="4" stroke-linecap="round"/></svg></div>
+<svg class="hero-prop prop-coin" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="35" r="26" fill="#E5B400"/><circle cx="32" cy="30" r="26" fill="#FFC800"/><circle cx="32" cy="30" r="19" fill="none" stroke="#FF9600" stroke-width="2"/><path d="m32 17 4 9 10 1-8 7 2 10-8-5-8 5 2-10-8-7 10-1Z" fill="white"/></svg>
+<svg class="hero-spark" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 3 35 23 56 30 35 36 30 57 24 36 3 30 24 23Z" fill="currentColor"/></svg>
+<div class="hero-device"><span class="device-button device-button-left" aria-hidden="true"></span><span class="device-button device-button-right" aria-hidden="true"></span><div class="device-display"><img class="" data-app-screen="overview" src="assets/images/app/overview.webp" alt="Nuvio overview screen showing sample financial data" width="660" height="1434" fetchpriority="high" decoding="async"><span class="device-island" aria-hidden="true"></span></div>
+</div>
+<img class="hero-bird" src="assets/images/brand/mascot-wave.png" alt="" width="300" height="300" fetchpriority="high">
+<div class="hero-speech"><span data-i18n="landing_hello" data-i18n-html="true">One small step.<br>You’ve got this.</span>
+</div>
+</figure>
+</div>
+</section>
+<section class="product-section" id="features">
+<div class="site-container">
+<div class="landing-section-heading feature-introduction"><h2 data-i18n="insights_intro_title" data-i18n-html="true">Small habits.<br>More money for you.</h2><p data-i18n="insights_intro_body" class="feature-intro-copy">Track daily expenses, plan monthly budgets, and see what is left to spend. Small check-ins help you make more room for saving.</p></div>
+<div class="feature-controls"><div class="product-tabs" role="tablist" aria-label="Explore Nuvio features">
+<button type="button" role="tab" id="tab-insights" aria-controls="panel-insights" aria-selected="true" tabindex="0"><span data-i18n="insights_tab">Save more</span></button>
+<button type="button" role="tab" id="tab-expenses" aria-controls="panel-expenses" aria-selected="false" tabindex="-1"><span data-i18n="landing_expenses">Track spending</span>
+</button>
+<button type="button" role="tab" id="tab-budgets" aria-controls="panel-budgets" aria-selected="false" tabindex="-1"><span data-i18n="landing_budgets">Plan a budget</span>
+</button>
+<button type="button" role="tab" id="tab-loans" aria-controls="panel-loans" aria-selected="false" tabindex="-1"><span data-i18n="landing_loans">Reduce debt</span>
+</button>
+</div></div>
+<div class="feature-deck">
+<div class="feature-panel insights" id="panel-insights" role="tabpanel" aria-labelledby="tab-insights" tabindex="0"><div class="feature-story"><span class="feature-number" aria-hidden="true">01</span><h3 data-i18n="insights_story_title" data-i18n-html="true">A little today.<br>More for tomorrow.</h3><p data-i18n="insights_story_body">Saving starts with the choices you make every day. See what you can spend, give your money a plan, and build a habit worth keeping.</p><ul class="feature-points"><li><span data-i18n="insights_point1">Know what is left before you spend</span></li><li><span data-i18n="insights_point2">Build consistency, one entry at a time</span></li></ul><a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="download-action" data-download-location="insights" target="_blank" rel="noopener noreferrer"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                                </svg><span data-i18n="landing_download">Download for iPhone</span></a></div><figure class="benefit-scene scene-save"><span class="scene-index" aria-hidden="true">01</span><img class="scene-art" src="assets/images/brand/savings-jar.png" alt="" width="300" height="300"><div class="scene-detail"><div class="daily-balance"><span data-i18n="visual_daily">Left to spend today</span><strong data-demo-money="85.66">$85.66</strong><div class="daily-status"><span aria-hidden="true">✓</span><span data-i18n="visual_track">On track</span></div></div><div class="scene-companion"><img src="assets/images/brand/mascot-thumbs-up.png" alt="" width="56" height="56"><span data-i18n="habit_small">Small steps.</span></div></div><div class="scene-note"><span aria-hidden="true">✓</span><span data-i18n="habit_big">More set aside.</span></div><span class="scene-sample" data-i18n="insights_sample">Sample data</span></figure></div>
+<div class="feature-panel expenses" id="panel-expenses" hidden role="tabpanel" aria-labelledby="tab-expenses" tabindex="0">
+<div class="feature-story"><span class="feature-number" aria-hidden="true">02</span>
+<h3 data-i18n="landing_expense_title" data-i18n-html="true">Small spends.<br>A clearer picture.</h3>
+<p data-i18n="landing_expense_body">Use your daily expense tracker to log everything from coffee to monthly bills. Keep income and spending together, then find transactions by category or search.</p>
+<ul class="feature-points">
+<li><span data-i18n="landing_expense_point1">Keep spending organized by category</span>
+</li>
+<li><span data-i18n="landing_expense_point2">Search and filter your transactions</span>
+</li>
+</ul><a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="download-action" data-download-location="expenses" target="_blank" rel="noopener noreferrer"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                                </svg><span data-i18n="landing_download">Download for iPhone</span></a>
+</div>
+<figure class="benefit-scene scene-spend"><span class="scene-index" aria-hidden="true">02</span><img class="scene-art" src="assets/images/brand/hero-wallet.png" alt="" width="300" height="300"><div class="scene-detail"><div class="detail-heading"><span data-i18n="landing_expenses">Track spending</span><span class="detail-plus" aria-hidden="true">+</span></div><div class="demo-entry"><i aria-hidden="true">↗</i><span data-i18n="visual_coffee">Coffee</span><strong data-demo-money="4.5">$4.50</strong></div><div class="demo-entry"><i aria-hidden="true">✓</i><span data-i18n="visual_savings">Moved to savings</span><strong data-demo-money="200">$200.00</strong></div><div class="demo-entry"><i aria-hidden="true">⌂</i><span data-i18n="visual_groceries">Groceries</span><strong data-demo-money="42.8">$42.80</strong></div></div><div class="scene-note"><span aria-hidden="true">✓</span><span data-i18n="habit_notice">Notice the little things.</span></div><span class="scene-sample" data-i18n="insights_sample">Sample data</span></figure>
+</div>
+<div class="feature-panel budgets" id="panel-budgets" role="tabpanel" aria-labelledby="tab-budgets" tabindex="0" hidden>
+<div class="feature-story"><span class="feature-number" aria-hidden="true">03</span>
+<h3 data-i18n="landing_budget_title" data-i18n-html="true">Spend with a plan.<br>Save with intention.</h3>
+<p data-i18n="landing_budget_body">Build a monthly budget around the things that matter to you. Set spending limits by category, check your remaining budget, and spot where you could save.</p>
+<ul class="feature-points">
+<li><span data-i18n="landing_budget_point1">See allocated, spent, and remaining amounts</span>
+</li>
+<li><span data-i18n="landing_budget_point2">Keep your categories in one clear view</span>
+</li>
+</ul><a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="download-action" data-download-location="budgets" target="_blank" rel="noopener noreferrer"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                                </svg><span data-i18n="landing_download">Download for iPhone</span></a>
+</div>
+<figure class="benefit-scene scene-budget"><span class="scene-index" aria-hidden="true">03</span><img class="scene-art" src="assets/images/brand/savings-jar.png" alt="" width="300" height="300"><div class="scene-detail"><div class="detail-heading"><span data-i18n="landing_budgets">Plan a budget</span></div><div class="budget-left"><span data-i18n="visual_remaining">Remaining in budgets</span><strong data-demo-money="1514.43">$1,514.43</strong></div><div class="budget-allocation"><div><span data-i18n="visual_spent">Spent</span><strong data-demo-money="2845.57">$2,845.57</strong></div><div><span data-i18n="visual_allocated">Allocated</span><strong data-demo-money="4360">$4,360.00</strong></div></div><div class="native-progress"><span style="--progress:.65"></span></div></div><div class="scene-note"><span aria-hidden="true">✓</span><span data-i18n="habit_room">Make room for saving.</span></div><span class="scene-sample" data-i18n="insights_sample">Sample data</span></figure>
+</div>
+<div class="feature-panel loans" id="panel-loans" role="tabpanel" aria-labelledby="tab-loans" tabindex="0" hidden>
+<div class="feature-story"><span class="feature-number" aria-hidden="true">04</span>
+<h3 data-i18n="landing_loan_title" data-i18n-html="true">A little less debt.<br>A little more freedom.</h3>
+<p data-i18n="landing_loan_body">Keep track of money you owe and money owed to you. See your loans and payment details alongside the rest of your finances.</p>
+<ul class="feature-points">
+<li><span data-i18n="landing_loan_point1">Track borrowed and lent money</span>
+</li>
+<li><span data-i18n="landing_loan_point2">Keep payment details close at hand</span>
+</li>
+</ul><a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="download-action" data-download-location="loans" target="_blank" rel="noopener noreferrer"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                                </svg><span data-i18n="landing_download">Download for iPhone</span></a>
+</div>
+<figure class="benefit-scene scene-debt"><span class="scene-index" aria-hidden="true">04</span><img class="scene-art" src="assets/images/brand/loans-art.png" alt="" width="300" height="300"><div class="scene-detail"><div class="detail-heading"><i class="credit-icon" aria-hidden="true">▰</i><span data-i18n="visual_credit">Credit card</span></div><div class="budget-left"><span data-i18n="visual_remaining_debt">Remaining balance</span><strong data-demo-money="2480">$2,480.00</strong></div><div class="native-progress"><span style="--progress:.6"></span></div><div class="payment-done"><span aria-hidden="true">✓</span><span data-i18n="visual_paid">60% paid off</span></div></div><div class="scene-note"><span aria-hidden="true">✓</span><span data-i18n="habit_forward">Every payment is progress.</span></div><span class="scene-sample" data-i18n="insights_sample">Sample data</span></figure>
+</div>
+</div>
+<div class="story-playback"><span class="story-count" aria-hidden="true">01 <span>/ 04</span></span><div class="story-timer" aria-hidden="true"><span></span></div><button type="button" class="rotation-toggle" aria-pressed="false"><span class="rotation-icon" aria-hidden="true">Ⅱ</span><span data-i18n="habit_pause">Pause</span></button></div>
+</div>
+</section>
+<section class="momentum-section"><div class="site-container momentum-layout"><div class="momentum-copy"><h2 data-i18n="momentum_title" data-i18n-html="true">Small wins.<br>Worth coming back for.</h2><p data-i18n="momentum_body">Make expense tracking a daily habit. A quick check-in helps you notice your spending, build your streak, and keep working toward better money habits.</p><a class="text-action" href="#how-it-works"><span data-i18n="momentum_link">Take your first step</span><span aria-hidden="true">↗</span></a></div><div class="momentum-scene"><svg class="momentum-trail" viewBox="0 0 600 420" fill="none" aria-hidden="true"><path d="M30 300C50 130 440 10 540 130C620 230 440 340 260 350" stroke="#FFD38A" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 12"/></svg><img src="assets/images/brand/mascot-celebrate.png" class="momentum-bird" alt="" width="180" height="180" loading="lazy"><span class="momentum-spark spark-one" aria-hidden="true">✦</span><span class="momentum-spark spark-two" aria-hidden="true">✦</span><div class="streak-preview"><div class="streak-heading"><span class="streak-flame" aria-hidden="true"><i class="app-flame" aria-hidden="true"></i></span><div><strong data-i18n="momentum_streak">17 day streak</strong><span data-i18n="momentum_little">One entry at a time.</span></div></div><div class="streak-week" aria-hidden="true"><div class="streak-day" style="--day:0"><i class="app-flame" aria-hidden="true"></i><span aria-hidden="true">✓</span></div><div class="streak-day" style="--day:1"><i class="app-flame" aria-hidden="true"></i><span aria-hidden="true">✓</span></div><div class="streak-day" style="--day:2"><i class="app-flame" aria-hidden="true"></i><span aria-hidden="true">✓</span></div><div class="streak-day" style="--day:3"><i class="app-flame" aria-hidden="true"></i><span aria-hidden="true">✓</span></div><div class="streak-day" style="--day:4"><i class="app-flame" aria-hidden="true"></i><span aria-hidden="true">✓</span></div><div class="streak-day" style="--day:5"><i class="app-flame" aria-hidden="true"></i><span aria-hidden="true">✓</span></div><div class="streak-day" style="--day:6"><i class="app-flame" aria-hidden="true"></i><span aria-hidden="true">✓</span></div></div><div class="streak-caption"><span data-i18n="momentum_nice">You showed up. Nice.</span><span class="streak-check" aria-hidden="true">✓</span></div></div><span class="momentum-sample" data-i18n="insights_sample">Sample data</span></div></div></section>
+<section class="getting-started" id="how-it-works">
+<div class="site-container start-layout">
+<div class="start-heading">
+<h2 data-i18n="landing_start_title" data-i18n-html="true">Your first step?<br>Just one entry.</h2><p data-i18n="lower_start_intro">You don’t need to change everything at once. Start with one entry and build from there.</p><img src="assets/images/brand/mascot-coin.png" alt="" width="180" height="180" loading="lazy">
+</div>
+<ol class="setup-steps">
+<li><span class="step-number" aria-hidden="true">01</span><div class="step-copy"><h3 data-i18n="landing_step1_title">Make it yours</h3>
+<p data-i18n="landing_step1_body">Choose your currency and starting balance. No bank login required.</p></div>
+<div class="step-preview currency-preview" aria-hidden="true"><span>USD</span><strong>$</strong><i>⌄</i></div></li>
+<li><span class="step-number" aria-hidden="true">02</span><div class="step-copy"><h3 data-i18n="landing_step2_title">Add an expense</h3>
+<p data-i18n="landing_step2_body">Pick a category, enter the amount, and save. You are on your way.</p></div>
+<div class="step-preview entry-preview" aria-hidden="true"><span>+</span><strong data-demo-money="4.5">$4.50</strong><i>✓</i></div></li>
+<li><span class="step-number" aria-hidden="true">03</span><div class="step-copy"><h3 data-i18n="landing_step3_title">Find your rhythm</h3>
+<p data-i18n="landing_step3_body">Check your overview and adjust your budgets as life happens.</p></div>
+<div class="step-preview habit-preview" aria-hidden="true"><span>✓</span><span>✓</span><span>✓</span><span>★</span></div></li>
+</ol>
+</div>
+</section>
+<section class="questions-section" id="questions">
+<div class="site-container questions-layout">
+<div>
+<p class="landing-eyebrow">FAQ</p><img class="faq-companion" src="assets/images/brand/mascot-receipt.png" alt="" width="130" height="130" loading="lazy">
+<h2 data-i18n="landing_faq_title">A few things you might be wondering.</h2><a class="text-action" href="contact.html"><span data-i18n="landing_support">Support</span><span aria-hidden="true">↗</span></a>
+</div>
+<div class="question-list">
+<details>
+<summary><span data-i18n="landing_q1">What is Nuvio?</span><span aria-hidden="true">+</span>
+</summary>
+<p data-i18n="landing_a1">Nuvio is an expense tracker and budget planner for iPhone and iPad. Log income and expenses, set category budgets, and track loans while building better money habits.</p>
+</details>
+<details>
+<summary><span data-i18n="landing_q2">Is Nuvio free to download?</span><span aria-hidden="true">+</span>
+</summary>
+<p data-i18n="landing_a2">Yes. Nuvio is free to download, and the free experience includes ads. Optional Nuvio Pro adds receipt scanning and ad removal. Check the app for availability and local pricing.</p>
+</details>
+<details>
+<summary><span data-i18n="landing_q3">Do I need to connect my bank or create an account?</span><span aria-hidden="true">+</span>
+</summary>
+<p data-i18n="landing_a3">No. You enter your own transactions. Choose your currency and starting balance, then start tracking without a bank connection or a Nuvio account.</p>
+</details>
+<details>
+<summary><span data-i18n="landing_q4">Where are my financial records stored?</span><span aria-hidden="true">+</span>
+</summary>
+<p data-i18n="landing_a4">Your financial entries are stored on your device. Advertising, subscriptions, website analytics, and support process other information as explained in the Privacy Policy.</p>
+</details>
+<details><summary><span data-i18n="landing_q5">How can Nuvio help me save money?</span><span aria-hidden="true">+</span></summary><p data-i18n="landing_a5">Start by logging your expenses so you can see where your money goes. Set category budgets and check what is left before you spend. These small habits can help you find room to save; the amount depends on your income, spending, and choices.</p></details>
+<details><summary><span data-i18n="landing_q6">How do I start tracking daily expenses?</span><span aria-hidden="true">+</span></summary><p data-i18n="landing_a6">Choose your currency and starting balance, then add an expense with an amount and category. Keep logging purchases and review your overview regularly to understand your spending. You enter your transactions yourself, without connecting a bank account.</p></details>
+</div>
+</div>
+</section>
 
-        <!-- How It Works Section -->
-        <section class="how-it-works-section">
-            <div class="container">
-                <h2 data-i18n="how_title">Up and Running in 3 Steps</h2>
-                <div class="how-it-works-grid">
-                    <div class="how-it-works-item">
-                        <div class="how-it-works-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                <polyline points="7 10 12 15 17 10"></polyline>
-                                <line x1="12" y1="15" x2="12" y2="3"></line>
-                            </svg>
-                        </div>
-                        <h3 data-i18n="how_step1_title">1. Download</h3>
-                        <p data-i18n="how_step1_desc">Download free from the App Store. No app account or bank connection needed.</p>
-                    </div>
-                    <div class="how-it-works-item">
-                        <div class="how-it-works-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="12" y1="1" x2="12" y2="23"></line>
-                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                            </svg>
-                        </div>
-                        <h3 data-i18n="how_step2_title">2. Add Expenses</h3>
-                        <p data-i18n="how_step2_desc">Log purchases in seconds. Smart categories do the heavy lifting.</p>
-                    </div>
-                    <div class="how-it-works-item">
-                        <div class="how-it-works-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 11l3 3L22 4"></path>
-                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-                            </svg>
-                        </div>
-                        <h3 data-i18n="how_step3_title">3. See Results</h3>
-                        <p data-i18n="how_step3_desc">Watch your spending habits transform. Budgets that actually stick.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-            
-        <!-- Features Section -->
-        <section class="features">
-            <div class="container">
-                <h2 data-i18n="features_title">Built for People Who Value Privacy</h2>
-                <p class="features-subtitle" data-i18n="features_subtitle">Everyday money tools. Financial records stored on your device.</p>
-                <div class="features-grid">
-                    <div class="feature feature-card feature-with-illustration">
-                        <div class="feature-illustration">
-                            <img src="assets/images/your-money-right-illustration.svg" alt="Track expenses" class="feature-img" width="200" height="150" loading="lazy">
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-icon feature-icon-blue">
-                                <svg viewBox="0 0 24 24" fill="white">
-                                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
-                                </svg>
-                            </div>
-                            <h3 data-i18n="feature_expense_title">Expense Tracking</h3>
-                            <p data-i18n="feature_expense_desc">Log purchases in seconds. Smart categories organize everything automatically.</p>
-                        </div>
-                    </div>
-                    <div class="feature feature-card feature-with-illustration">
-                        <div class="feature-illustration">
-                            <img src="assets/images/stay-on-track-illustration.svg" alt="Budget planning" class="feature-img" width="200" height="150" loading="lazy">
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-icon feature-icon-orange">
-                                <svg viewBox="0 0 24 24" fill="white">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
-                                </svg>
-                            </div>
-                            <h3 data-i18n="feature_budget_title">Smart Budgets</h3>
-                            <p data-i18n="feature_budget_desc">Set limits. Get alerts before you overspend. Finally stick to a budget.</p>
-                        </div>
-                    </div>
-                    <div class="feature feature-card feature-with-illustration">
-                        <div class="feature-illustration">
-                            <img src="assets/images/starting-balance-illustration.svg" alt="Loan tracking" class="feature-img" width="200" height="150" loading="lazy">
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-icon feature-icon-pink">
-                                <svg viewBox="0 0 24 24" fill="white">
-                                    <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
-                                </svg>
-                            </div>
-                            <h3 data-i18n="feature_loan_title">Loan Tracker</h3>
-                            <p data-i18n="feature_loan_desc">See your debt-free date. Track every payment. Know exactly where you stand.</p>
-                        </div>
-                    </div>
-                    <div class="feature feature-card feature-with-illustration">
-                        <div class="feature-illustration">
-                            <img src="assets/images/youre-all-set-illustration.svg" alt="Privacy and security" class="feature-img" width="200" height="150" loading="lazy">
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-icon feature-icon-green">
-                                <svg viewBox="0 0 24 24" fill="white">
-                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
-                                </svg>
-                            </div>
-                            <h3 data-i18n="feature_privacy_title">Local Financial Records</h3>
-                            <p data-i18n="feature_privacy_desc">Your entries stay on your device. Advertising and subscription services process limited service data. Read our Privacy Policy.</p>
-                        </div>
-                    </div>
-                    <div class="feature feature-card feature-with-illustration">
-                        <div class="feature-illustration">
-                            <img src="assets/images/choose-your-language-illustration.svg" alt="iOS experience" class="feature-img" width="200" height="150" loading="lazy">
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-icon feature-icon-blue">
-                                <svg viewBox="0 0 24 24" fill="white" preserveAspectRatio="xMidYMid meet">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                </svg>
-                            </div>
-                            <h3 data-i18n="feature_native_title">Native iOS</h3>
-                            <p data-i18n="feature_native_desc">Built with SwiftUI. Fast, smooth, and feels like it belongs on your device.</p>
-                        </div>
-                    </div>
-                    <div class="feature feature-card feature-with-illustration">
-                        <div class="feature-illustration">
-                            <img src="assets/images/choose-your-currency-illustration.svg" alt="Free core tools and optional Pro" class="feature-img" width="200" height="150" loading="lazy">
-                        </div>
-                        <div class="feature-content">
-                            <div class="feature-icon feature-icon-orange">
-                                <svg viewBox="0 0 24 24" fill="white">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                                </svg>
-                            </div>
-                            <h3 data-i18n="feature_free_title">Free Tools, Optional Pro</h3>
-                            <p data-i18n="feature_free_desc">Free tracking includes ads. Version 2.7 adds optional Pro for receipt scanning and an ad-free experience. All three plans unlock the same features.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+</main>
 
-        <!-- Final CTA Section -->
-        <section class="final-cta-section">
-            <div class="container">
-                <div class="final-cta">
-                    <h2 data-i18n="final_cta_title">Start Tracking in 30 Seconds</h2>
-                    <p data-i18n="final_cta_subtitle">No account. No setup. Just download and go.</p>
-                    <a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="btn btn-large" target="_blank" rel="noopener noreferrer">
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                        </svg>
-                        <span data-i18n="final_cta_button">Download Free</span>
-                    </a>
-                    <p class="final-cta-note" data-i18n="final_cta_note">No app account needed. Free tools with ads; optional Pro in version 2.7.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- shared:footer:start -->
+<section class="last-download"><div class="site-container closing-message"><h2 data-i18n="landing_final_title" data-i18n-html="true">Start small.<br>Keep more.</h2><p data-i18n="landing_final_body">Better money habits start with one little step.</p><a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" class="download-action" data-download-location="footer" target="_blank" rel="noopener noreferrer"><svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                                </svg><span data-i18n="landing_download">Download for iPhone</span></a><p data-i18n="landing_free" class="action-note">Free to download.</p></div><div class="closing-scene" aria-hidden="true"><svg class="closing-transition" viewBox="0 0 1440 180" preserveAspectRatio="none"><path d="M0 25C190 25 215 110 410 120C590 130 560 178 720 178C890 178 865 130 1040 120C1240 110 1250 25 1440 25V180H0Z" fill="#1659CC"/></svg><div class="closing-art"><img class="closing-wallet" src="assets/images/brand/hero-wallet.png" alt="" width="150" height="150" loading="lazy"><img class="closing-bird" src="assets/images/brand/mascot-coin.png" alt="" width="270" height="270" loading="lazy"><img class="closing-jar" src="assets/images/brand/savings-jar.png" alt="" width="165" height="165" loading="lazy"><span class="closing-star star-left">✦</span><span class="closing-star star-right">✦</span><span class="closing-coin coin-left"></span><span class="closing-coin coin-right"></span></div></div></section>
+<footer class="nuvio-footer"><div class="site-container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" aria-label="Nuvio home"><img src="assets/images/brand/nuvio-wordmark.svg" alt="Nuvio" width="130" height="42"></a><p data-i18n="lower_footer_intro">Small steps. Better money habits.</p></div><nav class="footer-group" aria-label="Explore"><h3 data-i18n="lower_explore">Explore</h3><a href="#features" data-i18n="landing_features">Explore</a><a href="#how-it-works" data-i18n="landing_how">How it works</a><a href="https://apps.apple.com/us/app/nuvio-money-manager/id6753201126" target="_blank" rel="noopener noreferrer" data-download-location="footer-links" data-i18n="landing_download">Download for iPhone</a></nav><nav class="footer-group" aria-label="Help"><h3 data-i18n="lower_help">Here to help</h3><a href="#questions" data-i18n="landing_faq">FAQs</a><a href="contact.html" data-i18n="landing_support">Support</a><a href="https://buymeacoffee.com/nuvio" target="_blank" rel="noopener noreferrer" data-i18n="lower_support_project">Support the project</a></nav><nav class="footer-group" aria-label="Legal"><h3 data-i18n="lower_legal">The details</h3><a href="privacy.html" data-i18n="nav_privacy">Privacy Policy</a><a href="terms.html" data-i18n="nav_terms">Terms of Service</a></nav></div><div class="footer-languages"><h3 data-i18n="lower_language">Site language</h3><div class="footer-language-options"><button type="button" data-footer-lang="auto" aria-pressed="true">Automatic</button><button type="button" data-footer-lang="en" aria-pressed="false">English</button><button type="button" data-footer-lang="de-DE" aria-pressed="false">Deutsch</button><button type="button" data-footer-lang="es-ES" aria-pressed="false">Español</button><button type="button" data-footer-lang="ja-JP" aria-pressed="false">日本語</button><button type="button" data-footer-lang="ko-KR" aria-pressed="false">한국어</button><button type="button" data-footer-lang="zh-CN" aria-pressed="false">简体中文</button><button type="button" data-footer-lang="zh-TW" aria-pressed="false">繁體中文</button></div></div><div class="footer-bottom"><p data-i18n="footer_copyright">© 2026 Nuvio. All rights reserved.</p><span data-i18n="lower_ios">Made for iPhone and iPad.</span></div></div></footer>
+<!-- shared:footer:end -->
 
-    <!-- Footer -->
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-links">
-                        <a href="index.html" data-i18n="nav_home">Home</a>
-                        <a href="contact.html" data-i18n="nav_contact">Contact</a>
-                        <a href="terms.html" data-i18n="nav_terms">Terms of Service</a>
-                        <a href="privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
-                    </div>
-                    <p data-i18n="footer_copyright">© 2026 Nuvio. All rights reserved.</p>
-                </div>
-                <div class="footer-support">
-                    <a href="https://buymeacoffee.com/nuvio" target="_blank" rel="noopener" class="support-btn-image">
-                        <img src="assets/images/bmc-button yallow.svg" alt="Buy me a coffee" class="bmc-button" width="150" height="42">
-                    </a>
-                    <p data-i18n="footer_support">Support Nuvio Development</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/translations.js?v=20261017b"></script>
-    <script src="assets/js/i18n.js?v=20251230d"></script>
-    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/translations.js?v=20261018attach2"></script>
+    <script src="assets/js/home-locales.js?v=20261018attach2"></script>
+    <script src="assets/js/i18n.js?v=20261018u"></script>
+    <script src="assets/js/script.js?v=20261018v" defer></script>
 </body>
 </html>

@@ -1,0 +1,1010 @@
+/** Homepage languages mirror AppLanguage in the native app. */
+Object.assign(languageNames, {
+    'de-DE': { name: 'Deutsch' },
+    'es-ES': { name: 'Español' },
+    'ja-JP': { name: '日本語' },
+    'ko-KR': { name: '한국어' }
+});
+Object.assign(translations, {
+    'de-DE': {
+        "rating_label": "im App Store",
+        "insights_intro_title": "Sieh, wohin es geht.<br>Plane den nächsten Schritt.",
+        "insights_intro_body": "Deine täglichen Einträge ergeben ein Gesamtbild. Sieh Einnahmen, Ausgaben, Budgets und Darlehen zusammen und entscheide, was wichtig ist.",
+        "insights_tab": "Einblicke",
+        "insights_story_title": "Zahlen, die du<br>einordnen kannst.",
+        "insights_story_body": "Vergleiche Einnahmen und Ausgaben. Wechsle zwischen Balken- und Ringdiagramm und finde die passende Ansicht.",
+        "insights_point1": "Einnahmen, Ausgaben und Saldo an einem Ort",
+        "insights_point2": "Klare Diagramme aus deinen Einträgen",
+        "insights_title": "Finanzübersicht",
+        "insights_sample": "Beispieldaten",
+        "insights_bars": "Balken",
+        "insights_donut": "Ring",
+        "insights_income": "Einnahmen",
+        "insights_expenses": "Ausgaben",
+        "insights_net": "Saldo",
+        "insights_chart_title": "Einnahmen und Ausgaben",
+        "insights_try": "Probiere die Ansichten aus",
+        "insights_chart_aria": "Diagramm mit Beispieleinnahmen von 5299,57 US-Dollar und Ausgaben von 3260,83 US-Dollar.",
+        "rating_aria": "Bewertung 4,8 von 5 im App Store",
+
+        landing_features: 'Entdecken', landing_how: 'So geht’s', landing_faq: 'FAQ', landing_support: 'Hilfe', landing_start_cta: 'Jetzt loslegen',
+        landing_title: 'Dein Geld,<br><span>im Blick.</span>',
+        landing_intro: 'Erfasse Ausgaben, plane Budgets und behalte Darlehen im Blick. Mehr Überblick über dein Geld und ein bisschen Ermutigung auf dem Weg.',
+        landing_download: 'Für iPhone laden', landing_see: 'Ein Blick in die App', landing_free: 'Kostenlos laden.',
+        landing_hello: 'Ein kleiner Schritt.<br>Du schaffst das.',
+        landing_section_label: 'Dein Begleiter für die täglichen Finanzen',
+        landing_section_title: 'Weniger Rätsel.<br>Ein besseres Gefühl.',
+        landing_expenses: 'Ausgaben', landing_budgets: 'Budgets', landing_loans: 'Darlehen',
+        landing_expense_title: 'Kleine Beträge.<br>Das ganze Bild.',
+        landing_expense_body: 'Vom Kaffee am Morgen bis zu den monatlichen Rechnungen: Behalte Einnahmen und Ausgaben zusammen. Finde einen Eintrag, ohne eine Tabelle durchsuchen zu müssen.',
+        landing_expense_point1: 'Ausgaben nach Kategorien ordnen', landing_expense_point2: 'Buchungen suchen und filtern',
+        landing_budget_title: 'Etwas Spielraum<br>für das Wichtige.',
+        landing_budget_body: 'Gib deinen täglichen Ausgaben einen Plan. Lege Budgets pro Kategorie fest und sieh, was ausgegeben wurde, was übrig ist und wo du anpassen möchtest.',
+        landing_budget_point1: 'Geplante, ausgegebene und übrige Beträge sehen', landing_budget_point2: 'Alle Kategorien übersichtlich an einem Ort',
+        landing_loan_title: 'Die nächste Rate<br>im Blick behalten.',
+        landing_loan_body: 'Behalte geliehenes und verliehenes Geld im Blick. Sieh deine Darlehen und Zahlungsdetails zusammen mit deinen übrigen Finanzen.',
+        landing_loan_point1: 'Geliehenes und verliehenes Geld erfassen', landing_loan_point2: 'Zahlungsdetails jederzeit griffbereit',
+        landing_privacy_title: 'Dein Geld ist persönlich.<br>Das soll so bleiben.',
+        landing_privacy_body: 'Deine Finanzeinträge bleiben auf deinem Gerät. Du brauchst weder ein Nuvio-Konto noch eine Bankverbindung, um loszulegen.',
+        landing_privacy_link: 'So geht Nuvio mit deinen Daten um',
+        landing_privacy_note: 'Für Werbung, Abonnements und Support gelten eigene Datenpraktiken. Einzelheiten findest du in der Datenschutzerklärung.',
+        landing_start_title: 'Dein erster Schritt?<br>Ein einziger Eintrag.',
+        landing_step1_title: 'Richte es für dich ein', landing_step1_body: 'Wähle deine Währung und deinen Anfangssaldo. Keine Bankanmeldung nötig.',
+        landing_step2_title: 'Erfasse eine Ausgabe', landing_step2_body: 'Wähle eine Kategorie, gib den Betrag ein und speichere. Schon geht es los.',
+        landing_step3_title: 'Finde deinen Rhythmus', landing_step3_body: 'Prüfe deine Übersicht und passe deine Budgets an deinen Alltag an.',
+        landing_faq_title: 'Vielleicht fragst du dich noch …',
+        landing_q1: 'Was ist Nuvio?', landing_a1: 'Nuvio ist ein Geldmanager für iPhone und iPad. Erfasse Ausgaben und Einnahmen, plane Budgets pro Kategorie und behalte Darlehen in einer App im Blick.',
+        landing_q2: 'Kann ich Nuvio kostenlos laden?', landing_a2: 'Ja. Nuvio ist kostenlos erhältlich und die kostenlose Nutzung enthält Werbung. Das optionale Nuvio Pro bietet Belegscans und entfernt Werbung. Verfügbarkeit und lokale Preise findest du in der App.',
+        landing_q3: 'Brauche ich eine Bankverbindung oder ein Konto?', landing_a3: 'Nein. Du gibst deine Buchungen selbst ein. Wähle Währung und Anfangssaldo und beginne ohne Bankverbindung oder Nuvio-Konto.',
+        landing_q4: 'Wo werden meine Finanzeinträge gespeichert?', landing_a4: 'Deine Finanzeinträge werden auf deinem Gerät gespeichert. Werbung, Abonnements, Website-Analyse und Support verarbeiten weitere Informationen, wie in der Datenschutzerklärung beschrieben.',
+        landing_final_title: 'Gut mit Geld umgehen<br>beginnt mit Überblick.', landing_final_body: 'Etwas mehr Klarheit. Etwas mehr: Du schaffst das.',
+        nav_home: 'Startseite', nav_contact: 'Kontakt', nav_terms: 'Nutzungsbedingungen', nav_privacy: 'Datenschutz', nav_download: 'Laden',
+        footer_copyright: '© 2026 Nuvio. Alle Rechte vorbehalten.', footer_support: 'Unterstütze die Entwicklung von Nuvio'
+    },
+    'es-ES': {
+        "rating_label": "en el App Store",
+        "insights_intro_title": "Mira adónde va.<br>Decide tu próximo paso.",
+        "insights_intro_body": "Tus registros diarios cuentan una historia más amplia. Revisa ingresos, gastos, presupuestos y préstamos y decide en qué centrarte.",
+        "insights_tab": "Análisis",
+        "insights_story_title": "Tus números,<br>con más contexto.",
+        "insights_story_body": "Compara lo que entra con lo que sale. Cambia entre barras y anillo para encontrar la vista que mejor entiendas.",
+        "insights_point1": "Ingresos, gastos y saldo en un solo lugar",
+        "insights_point2": "Gráficos claros a partir de tus registros",
+        "insights_title": "Análisis financiero",
+        "insights_sample": "Datos de ejemplo",
+        "insights_bars": "Barras",
+        "insights_donut": "Anillo",
+        "insights_income": "Ingresos",
+        "insights_expenses": "Gastos",
+        "insights_net": "Saldo",
+        "insights_chart_title": "Ingresos y gastos",
+        "insights_try": "Prueba las vistas del gráfico",
+        "insights_chart_aria": "Gráfico con ingresos de ejemplo de 5299,57 dólares y gastos de 3260,83 dólares.",
+        "rating_aria": "Valoración de 4,8 sobre 5 en el App Store",
+
+        landing_features: 'Explorar', landing_how: 'Cómo funciona', landing_faq: 'Preguntas', landing_support: 'Ayuda', landing_start_cta: 'Empieza a registrar',
+        landing_title: 'Tu dinero,<br><span>de un vistazo.</span>',
+        landing_intro: 'Registra gastos, planifica presupuestos y controla préstamos. Una visión más clara de tu dinero, con un poco de ánimo en cada paso.',
+        landing_download: 'Descargar para iPhone', landing_see: 'Mira la app por dentro', landing_free: 'Descarga gratuita.',
+        landing_hello: 'Un pequeño paso.<br>Tú puedes.',
+        landing_section_label: 'Tu compañero para las finanzas del día a día',
+        landing_section_title: 'Menos dudas.<br>Más tranquilidad.',
+        landing_expenses: 'Gastos', landing_budgets: 'Presupuestos', landing_loans: 'Préstamos',
+        landing_expense_title: 'Los pequeños gastos<br>también cuentan.',
+        landing_expense_body: 'Desde el café de la mañana hasta las facturas del mes, reúne tus ingresos y gastos. Encuentra un movimiento sin rebuscar en una hoja de cálculo.',
+        landing_expense_point1: 'Organiza tus gastos por categoría', landing_expense_point2: 'Busca y filtra tus movimientos',
+        landing_budget_title: 'Un poco de margen<br>para lo que importa.',
+        landing_budget_body: 'Dale un plan a tus gastos cotidianos. Crea presupuestos por categoría y consulta cuánto has gastado, cuánto queda y dónde podrías ajustar.',
+        landing_budget_point1: 'Consulta importes asignados, gastados y restantes', landing_budget_point2: 'Todas tus categorías en una vista clara',
+        landing_loan_title: 'Ten presente<br>el próximo pago.',
+        landing_loan_body: 'Controla el dinero que debes y el que te deben. Consulta tus préstamos y sus pagos junto al resto de tus finanzas.',
+        landing_loan_point1: 'Registra dinero prestado y recibido', landing_loan_point2: 'Ten los detalles de pago a mano',
+        landing_privacy_title: 'Tu dinero es personal.<br>Que siga siendo así.',
+        landing_privacy_body: 'Tus registros financieros permanecen en tu dispositivo. No necesitas crear una cuenta de Nuvio ni conectar un banco para empezar.',
+        landing_privacy_link: 'Cómo trata Nuvio tus datos',
+        landing_privacy_note: 'Los anuncios, las suscripciones y la asistencia tienen prácticas de datos propias. Consulta la Política de privacidad.',
+        landing_start_title: '¿Tu primer paso?<br>Un solo movimiento.',
+        landing_step1_title: 'Hazla tuya', landing_step1_body: 'Elige tu moneda y saldo inicial. No necesitas iniciar sesión en tu banco.',
+        landing_step2_title: 'Añade un gasto', landing_step2_body: 'Elige una categoría, introduce el importe y guarda. Ya has empezado.',
+        landing_step3_title: 'Encuentra tu ritmo', landing_step3_body: 'Revisa tu resumen y adapta tus presupuestos a tu día a día.',
+        landing_faq_title: 'Algunas cosas que quizá quieras saber.',
+        landing_q1: '¿Qué es Nuvio?', landing_a1: 'Nuvio es un gestor de dinero para iPhone y iPad. Permite registrar gastos e ingresos, planificar presupuestos por categoría y controlar préstamos en una sola app.',
+        landing_q2: '¿Se puede descargar Nuvio gratis?', landing_a2: 'Sí. Nuvio se puede descargar gratis y la experiencia gratuita incluye anuncios. Nuvio Pro es opcional y añade el escaneo de recibos y la eliminación de anuncios. Consulta disponibilidad y precios locales en la app.',
+        landing_q3: '¿Necesito conectar mi banco o crear una cuenta?', landing_a3: 'No. Introduces tus propios movimientos. Elige tu moneda y saldo inicial y empieza sin conectar un banco ni crear una cuenta de Nuvio.',
+        landing_q4: '¿Dónde se guardan mis registros financieros?', landing_a4: 'Tus registros financieros se guardan en tu dispositivo. La publicidad, las suscripciones, las analíticas del sitio web y la asistencia procesan otra información, tal como explica la Política de privacidad.',
+        landing_final_title: 'Entender tu dinero<br>es un buen comienzo.', landing_final_body: 'Un poco más de claridad. Un poco más de confianza.',
+        nav_home: 'Inicio', nav_contact: 'Contacto', nav_terms: 'Condiciones de uso', nav_privacy: 'Privacidad', nav_download: 'Descargar',
+        footer_copyright: '© 2026 Nuvio. Todos los derechos reservados.', footer_support: 'Apoya el desarrollo de Nuvio'
+    },
+    'ja-JP': {
+        "rating_label": "App Storeの評価",
+        "insights_intro_title": "お金の流れを知り、<br>次の一歩を。",
+        "insights_intro_body": "毎日の記録が、家計全体の姿に。収入、支出、予算、ローンをまとめて確認し、見直したいことを選べます。",
+        "insights_tab": "分析",
+        "insights_story_title": "数字の意味が、<br>見えてくる。",
+        "insights_story_body": "入ってきたお金と使ったお金を比較。棒グラフとドーナツグラフから、見やすい表示を選べます。",
+        "insights_point1": "収入・支出・差額をひと目で",
+        "insights_point2": "記録から生まれる、わかりやすいグラフ",
+        "insights_title": "家計分析",
+        "insights_sample": "サンプルデータ",
+        "insights_bars": "棒グラフ",
+        "insights_donut": "ドーナツ",
+        "insights_income": "収入",
+        "insights_expenses": "支出",
+        "insights_net": "差額",
+        "insights_chart_title": "収入と支出",
+        "insights_try": "表示を切り替えてみよう",
+        "insights_chart_aria": "サンプルの収入5299.57米ドルと支出3260.83米ドルのグラフ。",
+        "rating_aria": "App Storeで5点中4.8の評価",
+
+        landing_features: '機能を見る', landing_how: '使い方', landing_faq: 'よくある質問', landing_support: 'サポート', landing_start_cta: '記録を始める',
+        landing_title: 'お金のことを、<br><span>ひと目で。</span>',
+        landing_intro: '支出を記録し、予算を立て、ローンを管理。毎日を少し応援してくれるアプリで、お金の流れをもっとわかりやすく。',
+        landing_download: 'iPhoneにダウンロード', landing_see: 'アプリの中を見る', landing_free: '無料ダウンロード。',
+        landing_hello: '小さな一歩から。<br>きっと大丈夫。',
+        landing_section_label: '毎日のお金に寄り添うパートナー',
+        landing_section_title: '迷いを減らして、<br>気持ちを軽やかに。',
+        landing_expenses: '支出', landing_budgets: '予算', landing_loans: 'ローン',
+        landing_expense_title: '小さな支出も、<br>まとめて見える。',
+        landing_expense_body: '朝のコーヒーから毎月の請求まで、収入と支出をひとまとめに。表計算シートを探さなくても、必要な記録が見つかります。',
+        landing_expense_point1: 'カテゴリごとに支出を整理', landing_expense_point2: '取引を検索・絞り込み',
+        landing_budget_title: '大切なことに、<br>少しのゆとりを。',
+        landing_budget_body: '毎日の支出に計画を。カテゴリ別の予算を設定し、使った金額、残りの金額、見直したいところを確認できます。',
+        landing_budget_point1: '予算額・支出額・残額を確認', landing_budget_point2: 'カテゴリ別の予算を見やすく表示',
+        landing_loan_title: '次の支払いを、<br>きちんと把握。',
+        landing_loan_body: '借りたお金と貸したお金を管理。ほかの家計情報と一緒に、ローンや支払いの詳細を確認できます。',
+        landing_loan_point1: '借入と貸付を記録', landing_loan_point2: '支払いの詳細をすぐに確認',
+        landing_privacy_title: 'お金の記録は、<br>あなたのもの。',
+        landing_privacy_body: '家計の記録はお使いの端末に保存されます。Nuvioのアカウント登録や銀行口座の連携は必要ありません。',
+        landing_privacy_link: 'Nuvioのデータの取り扱い',
+        landing_privacy_note: '広告、サブスクリプション、サポートでは別途データを取り扱います。詳しくはプライバシーポリシーをご覧ください。',
+        landing_start_title: '最初の一歩は、<br>ひとつの記録。',
+        landing_step1_title: '自分に合わせて設定', landing_step1_body: '通貨と開始残高を選びます。銀行へのログインは不要です。',
+        landing_step2_title: '支出をひとつ追加', landing_step2_body: 'カテゴリを選び、金額を入力して保存。これだけでスタートです。',
+        landing_step3_title: '自分のペースで続ける', landing_step3_body: '概要を確認し、暮らしの変化に合わせて予算を調整しましょう。',
+        landing_faq_title: '気になることを、いくつか。',
+        landing_q1: 'Nuvioとは？', landing_a1: 'NuvioはiPhoneとiPad向けのお金管理アプリです。支出と収入の記録、カテゴリ別の予算作成、ローン管理をひとつのアプリで行えます。',
+        landing_q2: 'Nuvioは無料でダウンロードできますか？', landing_a2: 'はい。Nuvioは無料でダウンロードでき、無料版には広告が表示されます。任意のNuvio Proではレシートのスキャンと広告の削除が利用できます。提供状況と地域ごとの料金はアプリでご確認ください。',
+        landing_q3: '銀行口座の連携やアカウント登録は必要ですか？', landing_a3: '必要ありません。取引は自分で入力します。通貨と開始残高を選ぶだけで、銀行口座の連携やNuvioアカウントなしで記録を始められます。',
+        landing_q4: '家計の記録はどこに保存されますか？', landing_a4: '家計の記録はお使いの端末に保存されます。広告、サブスクリプション、ウェブサイトの分析、サポートでは、プライバシーポリシーに記載されたその他の情報を取り扱います。',
+        landing_final_title: 'お金を知ることから、<br>始めよう。', landing_final_body: '少しの見通しが、毎日の自信に。',
+        nav_home: 'ホーム', nav_contact: 'お問い合わせ', nav_terms: '利用規約', nav_privacy: 'プライバシー', nav_download: 'ダウンロード',
+        footer_copyright: '© 2026 Nuvio. All rights reserved.', footer_support: 'Nuvioの開発を応援する'
+    },
+    'ko-KR': {
+        "rating_label": "App Store 평점",
+        "insights_intro_title": "돈의 흐름을 보고,<br>다음 걸음을 정해요.",
+        "insights_intro_body": "매일의 기록이 전체 흐름을 보여줘요. 수입, 지출, 예산, 대출을 함께 확인하고 어디에 집중할지 정하세요.",
+        "insights_tab": "분석",
+        "insights_story_title": "숫자의 의미가,<br>더 잘 보여요.",
+        "insights_story_body": "들어온 돈과 나간 돈을 비교해 보세요. 막대와 도넛 차트 중 이해하기 편한 보기를 선택할 수 있어요.",
+        "insights_point1": "수입, 지출, 순액을 한곳에서",
+        "insights_point2": "내 기록으로 만드는 명확한 차트",
+        "insights_title": "재정 분석",
+        "insights_sample": "샘플 데이터",
+        "insights_bars": "막대",
+        "insights_donut": "도넛",
+        "insights_income": "수입",
+        "insights_expenses": "지출",
+        "insights_net": "순액",
+        "insights_chart_title": "수입과 지출",
+        "insights_try": "차트 보기를 바꿔 보세요",
+        "insights_chart_aria": "샘플 수입 5299.57 미국 달러와 지출 3260.83 미국 달러를 보여주는 차트.",
+        "rating_aria": "App Store 평점 5점 만점에 4.8점",
+
+        landing_features: '기능 둘러보기', landing_how: '사용 방법', landing_faq: '자주 묻는 질문', landing_support: '도움말', landing_start_cta: '기록 시작하기',
+        landing_title: '내 돈의 흐름을,<br><span>한눈에.</span>',
+        landing_intro: '지출을 기록하고, 예산을 세우고, 대출을 관리하세요. 작은 응원과 함께 내 돈의 흐름을 더 명확하게 알아보세요.',
+        landing_download: 'iPhone용 다운로드', landing_see: '앱 살펴보기', landing_free: '무료 다운로드.',
+        landing_hello: '작은 한 걸음.<br>할 수 있어요.',
+        landing_section_label: '매일의 돈 관리를 함께하는 친구',
+        landing_section_title: '고민은 줄이고,<br>마음은 가볍게.',
+        landing_expenses: '지출', landing_budgets: '예산', landing_loans: '대출',
+        landing_expense_title: '작은 지출도,<br>모아 보면 보여요.',
+        landing_expense_body: '아침 커피부터 매달 나가는 고지서까지, 수입과 지출을 한곳에 모으세요. 스프레드시트를 뒤지지 않아도 필요한 기록을 찾을 수 있어요.',
+        landing_expense_point1: '카테고리별로 지출 정리', landing_expense_point2: '거래 검색 및 필터링',
+        landing_budget_title: '중요한 것을 위한,<br>작은 여유.',
+        landing_budget_body: '일상 지출에 계획을 더하세요. 카테고리별 예산을 설정하고 쓴 금액, 남은 금액, 조정할 부분을 확인하세요.',
+        landing_budget_point1: '배정 금액, 지출 금액, 남은 금액 확인', landing_budget_point2: '카테고리별 예산을 한눈에 확인',
+        landing_loan_title: '다음 상환도,<br>놓치지 않도록.',
+        landing_loan_body: '빌린 돈과 빌려준 돈을 관리하세요. 다른 재정 정보와 함께 대출 및 상환 내역을 확인할 수 있어요.',
+        landing_loan_point1: '빌린 돈과 빌려준 돈 기록', landing_loan_point2: '상환 정보를 간편하게 확인',
+        landing_privacy_title: '내 돈의 기록은,<br>나만의 것이니까.',
+        landing_privacy_body: '재정 기록은 내 기기에 저장돼요. Nuvio 계정을 만들거나 은행을 연결하지 않아도 기록을 시작할 수 있어요.',
+        landing_privacy_link: 'Nuvio의 데이터 처리 방식',
+        landing_privacy_note: '광고, 구독, 고객 지원에는 별도의 데이터 처리 방식이 적용돼요. 자세한 내용은 개인정보처리방침을 확인하세요.',
+        landing_start_title: '첫걸음은?<br>기록 하나면 돼요.',
+        landing_step1_title: '나에게 맞게 설정', landing_step1_body: '통화와 시작 잔액을 선택하세요. 은행 로그인은 필요하지 않아요.',
+        landing_step2_title: '지출 하나 추가', landing_step2_body: '카테고리를 고르고 금액을 입력한 뒤 저장하세요. 이걸로 시작이에요.',
+        landing_step3_title: '나만의 리듬 찾기', landing_step3_body: '전체 현황을 확인하고 생활 변화에 맞춰 예산을 조정하세요.',
+        landing_faq_title: '궁금할 만한 몇 가지.',
+        landing_q1: 'Nuvio는 어떤 앱인가요?', landing_a1: 'Nuvio는 iPhone과 iPad용 돈 관리 앱이에요. 하나의 앱에서 수입과 지출을 기록하고, 카테고리별 예산을 계획하고, 대출을 관리할 수 있어요.',
+        landing_q2: 'Nuvio는 무료로 다운로드할 수 있나요?', landing_a2: '네. Nuvio는 무료로 다운로드할 수 있으며 무료 버전에는 광고가 포함돼요. 선택 사항인 Nuvio Pro는 영수증 스캔과 광고 제거를 제공해요. 이용 가능 여부와 지역별 가격은 앱에서 확인하세요.',
+        landing_q3: '은행 연결이나 계정 생성이 필요한가요?', landing_a3: '아니요. 거래는 직접 입력해요. 통화와 시작 잔액을 선택한 뒤 은행 연결이나 Nuvio 계정 없이 기록을 시작할 수 있어요.',
+        landing_q4: '재정 기록은 어디에 저장되나요?', landing_a4: '재정 기록은 내 기기에 저장돼요. 광고, 구독, 웹사이트 분석 및 고객 지원은 개인정보처리방침에 설명된 다른 정보를 처리해요.',
+        landing_final_title: '내 돈을 아는 것부터,<br>좋은 시작이에요.', landing_final_body: '조금 더 명확하게, 조금 더 자신 있게.',
+        nav_home: '홈', nav_contact: '문의하기', nav_terms: '이용약관', nav_privacy: '개인정보처리방침', nav_download: '다운로드',
+        footer_copyright: '© 2026 Nuvio. All rights reserved.', footer_support: 'Nuvio 개발 응원하기'
+    }
+});
+
+// Benefit-led product stories.
+Object.assign(translations["en"], {
+  "insights_intro_title": "Small habits.<br>More money for you.",
+  "insights_intro_body": "Save a little. Notice your spending. Keep going. Nuvio helps you make everyday money choices with more intention.",
+  "insights_tab": "Save more",
+  "insights_story_title": "A little today.<br>More for tomorrow.",
+  "insights_story_body": "Saving starts with the choices you make every day. See what you can spend, give your money a plan, and build a habit worth keeping.",
+  "insights_point1": "Know what is left before you spend",
+  "insights_point2": "Build consistency, one entry at a time",
+  "landing_expenses": "Track spending",
+  "landing_budgets": "Plan a budget",
+  "landing_loans": "Reduce debt",
+  "habit_small": "Small steps.",
+  "habit_big": "More set aside.",
+  "habit_notice": "Notice the little things.",
+  "habit_room": "Make room for saving.",
+  "habit_forward": "Every payment is progress.",
+  "habit_pause": "Pause",
+  "habit_play": "Play",
+  "landing_expense_title": "Small spends.<br>A clearer picture.",
+  "landing_budget_title": "Spend with a plan.<br>Save with intention.",
+  "landing_loan_title": "A little less debt.<br>A little more freedom."
+});
+Object.assign(translations["de-DE"], {
+  "insights_intro_title": "Kleine Gewohnheiten.<br>Mehr Geld für dich.",
+  "insights_intro_body": "Etwas sparen. Ausgaben verstehen. Dranbleiben. Nuvio hilft dir, im Alltag bewusster mit Geld umzugehen.",
+  "insights_tab": "Mehr sparen",
+  "insights_story_title": "Heute ein wenig.<br>Morgen mehr.",
+  "insights_story_body": "Sparen beginnt mit deinen täglichen Entscheidungen. Sieh, was du ausgeben kannst, plane dein Geld und entwickle gute Gewohnheiten.",
+  "insights_point1": "Vor dem Ausgeben wissen, was bleibt",
+  "insights_point2": "Mit jedem Eintrag beständiger werden",
+  "landing_expenses": "Ausgaben erfassen",
+  "landing_budgets": "Budget planen",
+  "landing_loans": "Schulden senken",
+  "habit_small": "Kleine Schritte.",
+  "habit_big": "Mehr zurückgelegt.",
+  "habit_notice": "Auch Kleinigkeiten zählen.",
+  "habit_room": "Raum fürs Sparen.",
+  "habit_forward": "Jede Zahlung bringt dich weiter.",
+  "habit_pause": "Pause",
+  "habit_play": "Abspielen",
+  "landing_expense_title": "Kleine Ausgaben.<br>Mehr Überblick.",
+  "landing_budget_title": "Bewusst ausgeben.<br>Gezielt sparen.",
+  "landing_loan_title": "Weniger Schulden.<br>Mehr Freiheit."
+});
+Object.assign(translations["es-ES"], {
+  "insights_intro_title": "Pequeños hábitos.<br>Más dinero para ti.",
+  "insights_intro_body": "Ahorra un poco. Entiende tus gastos. Sigue adelante. Nuvio te ayuda a tomar decisiones diarias con más intención.",
+  "insights_tab": "Ahorrar más",
+  "insights_story_title": "Un poco hoy.<br>Más para mañana.",
+  "insights_story_body": "Ahorrar empieza con tus decisiones diarias. Mira cuánto puedes gastar, organiza tu dinero y crea un hábito que valga la pena.",
+  "insights_point1": "Sabe cuánto queda antes de gastar",
+  "insights_point2": "Gana constancia con cada registro",
+  "landing_expenses": "Registrar gastos",
+  "landing_budgets": "Planificar",
+  "landing_loans": "Reducir deudas",
+  "habit_small": "Pasos pequeños.",
+  "habit_big": "Más ahorrado.",
+  "habit_notice": "Los pequeños gastos cuentan.",
+  "habit_room": "Haz espacio para ahorrar.",
+  "habit_forward": "Cada pago es un avance.",
+  "habit_pause": "Pausar",
+  "habit_play": "Reproducir",
+  "landing_expense_title": "Pequeños gastos.<br>Una visión clara.",
+  "landing_budget_title": "Gasta con un plan.<br>Ahorra con intención.",
+  "landing_loan_title": "Menos deudas.<br>Más libertad."
+});
+Object.assign(translations["ja-JP"], {
+  "insights_intro_title": "小さな習慣で、<br>お金にゆとりを。",
+  "insights_intro_body": "少し貯める。支出に気づく。続けていく。Nuvioは毎日のお金の選択をサポートします。",
+  "insights_tab": "貯める",
+  "insights_story_title": "今日の少しを、<br>明日のゆとりに。",
+  "insights_story_body": "貯蓄は毎日の選択から。使える金額を確認し、お金の計画を立てて、続けられる習慣を育てましょう。",
+  "insights_point1": "使う前に残額を確認",
+  "insights_point2": "ひとつの記録から習慣に",
+  "landing_expenses": "支出を記録",
+  "landing_budgets": "予算を計画",
+  "landing_loans": "返済を進める",
+  "habit_small": "小さな一歩。",
+  "habit_big": "貯蓄にゆとり。",
+  "habit_notice": "小さな支出に気づく。",
+  "habit_room": "貯める余裕をつくる。",
+  "habit_forward": "返済のたびに前進。",
+  "habit_pause": "一時停止",
+  "habit_play": "再生",
+  "landing_expense_title": "小さな支出も、<br>はっきり見える。",
+  "landing_budget_title": "計画的に使い、<br>意識して貯める。",
+  "landing_loan_title": "借入を減らし、<br>自由を増やす。"
+});
+Object.assign(translations["ko-KR"], {
+  "insights_intro_title": "작은 습관으로,<br>더 여유롭게.",
+  "insights_intro_body": "조금씩 저축하고 지출을 살피며 꾸준히 나아가세요. Nuvio가 매일의 현명한 돈 관리를 도와요.",
+  "insights_tab": "더 저축하기",
+  "insights_story_title": "오늘의 조금이,<br>내일의 여유로.",
+  "insights_story_body": "저축은 매일의 선택에서 시작해요. 쓸 수 있는 금액을 확인하고 계획을 세워 오래가는 습관을 만들어 보세요.",
+  "insights_point1": "쓰기 전에 남은 금액 확인",
+  "insights_point2": "기록 하나씩 꾸준한 습관으로",
+  "landing_expenses": "지출 기록",
+  "landing_budgets": "예산 계획",
+  "landing_loans": "부채 줄이기",
+  "habit_small": "작은 걸음.",
+  "habit_big": "더 많은 저축.",
+  "habit_notice": "작은 지출도 살펴요.",
+  "habit_room": "저축할 여유를 만들어요.",
+  "habit_forward": "상환할 때마다 한 걸음 앞으로.",
+  "habit_pause": "일시 정지",
+  "habit_play": "재생",
+  "landing_expense_title": "작은 지출도,<br>한눈에 선명하게.",
+  "landing_budget_title": "계획하며 쓰고,<br>생각하며 저축해요.",
+  "landing_loan_title": "부채는 줄이고,<br>자유는 늘리고."
+});
+Object.assign(translations["zh-CN"], {
+  "insights_intro_title": "小习惯，<br>让钱更有余裕。",
+  "insights_intro_body": "存下一点，留意支出，坚持下去。Nuvio 帮你更用心地做好每天的金钱选择。",
+  "insights_tab": "多存一点",
+  "insights_story_title": "今天存一点，<br>明天多一点。",
+  "insights_story_body": "储蓄从每天的选择开始。了解还能花多少，为资金做好安排，培养值得坚持的好习惯。",
+  "insights_point1": "花钱前先看剩余金额",
+  "insights_point2": "每次记录，积累好习惯",
+  "landing_expenses": "记录支出",
+  "landing_budgets": "规划预算",
+  "landing_loans": "减少负债",
+  "habit_small": "小小一步。",
+  "habit_big": "多存一点。",
+  "habit_notice": "留意每一笔小支出。",
+  "habit_room": "为储蓄留出空间。",
+  "habit_forward": "每次还款都是进步。",
+  "habit_pause": "暂停",
+  "habit_play": "播放",
+  "landing_expense_title": "小小支出，<br>看得更清楚。",
+  "landing_budget_title": "有计划地花，<br>有意识地存。",
+  "landing_loan_title": "少一点负债，<br>多一点自由。"
+});
+Object.assign(translations["zh-TW"], {
+  "insights_intro_title": "小習慣，<br>讓錢更有餘裕。",
+  "insights_intro_body": "存下一點，留意支出，持續前進。Nuvio 幫你更用心地做好每天的金錢選擇。",
+  "insights_tab": "多存一點",
+  "insights_story_title": "今天存一點，<br>明天多一點。",
+  "insights_story_body": "儲蓄從每天的選擇開始。了解還能花多少，為資金做好安排，培養值得持續的好習慣。",
+  "insights_point1": "花錢前先看剩餘金額",
+  "insights_point2": "每次記錄，累積好習慣",
+  "landing_expenses": "記錄支出",
+  "landing_budgets": "規劃預算",
+  "landing_loans": "減少負債",
+  "habit_small": "小小一步。",
+  "habit_big": "多存一點。",
+  "habit_notice": "留意每一筆小支出。",
+  "habit_room": "為儲蓄留出空間。",
+  "habit_forward": "每次還款都是進步。",
+  "habit_pause": "暫停",
+  "habit_play": "播放",
+  "landing_expense_title": "小小支出，<br>看得更清楚。",
+  "landing_budget_title": "有計畫地花，<br>有意識地存。",
+  "landing_loan_title": "少一點負債，<br>多一點自由。"
+});
+
+// Labels in the illustrative app details.
+Object.assign(translations["en"], {
+  "visual_daily": "Left to spend today",
+  "visual_track": "On track",
+  "visual_coffee": "Coffee",
+  "visual_savings": "Moved to savings",
+  "visual_groceries": "Groceries",
+  "visual_remaining": "Remaining in budgets",
+  "visual_spent": "Spent",
+  "visual_allocated": "Allocated",
+  "visual_credit": "Credit card",
+  "visual_remaining_debt": "Remaining balance",
+  "visual_paid": "60% paid off"
+});
+Object.assign(translations["de-DE"], {
+  "visual_daily": "Heute noch verfügbar",
+  "visual_track": "Im Plan",
+  "visual_coffee": "Kaffee",
+  "visual_savings": "Zurückgelegt",
+  "visual_groceries": "Lebensmittel",
+  "visual_remaining": "Im Budget verbleibend",
+  "visual_spent": "Ausgegeben",
+  "visual_allocated": "Eingeplant",
+  "visual_credit": "Kreditkarte",
+  "visual_remaining_debt": "Restbetrag",
+  "visual_paid": "60 % zurückgezahlt"
+});
+Object.assign(translations["es-ES"], {
+  "visual_daily": "Disponible para hoy",
+  "visual_track": "Vas bien",
+  "visual_coffee": "Café",
+  "visual_savings": "Ahorro apartado",
+  "visual_groceries": "Supermercado",
+  "visual_remaining": "Disponible en presupuestos",
+  "visual_spent": "Gastado",
+  "visual_allocated": "Asignado",
+  "visual_credit": "Tarjeta de crédito",
+  "visual_remaining_debt": "Saldo pendiente",
+  "visual_paid": "60 % pagado"
+});
+Object.assign(translations["ja-JP"], {
+  "visual_daily": "今日使える金額",
+  "visual_track": "順調です",
+  "visual_coffee": "コーヒー",
+  "visual_savings": "貯蓄に移動",
+  "visual_groceries": "食料品",
+  "visual_remaining": "予算の残額",
+  "visual_spent": "支出済み",
+  "visual_allocated": "割り当て",
+  "visual_credit": "クレジットカード",
+  "visual_remaining_debt": "残高",
+  "visual_paid": "60%返済済み"
+});
+Object.assign(translations["ko-KR"], {
+  "visual_daily": "오늘 쓸 수 있는 금액",
+  "visual_track": "순조로워요",
+  "visual_coffee": "커피",
+  "visual_savings": "저축으로 이동",
+  "visual_groceries": "식료품",
+  "visual_remaining": "예산 잔액",
+  "visual_spent": "지출",
+  "visual_allocated": "배정",
+  "visual_credit": "신용카드",
+  "visual_remaining_debt": "남은 잔액",
+  "visual_paid": "60% 상환 완료"
+});
+Object.assign(translations["zh-CN"], {
+  "visual_daily": "今天还可花费",
+  "visual_track": "进展顺利",
+  "visual_coffee": "咖啡",
+  "visual_savings": "转入储蓄",
+  "visual_groceries": "日常采购",
+  "visual_remaining": "预算剩余",
+  "visual_spent": "已花费",
+  "visual_allocated": "已分配",
+  "visual_credit": "信用卡",
+  "visual_remaining_debt": "剩余余额",
+  "visual_paid": "已还款 60%"
+});
+Object.assign(translations["zh-TW"], {
+  "visual_daily": "今天還可花費",
+  "visual_track": "進展順利",
+  "visual_coffee": "咖啡",
+  "visual_savings": "轉入儲蓄",
+  "visual_groceries": "日常採買",
+  "visual_remaining": "預算剩餘",
+  "visual_spent": "已花費",
+  "visual_allocated": "已分配",
+  "visual_credit": "信用卡",
+  "visual_remaining_debt": "剩餘餘額",
+  "visual_paid": "已還款 60%"
+});
+
+// Lower-page sections and closing navigation.
+Object.assign(translations["en"], {
+  "lower_records": "Your financial records",
+  "lower_device": "On your device.",
+  "lower_start_intro": "You don’t need to change everything at once. Start with one entry and build from there.",
+  "landing_final_title": "Start small.<br>Keep more.",
+  "landing_final_body": "Better money habits start with one little step.",
+  "lower_footer_intro": "Small steps. Better money habits.",
+  "lower_explore": "Explore Nuvio",
+  "lower_help": "Here to help",
+  "lower_support_project": "Support the project",
+  "lower_legal": "The details",
+  "lower_language": "Site language",
+  "lower_ios": "Made for iPhone and iPad."
+});
+Object.assign(translations["de-DE"], {
+  "lower_records": "Deine Finanzeinträge",
+  "lower_device": "Auf deinem Gerät.",
+  "lower_start_intro": "Du musst nicht alles auf einmal ändern. Beginne mit einem Eintrag und mache von dort weiter.",
+  "landing_final_title": "Klein anfangen.<br>Mehr behalten.",
+  "landing_final_body": "Bessere Geldgewohnheiten beginnen mit einem kleinen Schritt.",
+  "lower_footer_intro": "Kleine Schritte. Bessere Geldgewohnheiten.",
+  "lower_explore": "Nuvio entdecken",
+  "lower_help": "Wir helfen dir",
+  "lower_support_project": "Projekt unterstützen",
+  "lower_legal": "Die Einzelheiten",
+  "lower_language": "Sprache der Website",
+  "lower_ios": "Für iPhone und iPad."
+});
+Object.assign(translations["es-ES"], {
+  "lower_records": "Tus registros financieros",
+  "lower_device": "En tu dispositivo.",
+  "lower_start_intro": "No hace falta cambiarlo todo a la vez. Empieza con un registro y sigue desde ahí.",
+  "landing_final_title": "Empieza poco a poco.<br>Conserva más.",
+  "landing_final_body": "Mejores hábitos con el dinero empiezan con un pequeño paso.",
+  "lower_footer_intro": "Pequeños pasos. Mejores hábitos con el dinero.",
+  "lower_explore": "Explora Nuvio",
+  "lower_help": "Aquí para ayudarte",
+  "lower_support_project": "Apoya el proyecto",
+  "lower_legal": "Los detalles",
+  "lower_language": "Idioma del sitio",
+  "lower_ios": "Para iPhone y iPad."
+});
+Object.assign(translations["ja-JP"], {
+  "lower_records": "あなたのお金の記録",
+  "lower_device": "あなたのデバイスに。",
+  "lower_start_intro": "一度にすべてを変える必要はありません。ひとつの記録から始めましょう。",
+  "landing_final_title": "小さく始めて、<br>ゆとりを増やそう。",
+  "landing_final_body": "お金の良い習慣は、小さな一歩から。",
+  "lower_footer_intro": "小さな一歩で、お金の良い習慣を。",
+  "lower_explore": "Nuvioを知る",
+  "lower_help": "サポート",
+  "lower_support_project": "プロジェクトを応援",
+  "lower_legal": "各種情報",
+  "lower_language": "サイトの言語",
+  "lower_ios": "iPhoneとiPad向け。"
+});
+Object.assign(translations["ko-KR"], {
+  "lower_records": "나의 금융 기록",
+  "lower_device": "내 기기에 보관해요.",
+  "lower_start_intro": "한꺼번에 모두 바꿀 필요는 없어요. 기록 하나부터 시작해 보세요.",
+  "landing_final_title": "작게 시작하고,<br>여유를 늘려요.",
+  "landing_final_body": "좋은 돈 관리 습관은 작은 한 걸음에서 시작해요.",
+  "lower_footer_intro": "작은 걸음으로 더 좋은 돈 관리 습관을.",
+  "lower_explore": "Nuvio 둘러보기",
+  "lower_help": "도움이 필요할 때",
+  "lower_support_project": "프로젝트 후원",
+  "lower_legal": "자세한 정보",
+  "lower_language": "사이트 언어",
+  "lower_ios": "iPhone과 iPad를 위해."
+});
+Object.assign(translations["zh-CN"], {
+  "lower_records": "你的财务记录",
+  "lower_device": "保存在你的设备上。",
+  "lower_start_intro": "不必一次改变所有习惯。从一笔记录开始，一步步积累。",
+  "landing_final_title": "从小开始，<br>留住更多。",
+  "landing_final_body": "更好的金钱习惯，从小小一步开始。",
+  "lower_footer_intro": "小小一步，更好的金钱习惯。",
+  "lower_explore": "探索 Nuvio",
+  "lower_help": "帮助与支持",
+  "lower_support_project": "支持项目",
+  "lower_legal": "详细信息",
+  "lower_language": "网站语言",
+  "lower_ios": "为 iPhone 和 iPad 而设计。"
+});
+Object.assign(translations["zh-TW"], {
+  "lower_records": "你的財務記錄",
+  "lower_device": "保存在你的裝置上。",
+  "lower_start_intro": "不必一次改變所有習慣。從一筆記錄開始，一步步累積。",
+  "landing_final_title": "從小開始，<br>留下更多。",
+  "landing_final_body": "更好的金錢習慣，從小小一步開始。",
+  "lower_footer_intro": "小小一步，更好的金錢習慣。",
+  "lower_explore": "探索 Nuvio",
+  "lower_help": "幫助與支援",
+  "lower_support_project": "支持專案",
+  "lower_legal": "詳細資訊",
+  "lower_language": "網站語言",
+  "lower_ios": "為 iPhone 和 iPad 而設計。"
+});
+
+// Habit momentum section.
+Object.assign(translations["en"], {
+  "momentum_title": "Small wins.<br>Worth coming back for.",
+  "momentum_body": "A quick check-in today makes it easier to show up tomorrow. Build your streak, notice your progress, and keep your money habits moving.",
+  "momentum_link": "Take your first step",
+  "momentum_streak": "17 day streak",
+  "momentum_little": "One entry at a time.",
+  "momentum_nice": "You showed up. Nice."
+});
+Object.assign(translations["de-DE"], {
+  "momentum_title": "Kleine Erfolge.<br>Ein Grund dranzubleiben.",
+  "momentum_body": "Ein kurzer Check heute macht es leichter, morgen weiterzumachen. Baue deine Serie auf, erkenne Fortschritte und bleib bei deinen Geldgewohnheiten.",
+  "momentum_link": "Mach den ersten Schritt",
+  "momentum_streak": "17 Tage in Folge",
+  "momentum_little": "Ein Eintrag nach dem anderen.",
+  "momentum_nice": "Du bist dabei. Stark."
+});
+Object.assign(translations["es-ES"], {
+  "momentum_title": "Pequeños logros.<br>Ganas de volver.",
+  "momentum_body": "Un vistazo hoy facilita seguir mañana. Suma días a tu racha, reconoce tu progreso y sigue cuidando tus hábitos con el dinero.",
+  "momentum_link": "Da tu primer paso",
+  "momentum_streak": "Racha de 17 días",
+  "momentum_little": "Un registro a la vez.",
+  "momentum_nice": "Aquí estás. Bien hecho."
+});
+Object.assign(translations["ja-JP"], {
+  "momentum_title": "小さな達成が、<br>続ける楽しみに。",
+  "momentum_body": "今日の短い確認が、明日の一歩につながります。連続記録を伸ばし、進歩を感じながら、お金の習慣を育てましょう。",
+  "momentum_link": "最初の一歩を踏み出す",
+  "momentum_streak": "17日連続",
+  "momentum_little": "ひとつずつ記録しよう。",
+  "momentum_nice": "今日もできた。いい調子。"
+});
+Object.assign(translations["ko-KR"], {
+  "momentum_title": "작은 성취가,<br>다시 찾는 즐거움으로.",
+  "momentum_body": "오늘의 짧은 확인이 내일의 한 걸음을 쉽게 해줘요. 연속 기록을 쌓고 변화를 느끼며 좋은 돈 관리 습관을 이어가세요.",
+  "momentum_link": "첫걸음 시작하기",
+  "momentum_streak": "17일 연속 기록",
+  "momentum_little": "기록 하나씩 차근차근.",
+  "momentum_nice": "오늘도 해냈어요. 좋아요."
+});
+Object.assign(translations["zh-CN"], {
+  "momentum_title": "小小成就，<br>让人愿意坚持。",
+  "momentum_body": "今天简单看一眼，让明天更容易继续。积累连续记录，看到自己的进步，让好习惯持续下去。",
+  "momentum_link": "迈出第一步",
+  "momentum_streak": "连续记录 17 天",
+  "momentum_little": "一次记录，一点进步。",
+  "momentum_nice": "今天也做到了。真棒。"
+});
+Object.assign(translations["zh-TW"], {
+  "momentum_title": "小小成就，<br>讓人願意持續。",
+  "momentum_body": "今天簡單看一眼，讓明天更容易繼續。累積連續記錄，看到自己的進步，讓好習慣持續下去。",
+  "momentum_link": "踏出第一步",
+  "momentum_streak": "連續記錄 17 天",
+  "momentum_little": "一次記錄，一點進步。",
+  "momentum_nice": "今天也做到了。真棒。"
+});
+
+// Shared support-page copy.
+Object.assign(translations["en"], {
+  "support_headline": "A little help,<br>when you need it.",
+  "support_bubble": "Let’s figure it out.",
+  "support_answers": "Find a quick answer",
+  "support_email": "Prefer email?",
+  "support_form_title": "Send a message",
+  "support_form_intro": "A little context helps. Tell me what happened or what you’d like to see in Nuvio.",
+  "support_answers_intro": "A few useful things to know before you send."
+});
+Object.assign(translations["de-DE"], {
+  "support_headline": "Ein wenig Hilfe,<br>wenn du sie brauchst.",
+  "support_bubble": "Wir finden eine Lösung.",
+  "support_answers": "Eine schnelle Antwort finden",
+  "support_email": "Lieber per E-Mail?",
+  "support_form_title": "Nachricht senden",
+  "support_form_intro": "Etwas Kontext hilft. Erzähl mir, was passiert ist oder was du dir für Nuvio wünschst.",
+  "support_answers_intro": "Ein paar hilfreiche Antworten vor deiner Nachricht."
+});
+Object.assign(translations["es-ES"], {
+  "support_headline": "Un poco de ayuda,<br>cuando la necesitas.",
+  "support_bubble": "Vamos a resolverlo.",
+  "support_answers": "Encuentra una respuesta rápida",
+  "support_email": "¿Prefieres el correo?",
+  "support_form_title": "Envía un mensaje",
+  "support_form_intro": "Un poco de contexto ayuda. Cuéntame qué pasó o qué te gustaría ver en Nuvio.",
+  "support_answers_intro": "Algunas respuestas útiles antes de escribir."
+});
+Object.assign(translations["ja-JP"], {
+  "support_headline": "困ったときに、<br>ちょっとお手伝い。",
+  "support_bubble": "一緒に解決しましょう。",
+  "support_answers": "よくある質問を見る",
+  "support_email": "メールをご希望ですか？",
+  "support_form_title": "メッセージを送る",
+  "support_form_intro": "状況がわかると助かります。起きたことやNuvioへのご要望をお聞かせください。",
+  "support_answers_intro": "送信前に役立つ情報をまとめました。"
+});
+Object.assign(translations["ko-KR"], {
+  "support_headline": "필요할 때,<br>도움을 드릴게요.",
+  "support_bubble": "함께 해결해 봐요.",
+  "support_answers": "빠른 답변 찾기",
+  "support_email": "이메일이 편하신가요?",
+  "support_form_title": "메시지 보내기",
+  "support_form_intro": "상황을 알려주시면 도움이 돼요. 어떤 일이 있었는지, Nuvio에 무엇을 바라는지 들려주세요.",
+  "support_answers_intro": "보내기 전에 알아두면 유용한 답변이에요."
+});
+Object.assign(translations["zh-CN"], {
+  "support_headline": "需要时，<br>帮你一把。",
+  "support_bubble": "一起解决吧。",
+  "support_answers": "查找快速解答",
+  "support_email": "更喜欢邮件？",
+  "support_form_title": "发送消息",
+  "support_form_intro": "提供一些背景会有帮助。告诉我遇到了什么，或希望 Nuvio 增加什么。",
+  "support_answers_intro": "发送前，这些解答也许能帮到你。"
+});
+Object.assign(translations["zh-TW"], {
+  "support_headline": "需要時，<br>幫你一把。",
+  "support_bubble": "一起解決吧。",
+  "support_answers": "查看快速解答",
+  "support_email": "偏好電子郵件？",
+  "support_form_title": "傳送訊息",
+  "support_form_intro": "提供一些背景會有幫助。告訴我遇到了什麼，或希望 Nuvio 增加什麼。",
+  "support_answers_intro": "傳送前，這些解答也許能幫到你。"
+});
+Object.assign(translations["de-DE"], {
+  "contact_subtitle": "Eine Frage, ein Fehler oder eine Idee? Ich freue mich auf deine Nachricht.",
+  "contact_name": "Dein Name",
+  "contact_name_placeholder": "Dein Name",
+  "contact_email": "E-Mail-Adresse",
+  "contact_email_placeholder": "name@beispiel.de",
+  "contact_subject": "Worum geht es?",
+  "contact_subject_placeholder": "Thema auswählen",
+  "contact_subject_bug": "Fehler melden",
+  "contact_subject_feature": "Funktionswunsch",
+  "contact_subject_general": "Allgemeine Frage",
+  "contact_subject_help": "Hilfe zur App",
+  "contact_subject_business": "Geschäftliche Anfrage",
+  "contact_subject_other": "Sonstiges",
+  "contact_device": "Dein Gerät",
+  "contact_device_placeholder": "Gerät auswählen (optional)",
+  "contact_device_other": "Anderes Gerät",
+  "contact_device_custom_label": "Gerät angeben",
+  "contact_device_custom_placeholder": "Modell und iOS-Version",
+  "contact_message": "Deine Nachricht",
+  "contact_message_placeholder": "Beschreibe dein Anliegen …",
+  "contact_send": "Nachricht senden",
+  "contact_form_note": "Ich lese jede Nachricht persönlich und antworte in der Regel innerhalb von 24 bis 48 Stunden.",
+  "contact_privacy_text": "Dieses Formular sendet Name, E-Mail, Geräteangaben und Nachricht über Discord an den Entwickler. Bitte keine Finanzunterlagen oder sensiblen Daten angeben. Siehe unsere",
+  "contact_privacy_link": "Datenschutzerklärung",
+  "contact_privacy_end": "für weitere Informationen.",
+  "contact_faq_title": "Schnelle Antworten",
+  "contact_faq_export": "Wie exportiere ich meine Daten?",
+  "contact_faq_export_answer": "Einstellungen → Datenverwaltung → Daten exportieren. Deine Transaktionen werden als CSV-Datei exportiert.",
+  "contact_faq_secure": "Sind meine Daten sicher?",
+  "contact_faq_secure_answer": "Finanzeinträge bleiben im lokalen App-Speicher. Werbung und Abodienste kommunizieren mit ihren Anbietern. Details stehen in der Datenschutzerklärung.",
+  "contact_faq_budget": "Wie erstelle ich Budgets?",
+  "contact_faq_budget_answer": "Öffne den Budget-Tab und tippe auf „+“, um ein Budget mit deinem Ausgabenlimit anzulegen.",
+  "contact_faq_offline": "Funktioniert die App offline?",
+  "contact_faq_offline_answer": "Ausgaben, Budgets und Darlehen lassen sich offline verwalten. Werbung, Käufe und die Wiederherstellung von Abos benötigen Internet."
+});
+Object.assign(translations["es-ES"], {
+  "contact_subtitle": "¿Tienes una pregunta, encontraste un error o quieres sugerir algo? Me encantará leerte.",
+  "contact_name": "Tu nombre",
+  "contact_name_placeholder": "Tu nombre",
+  "contact_email": "Correo electrónico",
+  "contact_email_placeholder": "nombre@ejemplo.com",
+  "contact_subject": "¿De qué se trata?",
+  "contact_subject_placeholder": "Selecciona un tema",
+  "contact_subject_bug": "Informar de un error",
+  "contact_subject_feature": "Sugerir una función",
+  "contact_subject_general": "Pregunta general",
+  "contact_subject_help": "Ayuda con la app",
+  "contact_subject_business": "Consulta comercial",
+  "contact_subject_other": "Otro",
+  "contact_device": "Tu dispositivo",
+  "contact_device_placeholder": "Selecciona un dispositivo (opcional)",
+  "contact_device_other": "Otro",
+  "contact_device_custom_label": "Indica tu dispositivo",
+  "contact_device_custom_placeholder": "Modelo y versión de iOS",
+  "contact_message": "Tu mensaje",
+  "contact_message_placeholder": "Cuéntame qué necesitas…",
+  "contact_send": "Enviar mensaje",
+  "contact_form_note": "Leo cada mensaje personalmente y normalmente respondo en 24 a 48 horas.",
+  "contact_privacy_text": "Este formulario envía tu nombre, correo, dispositivo y mensaje al desarrollador mediante Discord. No incluyas registros financieros ni datos sensibles. Consulta la",
+  "contact_privacy_link": "Política de privacidad",
+  "contact_privacy_end": "para más información.",
+  "contact_faq_title": "Respuestas rápidas",
+  "contact_faq_export": "¿Cómo exporto mis datos?",
+  "contact_faq_export_answer": "Ajustes → Gestión de datos → Exportar datos. Tus transacciones se exportan en un archivo CSV.",
+  "contact_faq_secure": "¿Están seguros mis datos?",
+  "contact_faq_secure_answer": "Los registros financieros se guardan localmente. Los anuncios y las suscripciones se comunican con sus proveedores. Consulta la Política de privacidad.",
+  "contact_faq_budget": "¿Cómo creo presupuestos?",
+  "contact_faq_budget_answer": "Abre la pestaña Presupuesto y toca «+» para crear uno con tu límite de gasto.",
+  "contact_faq_offline": "¿Funciona sin conexión?",
+  "contact_faq_offline_answer": "El seguimiento de gastos, presupuestos y préstamos funciona sin conexión. Los anuncios, compras y restauraciones de suscripciones requieren internet."
+});
+Object.assign(translations["ja-JP"], {
+  "contact_subtitle": "ご質問、不具合、機能のご提案など、お気軽にお知らせください。",
+  "contact_name": "お名前",
+  "contact_name_placeholder": "お名前",
+  "contact_email": "メールアドレス",
+  "contact_email_placeholder": "name@example.com",
+  "contact_subject": "お問い合わせ内容",
+  "contact_subject_placeholder": "トピックを選択",
+  "contact_subject_bug": "不具合の報告",
+  "contact_subject_feature": "機能のご要望",
+  "contact_subject_general": "一般的なご質問",
+  "contact_subject_help": "アプリの使い方",
+  "contact_subject_business": "ビジネスのお問い合わせ",
+  "contact_subject_other": "その他",
+  "contact_device": "お使いのデバイス",
+  "contact_device_placeholder": "デバイスを選択（任意）",
+  "contact_device_other": "その他",
+  "contact_device_custom_label": "デバイスの詳細",
+  "contact_device_custom_placeholder": "モデルとiOSのバージョン",
+  "contact_message": "メッセージ",
+  "contact_message_placeholder": "お問い合わせ内容を入力してください…",
+  "contact_send": "送信する",
+  "contact_form_note": "すべてのメッセージに目を通し、通常24〜48時間以内に返信します。",
+  "contact_privacy_text": "このフォームは、お名前、メールアドレス、デバイス情報、メッセージをDiscord経由で開発者に送信します。財務記録や機密情報は含めないでください。詳しくは",
+  "contact_privacy_link": "プライバシーポリシー",
+  "contact_privacy_end": "をご覧ください。",
+  "contact_faq_title": "よくある質問",
+  "contact_faq_export": "データをエクスポートするには？",
+  "contact_faq_export_answer": "設定 → データ管理 → データをエクスポート。取引をCSVファイルとして書き出せます。",
+  "contact_faq_secure": "データは安全ですか？",
+  "contact_faq_secure_answer": "財務記録はアプリ内のローカルストレージに保存されます。広告とサブスクリプションは各提供元と通信します。詳細はプライバシーポリシーをご覧ください。",
+  "contact_faq_budget": "予算を作成するには？",
+  "contact_faq_budget_answer": "予算タブで「+」をタップし、支出上限を設定して作成してください。",
+  "contact_faq_offline": "オフラインで使えますか？",
+  "contact_faq_offline_answer": "支出、予算、ローンの基本機能はオフラインで利用できます。広告、購入、サブスクリプションの復元にはインターネット接続が必要です。"
+});
+Object.assign(translations["ko-KR"], {
+  "contact_subtitle": "궁금한 점이나 오류, 새로운 기능 제안이 있으신가요? 의견을 들려주세요.",
+  "contact_name": "이름",
+  "contact_name_placeholder": "이름",
+  "contact_email": "이메일 주소",
+  "contact_email_placeholder": "name@example.com",
+  "contact_subject": "어떤 내용인가요?",
+  "contact_subject_placeholder": "주제 선택",
+  "contact_subject_bug": "오류 신고",
+  "contact_subject_feature": "기능 제안",
+  "contact_subject_general": "일반 질문",
+  "contact_subject_help": "앱 사용 도움",
+  "contact_subject_business": "비즈니스 문의",
+  "contact_subject_other": "기타",
+  "contact_device": "사용 기기",
+  "contact_device_placeholder": "기기 선택 (선택 사항)",
+  "contact_device_other": "기타",
+  "contact_device_custom_label": "기기 상세 정보",
+  "contact_device_custom_placeholder": "모델 및 iOS 버전",
+  "contact_message": "메시지",
+  "contact_message_placeholder": "문의 내용을 알려주세요…",
+  "contact_send": "메시지 보내기",
+  "contact_form_note": "모든 메시지를 직접 읽고 보통 24~48시간 이내에 답변해요.",
+  "contact_privacy_text": "이 양식은 이름, 이메일, 기기 정보, 메시지를 Discord를 통해 개발자에게 전달해요. 금융 기록이나 민감한 정보는 포함하지 마세요. 자세한 내용은",
+  "contact_privacy_link": "개인정보 처리방침",
+  "contact_privacy_end": "을 확인해 주세요.",
+  "contact_faq_title": "빠른 답변",
+  "contact_faq_export": "데이터를 내보내려면 어떻게 하나요?",
+  "contact_faq_export_answer": "설정 → 데이터 관리 → 데이터 내보내기에서 거래를 CSV 파일로 내보낼 수 있어요.",
+  "contact_faq_secure": "데이터는 안전한가요?",
+  "contact_faq_secure_answer": "금융 기록은 앱의 로컬 저장소에 보관돼요. 광고와 구독 서비스는 각 제공업체와 통신해요. 자세한 내용은 개인정보 처리방침을 확인하세요.",
+  "contact_faq_budget": "예산은 어떻게 만드나요?",
+  "contact_faq_budget_answer": "예산 탭에서 “+”를 눌러 지출 한도를 설정하고 새 예산을 만드세요.",
+  "contact_faq_offline": "오프라인에서도 작동하나요?",
+  "contact_faq_offline_answer": "기본 지출, 예산, 대출 기록은 오프라인에서도 가능해요. 광고, 구매, 구독 복원은 인터넷 연결이 필요해요."
+});
+Object.assign(translations['de-DE'], { back_to_home: '← Zur Startseite' });
+Object.assign(translations['es-ES'], { back_to_home: '← Volver al inicio' });
+Object.assign(translations['ja-JP'], { back_to_home: '← ホームに戻る' });
+Object.assign(translations['ko-KR'], { back_to_home: '← 홈으로 돌아가기' });
+
+// Search-focused copy also remains available in the initial English HTML.
+Object.assign(translations.en, {
+  "landing_intro": "An expense tracker and budget planner for iPhone. See where your money goes, make room to save, and build better money habits one day at a time.",
+  "insights_intro_body": "Track daily expenses, plan monthly budgets, and see what is left to spend. Small check-ins help you make more room for saving.",
+  "landing_expense_body": "Use your daily expense tracker to log everything from coffee to monthly bills. Keep income and spending together, then find transactions by category or search.",
+  "landing_budget_body": "Build a monthly budget around the things that matter to you. Set spending limits by category, check your remaining budget, and spot where you could save.",
+  "momentum_body": "Make expense tracking a daily habit. A quick check-in helps you notice your spending, build your streak, and keep working toward better money habits.",
+  "landing_a1": "Nuvio is an expense tracker and budget planner for iPhone and iPad. Log income and expenses, set category budgets, and track loans while building better money habits.",
+  "landing_q5": "How can Nuvio help me save money?",
+  "landing_a5": "Start by logging your expenses so you can see where your money goes. Set category budgets and check what is left before you spend. These small habits can help you find room to save; the amount depends on your income, spending, and choices.",
+  "landing_q6": "How do I start tracking daily expenses?",
+  "landing_a6": "Choose your currency and starting balance, then add an expense with an amount and category. Keep logging purchases and review your overview regularly to understand your spending. You enter your transactions yourself, without connecting a bank account."
+});
+Object.assign(translations["de-DE"], {
+  "landing_intro": "Ein Ausgabentracker und Budgetplaner für dein iPhone. Behalte dein Geld im Blick, schaffe Raum zum Sparen und entwickle Tag für Tag bessere Geldgewohnheiten.",
+  "landing_q5": "Wie kann Nuvio mir beim Sparen helfen?",
+  "landing_a5": "Erfasse deine Ausgaben, um zu sehen, wohin dein Geld geht. Lege Budgets pro Kategorie fest und prüfe vor dem Ausgeben, was übrig ist. Diese kleinen Gewohnheiten können dir Spielraum zum Sparen zeigen. Wie viel du sparst, hängt von deinen Einnahmen, Ausgaben und Entscheidungen ab.",
+  "landing_q6": "Wie beginne ich, tägliche Ausgaben zu erfassen?",
+  "landing_a6": "Wähle deine Währung und deinen Anfangssaldo. Füge dann eine Ausgabe mit Betrag und Kategorie hinzu. Erfasse weitere Käufe und prüfe regelmäßig deine Übersicht. Du trägst deine Buchungen selbst ein, ohne ein Bankkonto zu verbinden."
+});
+Object.assign(translations["es-ES"], {
+  "landing_intro": "Una app de gastos y presupuestos para iPhone. Descubre adónde va tu dinero, encuentra margen para ahorrar y crea mejores hábitos financieros cada día.",
+  "landing_q5": "¿Cómo puede Nuvio ayudarme a ahorrar dinero?",
+  "landing_a5": "Registra tus gastos para ver adónde va tu dinero. Crea presupuestos por categoría y revisa cuánto queda antes de gastar. Estos pequeños hábitos pueden ayudarte a encontrar margen para ahorrar. La cantidad depende de tus ingresos, gastos y decisiones.",
+  "landing_q6": "¿Cómo empiezo a registrar mis gastos diarios?",
+  "landing_a6": "Elige tu moneda y saldo inicial y añade un gasto con importe y categoría. Sigue registrando tus compras y consulta el resumen para entender tus gastos. Tú introduces los movimientos, sin conectar una cuenta bancaria."
+});
+Object.assign(translations["ja-JP"], {
+  "landing_intro": "iPhoneで使える支出記録・予算管理アプリ。お金の使い道を把握し、貯蓄の余裕を見つけて、毎日少しずつ良いお金の習慣を育てましょう。",
+  "landing_q5": "Nuvioは節約にどう役立ちますか？",
+  "landing_a5": "まず支出を記録し、お金の使い道を把握しましょう。カテゴリ別に予算を設定し、使う前に残額を確認します。こうした小さな習慣が、貯蓄に回せる余裕を見つける手助けになります。貯められる金額は収入、支出、ご自身の選択によって異なります。",
+  "landing_q6": "毎日の支出記録はどう始めますか？",
+  "landing_a6": "通貨と開始残高を選び、金額とカテゴリを入力して支出を追加します。買い物を記録し、概要を定期的に確認して支出を把握しましょう。銀行口座を連携せず、ご自身で取引を入力します。"
+});
+Object.assign(translations["ko-KR"], {
+  "landing_intro": "iPhone을 위한 지출 기록 및 예산 관리 앱. 돈이 어디로 나가는지 살펴보고, 저축할 여유를 찾고, 하루하루 더 나은 돈 관리 습관을 만들어 보세요.",
+  "landing_q5": "Nuvio가 저축에 어떻게 도움이 되나요?",
+  "landing_a5": "지출을 기록해 돈이 어디로 나가는지 살펴보세요. 카테고리별 예산을 정하고 돈을 쓰기 전에 남은 금액을 확인하세요. 이런 작은 습관이 저축할 여유를 찾는 데 도움이 될 수 있어요. 저축할 수 있는 금액은 수입, 지출, 선택에 따라 달라요.",
+  "landing_q6": "매일 지출 기록을 어떻게 시작하나요?",
+  "landing_a6": "통화와 시작 잔액을 선택한 다음 금액과 카테고리를 입력해 지출을 추가하세요. 구매 내역을 계속 기록하고 전체 현황을 확인해 지출을 파악하세요. 은행 계좌 연결 없이 직접 거래를 입력해요."
+});
+Object.assign(translations["zh-CN"], {
+  "landing_intro": "适用于 iPhone 的记账与预算管理应用。看清钱花在哪里，找到储蓄空间，每天培养更好的金钱习惯。",
+  "landing_q5": "Nuvio 如何帮助我省钱？",
+  "landing_a5": "先记录支出，了解钱花在哪里。设置分类预算，花钱前查看剩余额度。这些小习惯可以帮助你找到储蓄空间；实际能存下多少取决于你的收入、支出和选择。",
+  "landing_q6": "如何开始记录每日支出？",
+  "landing_a6": "选择货币和初始余额，然后输入金额和分类来添加支出。持续记录消费，定期查看总览，了解自己的消费情况。交易由你手动输入，无需连接银行账户。"
+});
+Object.assign(translations["zh-TW"], {
+  "landing_intro": "適用於 iPhone 的記帳與預算管理應用。看清錢花在哪裡，找到儲蓄空間，每天培養更好的金錢習慣。",
+  "landing_q5": "Nuvio 如何幫助我省錢？",
+  "landing_a5": "先記錄支出，了解錢花在哪裡。設定分類預算，花錢前查看剩餘額度。這些小習慣可以幫助你找到儲蓄空間；實際能存下多少取決於你的收入、支出和選擇。",
+  "landing_q6": "如何開始記錄每日支出？",
+  "landing_a6": "選擇貨幣和初始餘額，然後輸入金額和分類來新增支出。持續記錄消費，定期查看總覽，了解自己的消費情況。交易由你手動輸入，無需連接銀行帳戶。"
+});
+
+Object.assign(translations["en"], {
+  "attachment_label": "Images (optional)",
+  "attachment_choose": "Add screenshots or images",
+  "attachment_help": "Up to 3 PNG, JPG, or WebP images. 5 MB each, 8 MB total. Hide personal or financial details before attaching.",
+  "attachment_remove": "Remove image",
+  "attachment_invalid": "Choose up to 3 valid PNG, JPG, or WebP images, no more than 5 MB each and 8 MB total.",
+  "support_empty": "Please enter your name and message.",
+  "support_sending": "Sending your message and images…",
+  "support_success": "Your message was sent. Reference:",
+  "support_rate_limit": "Too many requests. Please wait a moment before trying again. Your message and images are still here.",
+  "support_failure": "Delivery could not be confirmed. Your message and images are still here. If you retry, a duplicate may be sent.",
+  "support_email_fallback": "Email team@nuviomm.com instead. Attach images manually in your email app.",
+  "contact_privacy_text": "This form sends your name, email, device details, message, and any attached images through Discord to the developer. Please do not include financial records or sensitive information. See our"
+});
+
+Object.assign(translations["de-DE"], {
+  "attachment_label": "Bilder (optional)",
+  "attachment_choose": "Screenshots oder Bilder hinzufügen",
+  "attachment_help": "Bis zu 3 PNG-, JPG- oder WebP-Bilder. Je 5 MB, insgesamt 8 MB. Persönliche Daten vorher ausblenden.",
+  "attachment_remove": "Bild entfernen",
+  "attachment_invalid": "Wähle bis zu 3 gültige PNG-, JPG- oder WebP-Bilder mit je höchstens 5 MB und insgesamt 8 MB.",
+  "support_empty": "Bitte gib deinen Namen und eine Nachricht ein.",
+  "support_sending": "Nachricht und Bilder werden gesendet…",
+  "support_success": "Nachricht gesendet. Referenz:",
+  "support_rate_limit": "Zu viele Anfragen. Warte kurz. Nachricht und Bilder bleiben erhalten.",
+  "support_failure": "Die Zustellung konnte nicht bestätigt werden. Deine Eingaben bleiben erhalten. Erneutes Senden kann ein Duplikat erzeugen.",
+  "support_email_fallback": "Stattdessen an team@nuviomm.com mailen. Bilder bitte selbst an die E-Mail anhängen.",
+  "contact_privacy_text": "Dieses Formular sendet deinen Namen, deine E-Mail, Geräteangaben, Nachricht und angehängte Bilder über Discord an den Entwickler. Bitte keine Finanzunterlagen oder sensiblen Daten senden. Siehe unsere"
+});
+
+Object.assign(translations["es-ES"], {
+  "attachment_label": "Imágenes (opcional)",
+  "attachment_choose": "Añadir capturas o imágenes",
+  "attachment_help": "Hasta 3 imágenes PNG, JPG o WebP. 5 MB cada una, 8 MB en total. Oculta los datos personales o financieros.",
+  "attachment_remove": "Quitar imagen",
+  "attachment_invalid": "Elige hasta 3 imágenes PNG, JPG o WebP válidas, de hasta 5 MB cada una y 8 MB en total.",
+  "support_empty": "Introduce tu nombre y mensaje.",
+  "support_sending": "Enviando mensaje e imágenes…",
+  "support_success": "Mensaje enviado. Referencia:",
+  "support_rate_limit": "Demasiadas solicitudes. Espera un momento. Tu mensaje e imágenes siguen aquí.",
+  "support_failure": "No se pudo confirmar el envío. Tus datos siguen aquí. Si reintentas, podrías enviar un duplicado.",
+  "support_email_fallback": "Escribe a team@nuviomm.com. Adjunta las imágenes manualmente en tu aplicación de correo.",
+  "contact_privacy_text": "Este formulario envía tu nombre, correo, datos del dispositivo, mensaje e imágenes adjuntas al desarrollador a través de Discord. No incluyas registros financieros ni información sensible. Consulta nuestra"
+});
+
+Object.assign(translations["ja-JP"], {
+  "attachment_label": "画像（任意）",
+  "attachment_choose": "スクリーンショットや画像を追加",
+  "attachment_help": "PNG・JPG・WebPを3枚まで。1枚5 MB、合計8 MBまで。個人情報や家計情報は隠してください。",
+  "attachment_remove": "画像を削除",
+  "attachment_invalid": "有効なPNG・JPG・WebPを3枚まで、1枚5 MB、合計8 MB以内で選んでください。",
+  "support_empty": "お名前とメッセージを入力してください。",
+  "support_sending": "メッセージと画像を送信中…",
+  "support_success": "送信しました。受付番号：",
+  "support_rate_limit": "リクエストが多すぎます。少しお待ちください。入力内容と画像は残っています。",
+  "support_failure": "送信を確認できませんでした。入力内容は残っています。再送すると重複する場合があります。",
+  "support_email_fallback": "team@nuviomm.comにメールする。画像はメールアプリで手動添付してください。",
+  "contact_privacy_text": "このフォームは名前、メール、端末情報、メッセージ、添付画像をDiscord経由で開発者に送ります。家計記録や機密情報は含めないでください。詳しくはこちら："
+});
+
+Object.assign(translations["ko-KR"], {
+  "attachment_label": "이미지 (선택)",
+  "attachment_choose": "스크린샷 또는 이미지 추가",
+  "attachment_help": "PNG, JPG, WebP 최대 3장. 장당 5 MB, 총 8 MB. 개인 정보와 금융 정보는 가려 주세요.",
+  "attachment_remove": "이미지 삭제",
+  "attachment_invalid": "유효한 PNG, JPG, WebP 이미지를 최대 3장, 장당 5 MB 및 총 8 MB 이하로 선택하세요.",
+  "support_empty": "이름과 메시지를 입력해 주세요.",
+  "support_sending": "메시지와 이미지를 보내는 중…",
+  "support_success": "메시지를 보냈어요. 접수 번호:",
+  "support_rate_limit": "요청이 너무 많아요. 잠시 기다려 주세요. 메시지와 이미지는 유지돼요.",
+  "support_failure": "전송을 확인할 수 없어요. 입력 내용은 유지돼요. 다시 보내면 중복될 수 있어요.",
+  "support_email_fallback": "team@nuviomm.com으로 이메일 보내기. 이미지는 이메일 앱에서 직접 첨부해 주세요.",
+  "contact_privacy_text": "이 양식은 이름, 이메일, 기기 정보, 메시지와 첨부 이미지를 Discord를 통해 개발자에게 보내요. 금융 기록이나 민감한 정보는 포함하지 마세요. 자세한 내용:"
+});
+
+Object.assign(translations["zh-CN"], {
+  "attachment_label": "图片（可选）",
+  "attachment_choose": "添加截图或图片",
+  "attachment_help": "最多3张PNG、JPG或WebP图片。每张5 MB，总共8 MB。请先隐藏个人或财务信息。",
+  "attachment_remove": "移除图片",
+  "attachment_invalid": "请选择最多3张有效的PNG、JPG或WebP图片，每张不超过5 MB，总共不超过8 MB。",
+  "support_empty": "请输入姓名和消息。",
+  "support_sending": "正在发送消息和图片…",
+  "support_success": "消息已发送。参考编号：",
+  "support_rate_limit": "请求过多，请稍后重试。消息和图片已保留。",
+  "support_failure": "无法确认发送结果。输入内容已保留，重试可能会重复发送。",
+  "support_email_fallback": "改为发送邮件至team@nuviomm.com。请在邮件应用中手动添加图片。",
+  "contact_privacy_text": "此表单通过Discord向开发者发送姓名、邮箱、设备信息、消息和附加图片。请勿包含财务记录或敏感信息。详见我们的"
+});
+
+Object.assign(translations["zh-TW"], {
+  "attachment_label": "圖片（選填）",
+  "attachment_choose": "新增截圖或圖片",
+  "attachment_help": "最多3張PNG、JPG或WebP圖片。每張5 MB，總共8 MB。請先隱藏個人或財務資訊。",
+  "attachment_remove": "移除圖片",
+  "attachment_invalid": "請選擇最多3張有效的PNG、JPG或WebP圖片，每張不超過5 MB，總共不超過8 MB。",
+  "support_empty": "請輸入姓名和訊息。",
+  "support_sending": "正在傳送訊息和圖片…",
+  "support_success": "訊息已傳送。參考編號：",
+  "support_rate_limit": "請求過多，請稍後重試。訊息和圖片已保留。",
+  "support_failure": "無法確認傳送結果。輸入內容已保留，重試可能會重複傳送。",
+  "support_email_fallback": "改為寄信至team@nuviomm.com。請在郵件應用程式中手動附加圖片。",
+  "contact_privacy_text": "此表單透過Discord向開發者傳送姓名、電子郵件、裝置資訊、訊息與附加圖片。請勿包含財務紀錄或敏感資訊。詳見我們的"
+});
