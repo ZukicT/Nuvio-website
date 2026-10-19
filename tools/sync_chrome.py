@@ -9,7 +9,7 @@ for name in ('index.html', 'contact.html', 'privacy.html', 'terms.html', 'cookie
     for kind in ('header', 'footer'):
         partial = (root / 'partials' / (kind + '.html')).read_text().strip()
         if name == 'index.html':
-            partial = partial.replace('href="index.html#', 'href="#')
+            partial = partial.replace('href="/#', 'href="#')
         pattern = r'(<!-- shared:' + kind + r':start -->\n).*?(\n<!-- shared:' + kind + r':end -->)'
         source, count = re.subn(pattern, lambda match: match[1] + partial + match[2], source, flags=re.S)
         if count != 1:

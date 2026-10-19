@@ -118,3 +118,9 @@ References: [Google title links](https://developers.google.com/search/docs/appea
 ## Crawl configuration refresh, October 18
 
 The root and config copies of robots.txt and sitemap.xml are synchronized. The sitemap lists all five canonical public pages, including cookies.html, and excludes the noindex 404 page and internal templates. Last-modified dates remain October 18, matching the latest significant page updates. Removed the ignored priority and changefreq sitemap fields and the unsupported Google crawl-delay directive. Public pages and rendering assets remain crawlable; config, docs, partials, scripts, tools, and local review paths are disallowed for crawling. These rules are crawl guidance and do not provide access control or guarantee removal from search results.
+
+## Search Console exclusion audit, October 18
+
+Live checks confirmed that HTTP, HTTP www, and HTTPS www homepages each return a single 301 redirect to https://nuviomm.com/, which returns 200 with a self-referencing canonical. All five sitemap destinations return 200 directly, have one correct canonical tag, and have no noindex meta or X-Robots-Tag header. A nonexistent path returns a real 404. The /index.html alias returns 200 and correctly canonicalizes to the root homepage. Internal home and cross-page section links now use / and /#section consistently, including the shared templates and sync tool. Same-page links retain fragment-only navigation.
+
+The supplied Search Console screenshot shows three redirect exclusions, one alternate canonical exclusion, and zero currently crawled-but-not-indexed pages. Its example URLs are not visible, so matching those exact exclusions to the checked URL variants remains unconfirmed. Expected redirect and duplicate exclusions should remain excluded. No Search Console validation or indexing request was submitted.
