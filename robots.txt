@@ -1,7 +1,13 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nuviomm.com/sitemap.xml
+# Internal site resources are not search landing pages.
+Disallow: /config/
+Disallow: /docs/
+Disallow: /partials/
+Disallow: /scripts/
+Disallow: /tools/
+Disallow: /.local/
+Disallow: /local/
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
+Sitemap: https://nuviomm.com/sitemap.xml
